@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    
+    <link rel="canonical" href="http://vnstrawhat.github.io/posts/security_incident_response_part2/" />
+    <meta name="description" content="">
+    
+
+    <title>Incident Response part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố &middot; TrungKFC</title>
+
+    <link rel="shortcut icon" href="http://vnstrawhat.github.io/images/favicon.ico" />
+
+    <link rel="stylesheet" href="http://vnstrawhat.github.io/css/main.css" />
+    
+        
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-light.min.css">
+        
+    
+    
+    
+</head>
+
+
+<body class="loading light-mode">
+    
+<div class="top">
+    <img class="logo" src="http://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+<div class="bottom">
+    <img class="logo" src="http://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+
+    <header class="header">
+    <ul class="menu clearfix control">
+        
+
+<li class="logo-container logo-default">
+    <a href="http://vnstrawhat.github.io" class="btn logo-link">
+        <img class="logo" src="http://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+    </a>
+</li>
+
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                Article
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="/posts"
+                    
+                        class="btn "
+                    >Posts</a>
+                </li>
+                
+                <li class="">
+                    <a href="/tags"
+                    
+                        class="btn "
+                    >Tags</a>
+                </li>
+                
+                <li class="">
+                    <a href="/categories"
+                    
+                        class="btn "
+                    >Categories</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                View
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="#"
+                    
+                        class="btn toggle-sidebar"
+                    >Toggle Sidebar</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part1/" class="btn">
+                Incident Response part 1 - Tổng quan
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part2/" class="btn">
+                Incident Response part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part3/" class="btn">
+                Incident Response part 3 - Cơ cấu của một đội ứng phó sự cố
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part4/" class="btn">
+                Incident Response part 4 - Quy trình ứng phó sự cố
+            </a>
+        </li>
+        
+        
+    </ul>
+</header>
+
+    <div class="middle">
+        <nav class="sidebar">
+            <ul class="posts control">
+    
+    <li><a class="no-break btn" href='/posts/my-second-post/'><i class="icon icon-post"></i>My Second Post</a></li>
+    
+    <li><a class="no-break btn" href='/posts/my-first-post/'><i class="icon icon-post"></i>My First Post</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part4/'><i class="icon icon-post"></i>Incident Response part 4 - Quy trình ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part3/'><i class="icon icon-post"></i>Incident Response part 3 - Cơ cấu của một đội ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part2/'><i class="icon icon-post"></i>Incident Response part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part1/'><i class="icon icon-post"></i>Incident Response part 1 - Tổng quan</a></li>
+    
+</ul>
+
+        </nav>
+        <main class="main">
+            <article class="article">
+    <h2 class="title"><a href='/posts/security_incident_response_part2/' class="btn">Incident Response part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố</a></h2>
+    <div class="article-meta clearfix">
+        <ul class="dates clearfix left control">
+            <li><i class="icon icon-date"></i></li>
+            <li class="publish-date">
+                <time datetime="2015.12.22">2015.12.22</time>
+            </li>
+        </ul>
+        
+        
+    </div>
+    <div class="content">
+        
+        
+
+<h1 id="chính-sách">Chính sách</h1>
+
+<p>Chính sách về quản lý và ứng phó sự cố của từng các nhân hay tổ chức là khác nhau. Tuy nhiên, hầy hết các chính sách đều bao gồm các yếu tố sau:</p>
+
+<ul>
+<li>Cam kết quản lý</li>
+<li>Mục đích và mục tiêu của chính sách</li>
+<li>Phạm vi của chính sách</li>
+<li>Định nghĩa về sự cố bảo mật và các vấn đề liên quan</li>
+<li>Cơ cấu tổ chức, định nghĩa về vai trò, mức độ và quyền hạn</li>
+<li>Xếp hạng mức độ ưu tiên hoặc mức độ nghiêm trọng của sự cố</li>
+<li>Performance Measures</li>
+<li>Báo cáo và mẫu phương thức liên lạc</li>
+</ul>
+
+<h1 id="kế-hoạch">Kế Hoạch</h1>
+
+<p>Cá nhân hay tổ chúc cần có một kế hoạch chính thức, tập trung và phối hợp các bên liên quan để giải quyết các sự cố về bảo mật. Một kế hoạch ứng phó với sự cố sẽ cung cấp một lộ trình thực hiện các biện pháp nhằm giải quyết sự cố. Kế hoạch về ứng phó sự cố thường bao gồm các yếu tố sau:</p>
+
+<ul>
+<li>Nhiệm vụ</li>
+<li>Mục tiêu và chiến lược</li>
+<li>Sự phê chuẩn các yêu cầu quản lý cấp cao</li>
+<li>Phương pháp của tổ chức để ứng phó với sự cố</li>
+<li>Cách thức để đội ứng phó sự cố liên lạc với các thành phần khác trong một tổ chức hoặc là liên lạc với một tổ chức khác</li>
+<li>Đánh giá khả năng ứng phó vơi sự cố và tính hiệu quả của nó</li>
+<li>Làm cách nào đẻ kế hoạch có thể được áp dụng một cách tổng thể cho toàn bộ tổ chức</li>
+</ul>
+
+<h1 id="thủ-tục">Thủ tục</h1>
+
+<p>Các thử tục về ứng phó cự cố cần phải được xây dựng dựa trên chính sách và kế hoạch ứng phó sự cố. Thủ tục hoạt động tiêu chuẩn (Standard operating procedures - SOPs) là một sự phân chia cụ thể về mặt quy trình kỹ thuật nó bao gồm kỹ thuật, checklist, các biểu mẫu đước sử dụng bởi đội ứng phó sự cố. Việc chuẩn hóa các thủ tục sẽ làm giảm đi đáng kể sự thiếu sót, sai sót trong quá trình xử lý sự cố đặc biệt là đối với những tình huống nhạy cảm, căng thẳng. SOPs phải được kiểm tra để đảm bảo tính chính xác và tính hữu dụng của nó. SOPs nên bao gồm những yếu tố sau:</p>
+
+<h2 id="chia-sẻ-thông-tin-với-bên-ngoài">Chia sẻ thông tin với bên ngoài:</h2>
+
+<p>Trong quá trình ứng phó sự cố, đội ứng phó sự cố cần phải được chia sẻ thông tin ra bên ngoài trong một số trường hợp. Chẳng hạn như để thực thi pháp luật, trả lời các đơn vị truyền thông, hoặc tìm kiếm các chuyên gia bên ngoài giúp đỡ xử lý sự cố.</p>
+
+<p>Các tổ chức cũng có thể chủng động chia sẻ thông tin về sự cố với các đồng nghiệm khác nhằm phát hiện và phân tích các sự cố giúp cho việc giải quyết sự cố nhanh chóng hơn. Các thủ tục về vấn đề chia sẻ thông tin ra bên ngoài cầm phải được thiết lập nhằm đảm bảo các thông tin nhạy cảm không bị lộ ra bên ngoài một cách trái phép có thể dẫn đến những tổn thất về kinh tế cũng như danh tiếng cho tổ chức. Đội ứng phó sự cố phải lưu lại tất cả các thông tin, địa chỉ liên lạc với phía bên ngoài công ty, tổ chức để có thể quản lý về mặt trách nhiệm trong trường hợp thất thoát thông tin xảy ra.</p>
+
+<p><img src="/img/object_share.png" alt="Các đối tượng chia sẻ thông tin với đội ứng phó sự cố" /></p>
+
+<h2 id="phương-tiện">Phương tiện</h2>
+
+<p>Đội ứng phó sự cố nên thiết lập các thủ tục cho việc công bố thông tin qua các phương tiện truyền thông tuân theo chính sách của tổ chức. Ví dụ như một người trong đội ứng phó sự cố, sẽ tham gia cùng với các thành viên của phòng quan hệ công chúng trước các phương tiện truyền thông:</p>
+
+<ul>
+<li>Tổ chức các buổi tập huấn về tương tác với các phương tiện truyền thông liên quan khi có sự cố xảy ra, trong đó phải đảm bao việc không tiết lộ các thông tin nhạy cảm chẳng hạn như các chi tiết kỹ thuật của các biện pháp đối phó.</li>
+<li>Thiết lập một thủ tục ngắn gọn để các phương tiện truyền thông liên lạc liên quan đến các thông tin nhạy cảm của một sự việc cụ thể trước khi thảo luận chính thức với các phương tiện truyền thông.</li>
+<li>Duy trì các thông tin về tình trạng hiện tại của sự cố và liên tục cập nhật thông tin</li>
+<li>Nhắc nhở toàn bộ nhân viên về các thủ tục chung khi xử lý yêu cầu của các phương tiện truyền thông.</li>
+<li>Tập huấn các cuộc phỏng vấn giả và các cuộc họp báo khi có sự cố xảy ra. Một cố câu hỏi thường được các phương tiện truyền thông yêu cầu như:
+
+<ul>
+<li>Ai là kẻ tấn công ? Tại sao ?</li>
+<li>Cuộc tấn công xảy ra khi nào ? Chuyện gì đã xảy ra ? Điều này xảy ra do bảo mật kém hay do nguyên nhân nào khác ?</li>
+<li>Cách thức là sự cố này có thể lan rộng ra ? Bạn đã xác định sự cố như thế nào và nên làm gì để sự cố này không xảy ra trong tương lai ?</li>
+<li>Tác động của sự cố này như thế nào ? Mức độ nghiêm trọng như thế nào ? Tác động của sự cố này đến các thông tin cá nhân (PII) ? Thiệt hại ước tính của sự cố này là bao nhiêu ?</li>
+</ul></li>
+</ul>
+
+<h2 id="thi-hành-luật">Thi hành luật</h2>
+
+<p>Các đội phản ứng sự cố cần được làm quen và thảo luận với các đại diện của cơ quan thực thi pháp luật trước khi sự cố xảy ra về các điều kiện để thực thi pháp luật trong trường hợp cần thiết như báo cáo, cách thức thực hiện báo cáo, những bằng chứng cần thu thập và làm thế nào để thu thập các bằng chứng đó.
+Các cơ quan pháp luật ở các nước khác cũng có thể tham gia trong trường hợp kẻ tấn công nằm bên ngoài phạm vi của quốc gia.</p>
+
+<p>Các nhân đại diện thực thi pháp luật phải được chỉ định một cách phù hợp với yêu cầu của pháp luật và thủ tục của tổ chức. Nhiều tổ chức muốn bổ nhiệm một thành viên trong đội ứng phó sự cố làm đại diện trong việc thực thi pháp luật. Người này nên làm quen với các thủ tục, báo cáo của tất cả các cơ quan pháp lý có liên quan. Một lưu ý rằng công ty hay tổ chức thường chỉ nên liên lạc với một cơ quan pháp lý để tránh việc xung đột trong vấn đề phán quyết.</p>
+
+<h2 id="một-số-thành-phần-bên-ngoài">Một số thành phần bên ngoài</h2>
+
+<p>Công ty hay tổ chức trong quán trình ứng phó sự cố có thể muốn thảo luận và trao đổi về sự cố với các nhóm bên ngoài:</p>
+
+<ul>
+<li><strong>ISP</strong>: Quá trình ứng phó sự cố có thể cần sự hỗ trợ của các ISP trong việc ngăn chặn một cuộc tấn công mạng lớn hoặc truy tìm nguồn gốc của cuộc tấn công đó.</li>
+<li><strong>Chủ sở hữu của địa chỉ tấn công</strong>: Nếu một cuộc tấn công có nguồn gốc xuất phát từ một tổ chức bên ngoài, việc xử lý sự cố có thể được thực hiện bằng cách nói chuyện, trao đổi với tổ chức bên ngoài đó nhằm mục đích thu thập chứng cư hay ngăn chặn cuộc tấn công.</li>
+<li><strong>Các nhà cung cấp phần mềm</strong>: Đội ứng phó sự cố có thể muốn trao đổi với các  nhà cung cấp phần mềm về các hoạt động đáng ngờ của phần mềm. Sự trao đổi này có thể chỉ ra được các cuộc tấn công chiếm quyền điều khiển máy chủ thông qua một phần mền dễ bị tổn thương. Các nhà cung cấp phần mềm cũng có thể cung cấp các thông tin về các mỗi đe dọa, các lỗ hổng chưa được vá ở các phiên bản cũ để giúp đội ứng phó xử lý sự cố.</li>
+<li><strong>Các đội ứng phó sự cố khác</strong>:
+Một số đội ứng phó sự cố khác có thể cũng gặp các sự cố tương tự nên việc chủ động chia sẻ thông tin sẽ tăng hiệu quả trong quá trình xử lý sự cố (ví dụ như cảnh báo sớm, tăng khả năng chuẩn bị ứng phó sự cố)</li>
+</ul>
+
+<blockquote>
+<p>zMadMoon</p>
+
+<p>Dịch lược NIST.SP.800-61 Rev. 2</p>
+</blockquote>
+
+        
+    </div>
+
+</article>
+<section class="comment">
+    <p class="local-info">
+        Comment is disabled to avoid unwanted discussions from 'localhost:1313' on your Disqus
+        account...
+    </p>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+
+    (function () {
+        if (window.location.hostname == "localhost") {
+            return
+        }
+        document.querySelector('.local-info').classList.add('hide')
+
+        let dsq = document.createElement('script')
+        dsq.type = 'text/javascript'
+        dsq.async = true
+        let disqus_shortname = 'your disqus short name'
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
+    })()
+</script>
+
+
+        </main>
+    </div>
+    <footer class="footer clearfix">
+    <ul class="control social clearfix">
+        <li><a class="author btn" href="#">TrungKFC</a></li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon email"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon facebook"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon github"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon twitter"></i></a>
+        </li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="http://vnstrawhat.github.io/index.xml" type="application/rss+xml" title="rss">
+                <i class="rss icon"></i></a>
+        </li>
+    </ul>
+
+    <ul class="control status clearfix">
+        <li><a href="#" class="btn">Posts:
+                7</a>
+        </li>
+        <li><a href="#" class="btn">Pages:
+                0</a></li>
+    </ul>
+</footer>
+<div class="dialog">
+    <div class="wrapper">
+        <div class="clearfix"><button class="btn close-dialog">X</button></div>
+        <header>
+            <h1 class="title">Theme Name</h1>
+        </header>
+        <main>
+            <div class="clearfix">
+                <label for="theme-name">
+                    <p>Only English Character, space, hyphen are allowed!</p>
+                </label>
+                <input type="text" name="theme-name" id="theme-name">
+            </div>
+            <div class="clearfix">
+                <button class="btn export">Export</button>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</div>
+
+    <script src="http://vnstrawhat.github.io/js/main.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'your ga id', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>
