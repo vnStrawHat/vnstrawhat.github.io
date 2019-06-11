@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on TrungKFC</title>
+    <link>http://vnstrawhat.github.io/posts/</link>
+    <description>Recent content in Posts on TrungKFC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 10 Jun 2019 22:26:08 +0700</lastBuildDate>
+    
+	<atom:link href="http://vnstrawhat.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Second Post</title>
+      <link>http://vnstrawhat.github.io/posts/my-second-post/</link>
+      <pubDate>Mon, 10 Jun 2019 22:26:08 +0700</pubDate>
+      
+      <guid>http://vnstrawhat.github.io/posts/my-second-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://vnstrawhat.github.io/posts/my-first-post/</link>
+      <pubDate>Mon, 10 Jun 2019 22:04:08 +0700</pubDate>
+      
+      <guid>http://vnstrawhat.github.io/posts/my-first-post/</guid>
+      <description>Welcome to StackEdit! Hi! I&amp;rsquo;m your first Markdown file in StackEdit. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the file explorer on the left corner of the navigation bar.
+Files StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible offline!</description>
+    </item>
+    
+  </channel>
+</rss>
