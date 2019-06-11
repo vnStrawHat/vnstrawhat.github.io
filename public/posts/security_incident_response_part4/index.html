@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    
+    <link rel="canonical" href="http://vnstrawhat.github.io/posts/security_incident_response_part4/" />
+    <meta name="description" content="">
+    
+
+    <title>Incident Response part 4 - Quy trình ứng phó sự cố &middot; TrungKFC</title>
+
+    <link rel="shortcut icon" href="http://vnstrawhat.github.io/images/favicon.ico" />
+
+    <link rel="stylesheet" href="http://vnstrawhat.github.io/css/main.css" />
+    
+        
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-light.min.css">
+        
+    
+    
+    
+</head>
+
+
+<body class="loading light-mode">
+    
+<div class="top">
+    <img class="logo" src="http://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+<div class="bottom">
+    <img class="logo" src="http://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+
+    <header class="header">
+    <ul class="menu clearfix control">
+        
+
+<li class="logo-container logo-default">
+    <a href="http://vnstrawhat.github.io" class="btn logo-link">
+        <img class="logo" src="http://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+    </a>
+</li>
+
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                Article
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="/posts"
+                    
+                        class="btn "
+                    >Posts</a>
+                </li>
+                
+                <li class="">
+                    <a href="/tags"
+                    
+                        class="btn "
+                    >Tags</a>
+                </li>
+                
+                <li class="">
+                    <a href="/categories"
+                    
+                        class="btn "
+                    >Categories</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                View
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="#"
+                    
+                        class="btn toggle-sidebar"
+                    >Toggle Sidebar</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part1/" class="btn">
+                Incident Response part 1 - Tổng quan
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part2/" class="btn">
+                Incident Response part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part3/" class="btn">
+                Incident Response part 3 - Cơ cấu của một đội ứng phó sự cố
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part4/" class="btn">
+                Incident Response part 4 - Quy trình ứng phó sự cố
+            </a>
+        </li>
+        
+        
+    </ul>
+</header>
+
+    <div class="middle">
+        <nav class="sidebar">
+            <ul class="posts control">
+    
+    <li><a class="no-break btn" href='/posts/my-second-post/'><i class="icon icon-post"></i>My Second Post</a></li>
+    
+    <li><a class="no-break btn" href='/posts/my-first-post/'><i class="icon icon-post"></i>My First Post</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part4/'><i class="icon icon-post"></i>Incident Response part 4 - Quy trình ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part3/'><i class="icon icon-post"></i>Incident Response part 3 - Cơ cấu của một đội ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part2/'><i class="icon icon-post"></i>Incident Response part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part1/'><i class="icon icon-post"></i>Incident Response part 1 - Tổng quan</a></li>
+    
+</ul>
+
+        </nav>
+        <main class="main">
+            <article class="article">
+    <h2 class="title"><a href='/posts/security_incident_response_part4/' class="btn">Incident Response part 4 - Quy trình ứng phó sự cố</a></h2>
+    <div class="article-meta clearfix">
+        <ul class="dates clearfix left control">
+            <li><i class="icon icon-date"></i></li>
+            <li class="publish-date">
+                <time datetime="2015.12.24">2015.12.24</time>
+            </li>
+        </ul>
+        
+        
+    </div>
+    <div class="content">
+        
+        
+
+<p>Quy trình ứng phó sự cố bao gồm nhiều gian đoạn. Giai đoạn đầu tiên là việc thành lập và đào tạo một đội phản ứng sự cố và lựa chọn các công cụ cũng như nguồn lực cần thiết. Trong thời gian chuẩn bị, tổ chức cũng phải hạn chế số lượng các sự cố xảy ra. Việc phát hiện các lỗ hổng bảo mật là cần thiết để cảnh báo cho các tổ chức bất kể khi nào xảy ra sự cố. Sauk hi sự cố được xử lý đầy đủ, tổ chức cần phải phát hành một báo cáo chi tiết về nguyên nhân và chi phí của vụ việc, các bước để tổ chức ngăn chặn trong tương lai. Các quy trình ứng phó sự cố và các mối quan hệ được minh họa bởi hình sau:</p>
+
+<p><img src="/img/incident_response_process.png" alt="Quy trình ứng phó sự cố" /></p>
+
+<h1 id="chuẩn-bị">Chuẩn bị</h1>
+
+<p>Các phương pháp ứng phó sự cố thường nhấn mạng việc chuẩn bị. Nó không chỉ thiết lập khả năng để tổ chức ứng phó với sự cố mà còn ngăn ngừa sự cố bằng cách đảm bảo rằng hệ thống mạng và các ứng dụng đủ an toàn để vận hành. Mặc dù đội ứng phó sự cố thường không chịu trách nhiệm trong việc phòng ngừa sự cố xảy ra tuy nhiên bước này cung cấp các thông tin, lời khuyên cơ bản để chuẩn bị ứng phó và phòng ngừa sự cố xảy ra.</p>
+
+<h2 id="chuẩn-bị-ứng-phó-sự-cố">Chuẩn bị ứng phó sự cố</h2>
+
+<p>Danh sách các mục dưới đây cung cấp các ví dụ về các công vụ và nguồn lực trong quá trình xử lý sự cố. Những mục này là những điểm bắt đầu cho việc thảo luận các công cụ sử dụng cũng như nguồn lực xử lý sự cố của một tổ chức.</p>
+
+<h3 id="chuẩn-bị-về-liên-lạc-và-truyền-thông">Chuẩn bị về liên lạc và truyền thông</h3>
+
+<ul>
+<li>Thông báo cho các thành viên và những người liên quan bên trong và bên ngoài tổ chức ví dụ như các đội phản ứng xử lý sự cố khác hoặc cơ quan thực thi pháp luật. Thông tin có thể bao gồm số điện thoại, địa chỉ email, các khóa công khai và hướng dẫn cho việc xác minh danh tính.</li>
+<li>Lây thông tin ngay lập tức từ các đội khác bên trong tổ chức bao gồm cả vấn đề leo thang thông tin</li>
+<li>Cơ chế cảnh báo sự cố. Ví dụ như số điện thoại, địa chỉ email, hệ thống tin nhắn… Nên có một kênh riêng cho việc báo cáo sự cố nặc danh</li>
+<li>Phát hành hệ thống cho phép theo dõi các thông tin và trạng thái của sự cố.</li>
+<li>Phần mềm mã hóa được sử dụng để liên lạc giữa các thành viên trong nhóm, giữa nhóm với các tổ chức bên ngoài.</li>
+<li>Các cơ chế bảo mật lưu trữ để đảm bảo an toàn cho bằng chứng cũng như các tài liệu nhạy cảm khác.</li>
+</ul>
+
+<h3 id="chuẩn-bị-về-phân-tích-sự-cố-phần-cứng-và-phần-mềm">Chuẩn bị về phân tích sự cố phần cứng và phần mềm</h3>
+
+<ul>
+<li>Các biện pháp và thiết bị sao lưu để tạo ảnh đĩa, bảo quản file log và lưu trữ các dữ liệu sự cố liên quan.</li>
+<li>Máy tính xách tay phục vụ cho hoạt động phân tích dữ liệu, chặn bắt gói tin, viết báo cáo.</li>
+<li>Máy trạm, máy chủ, thiết bị mạng để phục vụ cho việc mô phỏng sự lây lan của phần mềm độc hại hoặc khôi phục lại các bản sao lưu dữ liệu.</li>
+<li>Máy in di động để tạo các bản sao lưu tệp tin log và các bằng chứng trong trường hợp hệ thống không có kết nối mạng.</li>
+<li>Hệ thống chặn bắt và phân tích lưu lượng mạng.</li>
+<li>Ổ cứng hoặc thiết bị lưu trữ di động chứa các chương trình tin cậy để thu thập thông tin, bằng chứng từ hệ thống.</li>
+<li>Các thiết bị thu thập chứng cứ như máy ảnh kỹ thuật số, máy ghi âm, túi bảo quản bằng chứng…</li>
+</ul>
+
+<h3 id="phân-tích-tài-nguyên-sự-cố">Phân tích tài nguyên sự cố</h3>
+
+<ul>
+<li>Danh sách các port thường được sử dụng, các port lạ, các port Trojan sử dụng</li>
+<li>Tài liệu về hệ điều hành, các ứng dụng, các giao thức, các sản phần antivirus và các sản phẩm phát hiện xâm nhập</li>
+<li>Sơ đồ mạng và danh mục các tài nguyên quan trọng.</li>
+<li>Baseline của hệ thống mạng hiện tại và các ứng dụng</li>
+</ul>
+
+<h2 id="ngăn-ngừa-sự-cố">Ngăn ngừa sự cố</h2>
+
+<p>Giữ số lượng các sự cố ở mức thấp là rất quan trọng trong việc bảo vệ các quá trình kinh doanh của tổ chức. Nếu các kiểm soát về an ninh là không đủ thì số lượng các sự cố quá lớn có thể dẫn đến việc đội ứng phó sự cố không thể xử lý kịp. Điều này dễ dẫn đến việc sự cố được đáp ứng chậm dẫn đến những thiệt hại không thể lường trước được.</p>
+
+<p>Mặc dù đội ứng phó sự cố nói chung không chịu trách nhiệm bảo vệ tài nguyên nhưng họ có thể xác định và đánh giá những rủi ro không thể nhận thức được. Đội ứng phó sự cố có thể xác định được những khoảng trống của các chính sách tạo điều kiện cho các cuộc tấn công tiền năng. Các kiến nghị sau giúp nâng cao vấn đề bảo mật trong các hệ thống mạng và ứng dụng:</p>
+
+<ul>
+<li><strong>Đánh giá rủi ro</strong>: Đánh gia rủi ro định kỳ cho hệ thống và ứng dụng là việc làm nhằm xác định những rủi ro có thể gây ra bởi sự kết hợp giữa các mối đe dọa và lỗ hổng bảo mật. Việc đánh giá rủi ro định kỳ cung cấp cho tổ chức các mỗi rủi ro tiền năng qua đó đưa ra được các biện pháp đối phó phù hợp. Việc đánh giá rủi ro định kỳ cũng cho phép các thành viên nhấn mạnh các hoạt động giám sát và phản ứng đối với tài nguyên hệ thống.</li>
+<li><strong>Tổ chức an ninh</strong>: Tất cả các tổ chức nên kiểm tra các cấu hình tiêu chuẩn của hệ thống . Ngoài việc liên tục cập nhật các bản vá, việc cấu hình nên được thực hiện theo nguyên tắc đặc quyền tối thiểu. Người sử dụng chỉ được cấp những quyền tối thiểu tương ứng với vai trò của người dùng đó trong hệ thống.</li>
+<li><strong>An toàn hệ thống mạng</strong>:  Các vành đai mạng nên được cấu hình để từ chối tất cả các hoạt động không cho phép một cách rõ ràng.</li>
+<li><strong>Phòng chống mã độc hại</strong>: phần mền phát hiện và phòng chống mã độc phải được triển khai trên toàn bộ tổ chức. Các phần mềm phòng chống mã độc nên hoạt động cả các cấp bảo vệ mức hệ điều hành và mức ứng dụng.</li>
+<li><strong>Nâng cao nhận thức của toàn bộ nhân viên</strong>: Triển khai đào tạo nâng cao nhận thức về an toàn thông tin cho toàn bộ nhân viên trong tổ chức. Bài học kinh nghiệm rút ra được từ các sự cố trước đây cần được chia sẻ cho các nhân viên để giảm tần số xuất hiện của sự cố.</li>
+</ul>
+
+<h1 id="phát-hiện-và-phân-tích">Phát hiện và phân tích</h1>
+
+<p><img src="/img/detection_analysis.png" alt="Phát hiện và phân tích" /></p>
+
+<h2 id="dấu-hiệu-của-sự-cố">Dấu hiệu của sự cố</h2>
+
+<p>Đối với nhiều tổ chức, công đoạn khó khăn nhất trong quá trình ứng phó sự cố là phát hiện chính xác và đánh giá sự cố xem sự cố đã xảy ra hay chưa, loại hình, mức độ nghiêm trọng của sự cố. Điều này được thực hiện bằng cách kết hợp ba yếu tố sau:</p>
+
+<ul>
+<li>Sự cố có thể được phát hiện thông qua nhiều phương tiện khác nhau, các mức độ và tính trung thực cũng khác nhau. Khả năng phát hiện tự động bao gồm việc dựa trên các sự kiện của hệ thống phát hiện xâm nhập IDS, phần mềm chống mã độc hại và phân tích quá trình đăng nhập. Sự cố có thể được phát hiện thông qua những báo cáo của người dùng.</li>
+<li>Số lượng các sự cố tiền ẩn thưởng rất cao. Ví dụ như nó không phổ biến cho một tổ chức cụ thể hoặc hệ thống phát hiện thông báo quá nhiều sự kiện trong một khoảng thời gian.</li>
+<li>Việc phát hiện sự cố phụ thuộc vào kiến thức kỹ thuật, kinh nghiệm trong việc phân tích các dữ liệu liên quan đến sự cố của đội ứng phó sự cố</li>
+</ul>
+
+<p>Dấu hiệu về sự cố có thể rơi vào 2 loại. Một là những <b><span style="color:red;">dấu hiệu tiền thân</span></b>, nó là những dấu hiệu cho thấy sự cố có thể xảy ra trong tương lai. Hai là <b><span style="color:red;">dấu hiệu chỉ thị</span></b>, nó là những dấu hiệu cho thấy sự cố đã xảy ra hoặc có thể xảy ra ngay lập tức. Nếu một <b><span style="color:red;">dấu hiệu tiền thân</span></b> được phát hiện, tổ chức có thể thực hiện ngăn chặn sự cố này trước khi sự cố xảy ra. Một số <b><span style="color:red;">dấu hiệu tiền thân</span></b> như là:</p>
+
+<ul>
+<li>Log của máy chủ web ghi nhận được các bản ghi của các công cụ dò quét lỗ hổng bảo mật</li>
+<li>Mối đe dọa từ các nhóm hacker sẽ tấn công tổ chức</li>
+<li>Một lời tuyên bố tấn công nhằm vào các máy chủ hay ứng dụng của tổ chức</li>
+</ul>
+
+<p>Trong khi các <b><span style="color:red;">dấu hiệu tiền thân</span></b> là khá ít thì các <b><span style="color:red;">dấu hiệu chỉ thị</span></b> lại rất phổ biến:</p>
+
+<ul>
+<li>Các thiết bị phát hiện xâm nhập cảnh báo kẻ tấn công đang khai thác lỗi tràn bộ đệm.</li>
+<li>Phần mềm chống mã độc hại cảnh báo một máy chủ bị nhiễm phần mềm độc hại.</li>
+<li>Một quản trị viên nhìn thấy một tệp tin khác thường trên máy chủ.</li>
+<li>Máy chủ ghi lại tự thay đổi cấu hình kiểm toán của mình.</li>
+<li>Tệp tin log ghi lại rất nhiều lần đăng nhập sai đến một hệ thống</li>
+<li>Một quản trị viên thấy lưu lượng bất thường bên trong hệ thống mạng</li>
+</ul>
+
+<h2 id="nguồn-thông-tin">Nguồn thông tin</h2>
+
+<p>Các dấu hiệu của sự cố được xác định từ nhiều nguồn thông tin khác nhau, phổ biến là từ các phần mềm phòng chống mã độc hại, các bản ghi nhật ký, hệ thống phát hiện xâm nhập, con người…</p>
+
+<ul>
+<li>IDPS</li>
+<li>SIEMs</li>
+<li>Antivirus</li>
+<li>File integrity checking</li>
+<li>Monitoring services</li>
+<li>System, application, security logs</li>
+<li>Network device logs</li>
+<li>Netflows</li>
+<li>Thông tin về các lỗ hổng bảo mật mới</li>
+<li>Người bên ngoài và bên trong tổ chức</li>
+</ul>
+
+<h2 id="phân-tích-sự-cố">Phân tích sự cố</h2>
+
+<p>Việc phân tích sự cố sẽ dễ dàng hơn nếu các dấu hiệu được đảm bảo là chính xác. Tuy nhiên các dấu hiệu không phải lúc nào cũng đúng. Ví dụ như các hệ thống phát hiện xâm nhập có thể đưa ra những cảnh báo sai. Hoặc tệ hơn, hệ thống phát hiện xâm nhập đưa ra quá nhiều cảnh báo, nó làm cho việc phân tích trở nên vô cùng khó khăn.
+Thậm chí là nếu một số dấu hiệu là chính xác, nó cũng không đảm bảo được là sự cố đã xảy ra. Một số sự cố dễ dàng được phát hiện ví dụ như nội dung của trang web đã bị thay đổi. Tuy nhiên không nhiều những sự cố dễ dàng phát hiện được như vậy. Biện pháp khắc phục tốt nhất là xây dựng một đội ngũ giàu kinh nghiệm và thành thạo có thể phân tích, xác định chính xác các dấu hiệu và đưa ra những hành động thích hợp. Nếu không có một đội ngũ nhân viên có khả năng phát hiện và phân tích sự việc thì việc ứng phó sự cố sẽ không hiệu quả và những sai lầm, tốn kém có thể xảy ra.
+Đội phản ứng sự cố nên phân tích một cách nhanh chóng và xác định xem sự cố đã thật sự xảy ra hay chưa. Khi đã xác định một sự cố đã thật sự xảy ra, nhóm nghiên cứu bắt đầu thực hiện các bước phân tích ban đầu đề xác định phạm vi của sự việc ví dụ như mạng, máy chủ, hệ thống bị ảnh hưởng, cái gì có thể là nguồn gốc của vụ việc, làm thế nào để sự việc xảy ra. Những phân tích ban đầu sẽ cung cấp thông tin cho các hoạt động phân tích sâu tiếp theo.
+Các khuyến nghị sau đây giúp việc phân tích sự cố dễ dàng và hiệu quả hơn:</p>
+
+<ul>
+<li><strong>Hồ sơ về hệ thống mạng</strong>: Lập hồ sơ các vị trí thay đổi để dễ dàng xác định và khoanh vùng sự cố hơn.</li>
+<li><strong>Hiểu về các hành vi bình thường</strong>: Các thành viên trong đội ứng phó sự cố cần hiểu về các hành vi bình thường để có thể xác định được các hành vi bất bình thường bên trong hệ thống. Cách để có được điều này là rà soát các thông tin trong nhật ký và các cảnh báo bảo mật. Tiến hành đánh gia thường xuyên các bản ghi log sẽ cho chung ta một cái nhìn tổng quan về sự bình thường và bất bình thường của hệ thống.</li>
+<li><strong>Tạo chính sách về lưu trữ các bản ghi log</strong>: Thông tin liên quan đến sự cố có thể được lưu trữ tại một số nơi trên hệ thống chẳng hạn như tường lửa,  các bản ghi log của ứng dụng… Việc phân tích các bản ghi log cũ có thể cho ra các dấu hiệu của các cuộc tìm kiếm thông tin, dò quét tạo tiền đề cho sự cố xảy ra hoặc có thể xác định được các sự cố đã xảy ra mà chưa được phát hiện.</li>
+<li><strong>Giữ cho tất cả các thiết bị được đồng bộ về thời gian</strong>: Giao thức NTP có thể giúp cho hệ thống đồng bộ về mặt thời gian. Thời gian chuẩn của hệ thống có thể cung cấp chính xác thời gian sự cố xảy ra, các cuộc tấn công xảy ra chính xác vào thời gian nào…</li>
+<li><strong>Chạy các công cụ chặn bắt dữ liệu mạng để cho thêm các thông tin bổ sung</strong>. Đôi khi dữ liệu từ các bản ghi là không đủ cho quá trình phân tích. Các dữ liệu về lưu lượng mạng cho phép ta biết chính xác những gì đang xảy ra bên trong hệ thống mạng của tổ chức.</li>
+</ul>
+
+<h2 id="đánh-giá-mức-độ-ưu-tiên-cho-sự-cố">Đánh giá mức độ ưu tiên cho sự cố</h2>
+
+<p>Xác định mức độ ưu tiên cho các sự kiện cũng là một vấn đề quant rọng. Các sự cố không nên được xử lý theo thứ tự thời gian phát hiện. Thay vào đó, việc xử lý các sự cố cần được ưu tiên dựa vào các yếu tố sau:</p>
+
+<ul>
+<li>Tác động về mặt chức năng của sự cố: Sự cố nhắm đến mục tiêu là các hệ thống công nghệ thông tin thường ảnh hưởng đến hoạt động kinh doanh. Việc xử lý sự cố nên được xem xét đến việc làm ảnh hưởng đến hoạt động của hệ thống.Nên xem xét cả những tác động về mặt chức năng trong tương lai có thể xảy ra.</li>
+<li>Tác động về mặt thông tin của sự cố: Sự cố có thể ảnh hưởng đến tính bảo mật, tính toàn vẹn và tính sẵn sàng của hệ thống.Việc xử lý sự cố cần được xem xét sự ảnh hưởng về mặt thông tin đến hoạt động bình thường của tổ chức. Nó cũng có thể liên quan đến các tỏ chức khác nếu như sự cố ảnh hưởng đến các dữ liệu gắn liền với tổ chức đố.</li>
+<li>Phục hồi sự cố: Mức độ của sự cố ảnh hưởng đến chi phí khôi phục, thời gian và nguồn lực của tổ chức trong đó chưa kể đến một số trường hợp các sự cố xảy ra không thể phục hồi.</li>
+</ul>
+
+<h3 id="phân-loại-tác-động-về-mặt-chức-năng-như-sau">Phân loại tác động về mặt chức năng như sau:</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Loại</th>
+<th align="left">Định nghĩa</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">Không</td>
+<td align="left">Là các sự cố không ảnh hưởng gì tới khả năng cung cấp dịch vụ đến tất cả các người dùng</td>
+</tr>
+
+<tr>
+<td align="center">Thấp</td>
+<td align="left">Ảnh hưởng tối thiểu, hệ thống của tổ chức có thể cung cấp dịch vụ cho người dùng nhưng tính hiệu quả bị ảnh hưởng</td>
+</tr>
+
+<tr>
+<td align="center">Trung Bình</td>
+<td align="left">Tổ chức mất khả năng cung cấp một dịch vụ quan trọng với một phần người dùng hệ thống</td>
+</tr>
+
+<tr>
+<td align="center">Cao</td>
+<td align="left">Tổ chức không còn có thể cung cấp một số dịch vụ quan trọng cho bất kỳ người dùng nào</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="phân-loại-mức-độ-tác-động-về-mặt-thông-tin">Phân loại mức độ tác động về mặt thông tin</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Loại</th>
+<th align="left">Định nghĩa</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">Không</td>
+<td align="left">Thông tin không bị thay đổi, sửa, xóa hay bị tổn hạn gì cả</td>
+</tr>
+
+<tr>
+<td align="center">Vi phạm bảo mật</td>
+<td align="left">Các thông tin cá nhân (PII) bị truy cập trái phép</td>
+</tr>
+
+<tr>
+<td align="center">Vi phạm sở hữu</td>
+<td align="left">Các thông tin độc quyền của tổ chức bị truy cập trái phép</td>
+</tr>
+
+<tr>
+<td align="center">Mất tính toàn vẹn</td>
+<td align="left">Các thông tin nhạy cảm hoặc độc quyền bị thay đổi hoặc xóa</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="phân-loại-khẳ-năng-phục-hồi">Phân loại khẳ năng phục hồi</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Loại</th>
+<th align="left">Định nghĩa</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">Bình thường</td>
+<td align="left">Thời gian để phục hồi có thể dự đoán được với nguồn lực hiện tại</td>
+</tr>
+
+<tr>
+<td align="center">Bổ sung</td>
+<td align="left">Thời gian phục hồi có thể dự đoán được với nguồn lực bổ sung</td>
+</tr>
+
+<tr>
+<td align="center">Gia tăng</td>
+<td align="left">Thời gian phục hồi không thể dự đoán trước được, cần thêm nguồn lực và sự giúp đỡ từ bên ngoài</td>
+</tr>
+
+<tr>
+<td align="center">Không</td>
+<td align="left">thể phục hồi Không thẻ phục hồi</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="ngăn-chặn-loại-bỏ-và-phục-hồi">Ngăn chặn, Loại bỏ và Phục hồi</h1>
+
+<p><img src="/img/containment_eradication_recovery.png" alt="Ngăn chặn, Loại bỏ và Phục hồi" /></p>
+
+<h2 id="lựa-chọn-chiến-lực-ngăn-chặn">Lựa chọn chiến lực ngăn chặn</h2>
+
+<p>Chiến lược ngăn chặn khác nhau dựa trên các loại sự cố khác nhau. Ví dụ chiến lược ngăn chặn đối với sự cố lây nhiễm phần mềm độc hại khác so với chiến lược ngăn chặn sự cố tấn côn dừ chối dịch vụ DDoS. Các tổ chức nên tạo ra các chiến lược ngắn hạn riêng biệt cho từng loại sự cố lớn, có các tài liệu chuẩn nội dung chiến lược rõ ràng để tạo điều kiện thuận lợi chi việc đưa ra quyết định. Các tiêu chí xác định các chiến lược thích hợp bao gồm:</p>
+
+<ul>
+<li>Các thiệt hại tiền năng</li>
+<li>Mất cắp tài nguyên phần cứng</li>
+<li>Cần bảo vệ bằng chứng</li>
+<li>Tính sẵn sàng của dịch vụ</li>
+<li>Thời gian và nguồn lực cần thiết để thực hiện chiến lược</li>
+<li>Tính hiệu quả của chiến lược</li>
+<li>Thời gian của giải pháp</li>
+</ul>
+
+<p>Trong một số trường hợp, các tổ chức chuyển hướng tấn công sang một sanbox hay sang hệ thống honeynet để theo dõi hoạt động tấn công của hệ thống, thường là để thu thập thêm bằng chứng. Đội ứng phó sự cố nên thảo luận chiến lược này với bộ phẩn quản lý để xác minh tính khả khi. Các chiến lược theo dõi hoạt động của kẻ tấn công ngoài sử dụng sanbox là không nên sử dụng. Nếu một tổ chức quyết định theo dõi kẻ tán công trên hệ thống thật của mình, nó có thể tồn tại những rủi ro lớn. Các chiến lực ngăn chặn chậm chạm là rất nguy hiểm vì kẻ tấn công có thể leo thang và truy cập trái phép vào các hệ thống khác từ hệ thống đã bị thỏa hiệp.</p>
+
+<h2 id="thu-thập-và-xử-lý-bằng-chứng">Thu thập và xử lý bằng chứng</h2>
+
+<p>Lý do chính trong việc thu thập bằng chứng là để phục vụ cho các thủ tục tố tụng pháp lý. Bằng chứng cần được thu thập theo thủ tục nhất định, đáp ứng tất cả các luật và quy định. Việc này có thể được tìm hiểu bằng cách trao đổi và thảo luận với luật sư hoặc các nhân viên pháp lý. Bằng chứng cần phải được hạch toàn mọi lúc. Bát cứ một hành động chuyển giao bằng chứng nào đều cần được ghi chép và có chữ ký. Một bản ghi chi tiết đi kèm với các bằng chứng bao gồm những điều sau:</p>
+
+<ul>
+<li>Xác định thông tin: ví dụ như số serial, tên thiết bị, địa chỉ MAC, địa chỉ IP…</li>
+<li>Tên, chức danh, số điện thoại của cá nhân thu thập hoặc xử lý bằng chứng trong quá trình điều tra.</li>
+<li>Thời gian và ngày tháng</li>
+<li>Địa điểm nơi lưu trữ bằng chứng</li>
+</ul>
+
+<h2 id="xác-định-nguồn-gốc-tấn-công">Xác định nguồn gốc tấn công</h2>
+
+<p>Trong thời gian xử lý sự cố, đội ứng phó sự cố đôi khi muốn xác định máy chủ hoặc cá nhân đang thực hiện tấn công vào hệ thống. Mặc dù thông tin này khá quan trong nhưng việc xử lý sự cố lại chỉ tập trung vào vấn đề ngăn chặn, xóa và phục hồi. Những điều dưới đây là hoạt động phổ biến nhất để xác định nguồn gốc của cuộc tấn công:</p>
+
+<ul>
+<li><strong>Địa chỉ IP tấn công</strong>: Địa chỉ IP có thể cho biết nguồn gốc của một cuộc tấn công. Tuy nhiên nó có thể bị giả mạo. Các nhân viên trong đội ứng phó nên xác định lại tính chính xác của danh sách các địa chỉ IP tấn công bằng các biện pháp kỹ thuật cần thiết.</li>
+<li><strong>Nghiên cứu kẻ tấn công qua các công cụ tìm kiếm</strong>: thực hiện tìm kiếm thông tin vè kẻ tấn công bằng cách sử dụng các công cụ tìm kiếm. Ví dụ như là tìm hiểu người đăng ký sử dụng địa chỉ IP, thông tin về tên hay nhóm hay nickname…</li>
+<li><strong>Sử dụng cơ sở dữ liệu về sự cố</strong></li>
+<li><strong>Giám sát các kênh truyền thông của hacker</strong>: Một số hacker tấn công các hệ thống với mục đích thể hiện bản thân. Họ thường khoe những cuộc tấn công đã thực hiện được lên mạng xã hội, các kênh IRC, zone-h…</li>
+</ul>
+
+<h2 id="xóa-và-phục-hồi">Xóa và phục hồi</h2>
+
+<p>Sau khi sự cố đã được ngăn chặn. việc loại bỏ các thành phần của sự cố ra khỏi hệ thống là cần thiết ví dụ như  sự cố về lây lan mã độc hại. Trong quá trình xóa, điều quan trọng là xác định tất cả các ảnh hưởng đối với tổ chức để có kế hoạch xử lý. Đối với một số sự cố, quá trình xóa là không cần thiết hoặc được thực hiện trong quá trình phục hồi.</p>
+
+<p>Trong quá trình phục hồi, các quản trị viên hệ thống khôi phục lại hoạt động bình thường của hệ thống và xác nhận rằng hệ thống đang hoạt động bình thường. Quá trình phục hồi có liên quan đến các hành động như khôi phục lại từ các bản sao lưu hệ thống sạch, xây dựng lại hệ thống từ đầu, thay thế tệp tin bị thỏa hiệp bằng các bản sạch, cài đặt các bản vá lỗi, thay đổi mật khẩu, thắt chặt các hính sách an ninh mạng.</p>
+
+<p>Xóa và phục hồi nên được thực hiện theo từng giai đoạn để bước khắc phục sự cố được ưu tiên. Đối với các sự cố có quy mô lớn, việc phục hồi có thể mất rất nhiều thời gian, vì vậy việc chia giai đoạn đảm bảo trong giai đoạn đầu tiên, các cơ chế an ninh tổng thể được tăng cường để ngăn chặn các sự cố tương tự trong tương lai. Giai đoạn sau nên tập trung vào những thay đổi dài hạn (ví dụ như những thay đổi về có sở hạ tầng&hellip;).</p>
+
+<h1 id="hoạt-động-sau-sự-cố">Hoạt động sau sự cố</h1>
+
+<p><img src="/img/post_incident.png" alt="Hoạt động sau sự cố" /></p>
+
+<h2 id="bài-học-kinh-nghiệm">Bài học kinh nghiệm</h2>
+
+<p>Một phần quan trọng trong quá trình xử lý sự cố là việc rút ra các bài học kinh nghiệm về cuộc ứng phó sự cố. Tổ chức nên thực hiện các cuộc họp bữa các bên liên quan và rút ra các bài học kinh nghiệm cần thiết để đảm bảo sự cố tương tự sẽ không xảy ra. Cuộc họp cũng sẽ chỉ ra được cách thức phối hợp giữa các bên liên quan khi có sự cố xảy ra. Một số câu hỏi nên được giải đáp là:</p>
+
+<ul>
+<li>Chính xác điều gì đã xảy ra ? vào thời gian nào ?</li>
+<li>Nhân viên và các quản lý thực hiện giải quyết vụ việc có tốt không ?</li>
+<li>Những điều gi mà nhân viên và các quản lý nên làm khi có sự cố xảy ra ?</li>
+<li>Làm thế nào để chia sẻ thông tin với các tổ chức khác ?</li>
+<li>Các hành động để ngăn chặn sự cố tương tự trong tương lai là gì ?</li>
+<li>Các dấu hiệu về sự cố tương tự là gì ?</li>
+<li>Những công cụ hay nguồn lực nào cần thiết để giải quyết nhanh sự cố trong tương lai ?</li>
+</ul>
+
+<h2 id="lưu-trữ-bằng-chứng">Lưu trữ bằng chứng</h2>
+
+<p>Tổ chức cần thiết lập chính sách cho việc lưu trữ các bằng chứng trong thời gian dài. Hầu hết các tổ chức lưu giữ bằng chứng trong nhiều tháng hoặc nhiều năm sau khi vụ việc kết thúc. Một số yếu tố sau cần được xem xét trong quá trình tạo chính sách:</p>
+
+<ul>
+<li><strong>Truy tố</strong>: Nếu những kẻ tấn công bị truy tố, những bằng chứng cần phải được giữa lại khi các hoạt động về mặt pháp lý được hoàn thành. Trong một số trường hợp, điều này có thể mất rất nhiều thời gian, có thể lên đến vài năm.</li>
+<li><strong>Lưu giữ dữ liệu</strong>: Hầu hết các tổ chức có chính sách về thời gian sống cho các dữ liệu. Ví dụ các thư điện tử sẽ được giữ lại 180 ngày. Sau 180 ngày các thư điện tử sẽ bị xóa hoàn toàn.</li>
+<li><strong>Chi phí</strong>: Chi phí cho các thiết bị phần chứng thực hiện lưu trữ bằng chứng cần dược xem xét. Chi phí có thể là đáng kể nếu như bằng chứng được lưu giữ trong thời gian dài.</li>
+</ul>
+
+<blockquote>
+<p>zMadMoon</p>
+
+<p>Dịch lược NIST.SP.800-61 Rev. 2</p>
+</blockquote>
+
+        
+    </div>
+
+</article>
+<section class="comment">
+    <p class="local-info">
+        Comment is disabled to avoid unwanted discussions from 'localhost:1313' on your Disqus
+        account...
+    </p>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+
+    (function () {
+        if (window.location.hostname == "localhost") {
+            return
+        }
+        document.querySelector('.local-info').classList.add('hide')
+
+        let dsq = document.createElement('script')
+        dsq.type = 'text/javascript'
+        dsq.async = true
+        let disqus_shortname = 'your disqus short name'
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
+    })()
+</script>
+
+
+        </main>
+    </div>
+    <footer class="footer clearfix">
+    <ul class="control social clearfix">
+        <li><a class="author btn" href="#">TrungKFC</a></li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon email"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon facebook"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon github"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon twitter"></i></a>
+        </li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="http://vnstrawhat.github.io/index.xml" type="application/rss+xml" title="rss">
+                <i class="rss icon"></i></a>
+        </li>
+    </ul>
+
+    <ul class="control status clearfix">
+        <li><a href="#" class="btn">Posts:
+                7</a>
+        </li>
+        <li><a href="#" class="btn">Pages:
+                0</a></li>
+    </ul>
+</footer>
+<div class="dialog">
+    <div class="wrapper">
+        <div class="clearfix"><button class="btn close-dialog">X</button></div>
+        <header>
+            <h1 class="title">Theme Name</h1>
+        </header>
+        <main>
+            <div class="clearfix">
+                <label for="theme-name">
+                    <p>Only English Character, space, hyphen are allowed!</p>
+                </label>
+                <input type="text" name="theme-name" id="theme-name">
+            </div>
+            <div class="clearfix">
+                <button class="btn export">Export</button>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</div>
+
+    <script src="http://vnstrawhat.github.io/js/main.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'your ga id', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

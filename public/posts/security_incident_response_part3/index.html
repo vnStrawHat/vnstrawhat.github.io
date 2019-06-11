@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    
+    <link rel="canonical" href="http://vnstrawhat.github.io/posts/security_incident_response_part3/" />
+    <meta name="description" content="">
+    
+
+    <title>Incident Response part 3 - Cơ cấu của một đội ứng phó sự cố &middot; TrungKFC</title>
+
+    <link rel="shortcut icon" href="http://vnstrawhat.github.io/images/favicon.ico" />
+
+    <link rel="stylesheet" href="http://vnstrawhat.github.io/css/main.css" />
+    
+        
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-light.min.css">
+        
+    
+    
+    
+</head>
+
+
+<body class="loading light-mode">
+    
+<div class="top">
+    <img class="logo" src="http://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+<div class="bottom">
+    <img class="logo" src="http://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+
+    <header class="header">
+    <ul class="menu clearfix control">
+        
+
+<li class="logo-container logo-default">
+    <a href="http://vnstrawhat.github.io" class="btn logo-link">
+        <img class="logo" src="http://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+    </a>
+</li>
+
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                Article
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="/posts"
+                    
+                        class="btn "
+                    >Posts</a>
+                </li>
+                
+                <li class="">
+                    <a href="/tags"
+                    
+                        class="btn "
+                    >Tags</a>
+                </li>
+                
+                <li class="">
+                    <a href="/categories"
+                    
+                        class="btn "
+                    >Categories</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                View
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="#"
+                    
+                        class="btn toggle-sidebar"
+                    >Toggle Sidebar</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part1/" class="btn">
+                Incident Response part 1 - Tổng quan
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part2/" class="btn">
+                Incident Response part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part3/" class="btn">
+                Incident Response part 3 - Cơ cấu của một đội ứng phó sự cố
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/posts/security_incident_response_part4/" class="btn">
+                Incident Response part 4 - Quy trình ứng phó sự cố
+            </a>
+        </li>
+        
+        
+    </ul>
+</header>
+
+    <div class="middle">
+        <nav class="sidebar">
+            <ul class="posts control">
+    
+    <li><a class="no-break btn" href='/posts/my-second-post/'><i class="icon icon-post"></i>My Second Post</a></li>
+    
+    <li><a class="no-break btn" href='/posts/my-first-post/'><i class="icon icon-post"></i>My First Post</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part4/'><i class="icon icon-post"></i>Incident Response part 4 - Quy trình ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part3/'><i class="icon icon-post"></i>Incident Response part 3 - Cơ cấu của một đội ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part2/'><i class="icon icon-post"></i>Incident Response part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part1/'><i class="icon icon-post"></i>Incident Response part 1 - Tổng quan</a></li>
+    
+</ul>
+
+        </nav>
+        <main class="main">
+            <article class="article">
+    <h2 class="title"><a href='/posts/security_incident_response_part3/' class="btn">Incident Response part 3 - Cơ cấu của một đội ứng phó sự cố</a></h2>
+    <div class="article-meta clearfix">
+        <ul class="dates clearfix left control">
+            <li><i class="icon icon-date"></i></li>
+            <li class="publish-date">
+                <time datetime="2015.12.23">2015.12.23</time>
+            </li>
+        </ul>
+        
+        
+    </div>
+    <div class="content">
+        
+        
+
+<p>Một đội ứng phó sự cố nên ở trạng thái sẵn sàng trước những phát hiện hoặc nghi ngờ rằng có một sự cố về bảo mật đã xảy ra. Một hoặc nhiều thành viên trong nhóm tùy thuộc vào độ lớn của đội xử lý sự cố sẽ thực hiện xử lý sự cố. Việc xử lý sự cố bao gồm việc phân tích các dữ liệu, xác định tác động của vụ việc, các hành đồng để hạn chế thiệt hại và khôi phục lại sự hoạt động bình thường của dịch vụ.</p>
+
+<h1 id="mô-hình">Mô hình</h1>
+
+<p>Các mô hình chính cho một đội ứng phó sự cố:</p>
+
+<ul>
+<li><strong>Đội ứng phó sự cố tâp trung</strong>: Đội ứng phó sự cố này là đội duy nhất xử lý sự cố cho tổ chức của bạn. Đây là mô hình có hiệu quả trong các tổ chức nhỏ và nhỏ.</li>
+<li><strong>Đội ứng phó sự cố phân tán</strong>: Có nhiều đội ứng phó sự cố cùng xử lý sự cố cho tổ chức. Mỗi đội có thể đảm nhiệm một trong các công đoạn trong quy trình ứng phó sự cố hoặc có thể mỗi đội ở một vị trí địa lý khác nhau của tổ chức. Đây là một mô hình có hiệu quả đối với các tổ chức lớn, có tài nguyên phân bổ ở nhiều vị trí địa lý khác nhau. Tuy nhiên, các đội phải có một thành phần duy nhất quản lý chung để tạo sự nhất quán trong quá trình xử lý cũng như chia sẻ thông tin.</li>
+<li><strong>Đội điều phối</strong>: là một đội tư vấn cho các đội khác mà không có thẩm quyền với các đội đấy. Ví dụ như một đội nghiên cứu có thể tham gia hỗ trợ các đội ứng phó sự cố riêng biệt.
+Nhân sự cho đội ứng phó sự cố có thể áp dụng 3 hình thức sau:</li>
+<li><strong>Toàn bộ là nhân viên của tổ chức</strong>: Toàn bộ thành viên trong đội ứng phó sự cố đều là nhân viên của tổ chức. Hình thức này sẽ gây hạn chế trong việc yêu cầu sự hỗ trợ từ các nhà thầu hay các nhà cung cấp.</li>
+<li><strong>Một phần là thuê bên ngoài</strong>: Tổ chức sẽ thuê ngoài một phần trong quy trình ứng phó sự cố. Phổ biến nhất là tổ chức thuê ngoài việc giám sát phát hiện xâm nhập, tưởng lửa và các thiết bị an ninh, phân tích các dấu hiệu đáng ngờ và báo cáo từng sự việc với đội ứng phó sự cố của tổ chức. Một số tổ chức thực hiện các quy trình cơ bản trong ứng phó sự cố và kêu gọi sự giúp đỡ của các nhà thầy hoặc các nhà cung cấp dịch vụ.</li>
+<li><strong>Thuê toàn bộ bên ngoài</strong>: Hình thức này thường được sử dụng khi đội ứng phó sự cố của tổ chức không sẵn sàng thực hiện hoạt động ứng phó sự cố ( có thể đang xử lý các sự cố khác) hoặc nhân viện trong tổ chức không có đủ trình độ để thực hiện xử lý sự cố. Tổ chức sẽ phải có một nhân viên thực hiện công việc giám sát các công việc của những người được thuê làm công tác ứng phó sự cố.</li>
+</ul>
+
+<h1 id="lựa-chọn-mô-hình-phù-hợp">Lựa chọn mô hình phù hợp</h1>
+
+<p>Khi lựa chọn mô hình là hình thức nhân sự cho một đội ứng phó sự cố, các tổ chức cần xem xét những yếu tố sau:</p>
+
+<ul>
+<li><strong>Sự cần thiết của tính sẵn sàng <sup>24</sup>&frasl;<sub>7</sub> của đội ứng phó sự cố</strong>: Hầu hết các tổ chức cần các thành viên đội ứng phó sự cố trực <sup>24</sup>&frasl;<sub>7</sub> nhằm ứng phó với các sự cố một cách nhanh nhất có thể. Việc trực <sup>24</sup>&frasl;<sub>7</sub> là rất cần thiết cho những sự cố tiền năng hay những sự cố kéo dài. Trong một số trường hợp, việc trực <sup>24</sup>&frasl;<sub>7</sub> của đội ứng phố sự cố là không cần thiết ví dụ như mục đích là truy tìm nguồn gốc của một cuộc tấn công đã xảy ra.</li>
+<li><strong>Kết hợp giữa thành viên full-time và part-time</strong>: Nếu tổ chức có kinh phí và nhân sự hạn hẹp nên tính toán đến vấn đề này. Đội tứng phó sự cố có thể không nhất thiết phải thường trực mà chỉ hoạt động khi có sự cố thật sự xảy ra. Một nhóm các nhân viên hỗ trợ IT có thể thực hiện tiếp nhận và thực hiện các thủ tục đơn giản như tiếp nhận thông bao sự cố, thu thập dữ liệu sau đó thông báo trực tiếp cho đội ứng phó sự cố nếu có vẻ như là một sự cố nghiêm trọng đang xảy ra.</li>
+<li><strong>Tinh thần của nhân viên</strong>: Việc ứng phó sự cố là rất căng thẳng. Nhiều tổ chức sẵn sàng tìm ra những người giàu kinh nghiệm, có tay nghề, và đặc biệt là có thể hỗ trợ <sup>24</sup>&frasl;<sub>7</sub>.</li>
+<li><strong>Chi phí</strong>: Chi phí là một yếu tố quan trọng, đặc biệt là nếu nhân yêu cầu phải có văn phòng hoạt động <sup>24</sup>&frasl;<sub>7</sub>. Các chi phí cho việc ứng phó sự cố thường được bỏ qua và không được nằm trong ngân sách. Tuy nhiên nó rất quan trọng trong hoạt động úng phó sự cố như chi phí cho các công cụ hỗ trự ứng phó sự cố, các công cụ điều tra số, các chi phí bảo vệ cho khu vực làm việc hay các đối tác truyền thông.</li>
+<li><strong>Nhân viên thẩm định</strong>: Việc xử lý sự cố đòi hỏi những kiến thức chuyên môn và kinh nghiệm cao trong lĩnh vực kỹ thuật và không phải tổ chức nào cũng có những nhân viên đảm bảo được việc đó. Việc thuê các đội ứng phó cự cố bên ngoài thực hiện ứng phó sự cố cho tổ chức là cần thiết. Tuy nhiên, những nhân viên của tổ chức thường có những kiên thức tốt hơn về môi trường của tổ chức. Vì thế, nhân viên thẩm định là rất quan trọng trong việc xác định các báo động sau liên quan đến các hành vi cụ thể trong quá trình ứng phó sự cố.</li>
+</ul>
+
+<p>Khi xem xét sử dụng nhân sự bên ngoài để thực hiện ứng phó sự cố, các tổ chức cần chú ý những điểm sau:</p>
+
+<ul>
+<li><strong>Chất lượng hiện tại và trong tương lai</strong>: Các tổ chức nên xem xét không chỉ chất lượng hiện tại của việc ứng phó sự cố mà nên xem xét các hành động đảm bảo chất lượng của việc xử lý sự cố trong tương lai.</li>
+<li><strong>Phân chia trách nhiệm</strong>: Các tổ chức thường bác bỏ các yêu cầu từ đội ứng phó sự cố bên ngoài liên quan đến môi trường hoạt động của hệ thống bên trong tổ chức ( Ví dụ như ngắt kết nối một máy chủ web). Điều quan trọng là phải xác định được hành động nào là thích hợp tại thời điểm quyết định. Các đội liên quan đến vấn đề sự cố bên trong tổ chức cũng nên hỗ trợ đội ứng phó sự cố bên ngoài khi cần thiết.</li>
+<li><strong>Tiết lộ những thông tin nhạy cảm</strong>: Xác định các thông tin cần thiết có thể cung cấp cho bên thứ 3 là gì. Các thông tin nhảy cảm nên được giới hạn hết mức có thể. Ví dụ các đội ứng phó sự cố bên ngoài tổ chức có thể biết những hoạt động của người dùng có ID là 1234 những không được phép biết họ là ai hay họ có vai trò gì. Sauk hi tiếp nhận cuộc điều tra về sự cố, hai bên nên có các thỏa thuật không tiết lộ thông tin trong đó có các điều khoản cấm tiết lộ thông tin và các hình thức xử phạt nếu vi phạm.</li>
+<li><strong>Thiếu sự tương quan</strong>: Sự tương quan giữa nhiều nguồn dữ liệu là rất quan trọng. Trong một ví dụ thực tế, nếu hệ thống phát hiện xâm nhập ghi lại được một cuộc tấn công vào máy chủ web, nhung không có việc truy xuất vào các bản ghi dữ liệu của máy chủ, điều này có thể không xác định là hành động tấn công đó có thành công hay không. Để có hiệu của, đội ứng phó sự cố ngoài sẽ yêu cầu được truy cập vào các hệ thống quan trọng. Điều này làm tăng chi phí quản lý cũng như nguy cơ tiết lộ những thông tin nhạy cảm.</li>
+<li><strong>Xử lý sự cố  trên nhiều vị trí địa lý khác nhau</strong>: Để việc xử lý sự cố có hiệu quả, các đội ứng phó sự cố thường yêu cầu được đến trực hiện vị trí của hệ thống để thực hiện điều tra. Việc này có thể dẫn đến việc phát sinh các chi phí về cơ sở vật chất cho đội ứng phó sự cố ngoài cũng như các vấn đề liên quan đến an toàn vật lý.</li>
+<li><strong>Duy trì các kỹ năng ứng phó sự cố tại tổ chức</strong>: các tổ chức thuê ngoài hoàn toàn các đội ứng phó sự cố nên cố gắng duy trì các kỹ năng ứng phó sự cố cơ bản đối với một nhóm nhân viên bên trong tổ chức. Các tình huống có thể phát sinh trong khi các đội ứng phó sự cố ngoài không có mặt ở đó và cần được thực hiện gấp. Những kỹ thuật viên của tổ chức nên học được khẳ năng hiểu dược ý nghĩa, các thuật ngữ và các khuyến nghị của đội ứng phó sự cố.</li>
+</ul>
+
+<h1 id="thành-viên-trong-đội-ứng-phó-sự-cố">Thành viên trong đội ứng phó sự cố</h1>
+
+<p>Một nhân viên duy nhất nên được chỉ định để phụ trách việc ứng phó sự cố.</p>
+
+<p>Trong mô hình thuê ngoài hoàn toàn, người này sẽ thực hiện giám sát, đánh giá và thẩm định hoạt động ứng phó sự cố. Người này có nhiệm vụ thực hiện các liên lạc với các bên liên quan (ví dụ như các cấp trên, các phòng ban liên quan, các đội ứng phó khác hay các tổ chức khác trong trường hợp cần thiết, tiếp xúc trực tiếp với các đơn vị truyền thông…) Người quản lý cần phải thành thạo kỹ thuật, có kỹ năng giao tiếp tốt đặc biệt là giao tiếp và nói trước nhiều người. Người quản lý cũng đảm bảo hoạt động ứng phó sự cố được thực hiện đúng cách, đúng quy trình.</p>
+
+<p>Ngoài người quản lý, trong đội cầm có một người quản lý về mặt kỹ thuật. Người này phải có kiến thức về kỹ thuật sâu rộng, rất có kinh nghiệm trong việc xử lý sự cố, giám sát hệ thống và điều tra số. Đây là người chịu trách nhiệm về chất lượng công việc kỹ thuật của đội.
+Thành viên của đội xử lý sự cố cần phải có kỹ thuật vững vàng về các mảng như quản trị hệ thống mạng, lập kỹ, phát hiện xâm nhập, điều tra số, phân tích mã động. Mỗi thành viên trong nhóm cần phải có kỹ năng giải quyết vấn đề và tư duy tốt.</p>
+
+<p>Các gợi ý sau đây sẽ giúp ích cho việc xây dựng và duy trì đội kỹ thuật:</p>
+
+<ul>
+<li>Đảm bảo đầy đủ ngân sách cho việc tăng cường và mở rộng tầm hiểu biết về các lĩnh vực kỹ thuật cũng như các vấn đề về mặt pháp lý. Điều này bao gồm việc gửi nhân viên đến các hội thảo, hội nghị về kỹ thuật, đầu tư tài liệu, phòng lab cũng như có kế hoạch đào tạo các nhân viên kỹ thuật để nâng cao trình độ.</li>
+<li>Cho các thành viên trong đội được thực hiện các nhiệm vụ khác nhau.</li>
+<li>Tạo một chương trình đào tạo để hỗ trợ các nhân viên mới học hỏi kinh nghiệm trong việc xử lý sự cố.</li>
+<li>Xây dựng các kịch bản về sự cố và cùng nhau thảo luận về cách xử lý chúng ra sao.</li>
+</ul>
+
+<p>Các thành viên trong đội ứng phó sự cố cần phải có những kỹ năng khác ngoài kỹ năng chuyên môn. Kỹ năng làm việc theo nhóm là rất quan trọng vì bản chất của sự ứng phó sự cố là sự hợp tác và phối hợp. Kỹ năng nói cũng là một kỹ năng quan trọng bởi vì các thành viên trong đội phải tương tác với nhau. Bên cạnh đó, kỹ năng viết giúp cho các thành viên có thể chuẩn bị cho mình các thủ tục và báo cáo cần thiết.</p>
+
+<h1 id="sự-phụ-thuộc-bên-trong-tổ-chức">Sự phụ thuộc bên trong tổ chức</h1>
+
+<p>Một điều rất quan trọng là xác định các nhóm hay các thành phần khác bên trong tổ chức có cần phải tham gia vào quá trình xử lý sự cố hay không để có được sự hợp tác của họ khi cần thiết.</p>
+
+<ul>
+<li><strong>Người quản lý</strong>: Những người quản lý thực hiện xây dựng chính sách ứng phó sự cố, chi ngân sách và vấn đề về nhân sự. Những người quản lý cũng chịu trách nhiệm về việc phối hợp giữa các bên trong vấn đề giải quyết sự cố.</li>
+<li><strong>Đảm bảo thông tin</strong>: Các nhân viên an ninh có thể cần thiết trong một số giai đoạn của sử lý sự cố (Phòng ngừa, ngăn chặn, xóa, phục hồi). Ví dụ như thay đổi các chính sách kiểm soát an ninh mạng.</li>
+<li><strong>Nhân viên hỗ trợ IT</strong>: Các kỹ thuật viện công nghệ thông tin không chỉ có các kỹ năng về hỗ trợ người dùng cuối mà họ cũng có những hiểu biết tốt về công nghệ hay cơ sở hạ tầng mà họ quản lý. Sự hiểu biết này có thể đảm bảo các hành động thích hợp được thực hiện trong trường hợp hệ thống bị ảnh hưởng bởi sự cố.</li>
+<li><strong>Bộ phận pháp lý</strong>:  Các chuyên gia pháp lý nên xem xét các kế hoạch ứng phó sự cố, chính sách và thủ tục để đảm bảo tính phù hợp về mặt pháp luật.</li>
+<li><strong>Bộ phận truyền thông</strong>: Tùy theo tính chất và tác động của một sự cố mà có thể tồn tại nhu cầu thông báo đến các đơn vị truyền về sự cố và kết quả của việc ứng phó sự cố.</li>
+<li><strong>Bộ phận nhân sự</strong>: nếu một nhân viên bị nghi ngờ gây ra sự cố, bộ phận nhân sự có thể giam gia ví dụ như trong các trường hợp hỗ trợ hoàn thành thủ tục tố tụng pháp luật</li>
+<li><strong>Bộ phận kinh doanh</strong>: Tổ chức cần đảm bảo việc các chính sách, thủ tục và các kế hoạch kinh doanh cần phải được đồng bộ. Các sự cố về an ninh máy tính có thể làm suy yếu sự phục hồi kinh doanh của một tổ chức. các chuyên gia về kinh doanh cần được biết về sự cố và mức độ ảnh hưởng để có thể đánh giá tác động đến hoạt động kinh doanh , đánh giá rủi ro nhằm đưa ra những kế hoạch phù hợp.</li>
+<li><strong>Bộ phân an ninh</strong>: Một số sự cố an ninh máy tính xảy ra thông qua các vi phạm về vấn đề an ninh vật lý. Các đội phải ứng sự cố cần đến trực tiếp các cớ sở để xử lý sự cố.</li>
+</ul>
+
+<h1 id="các-dịch-vụ-của-đội-ứng-phó-sự-cố">Các dịch vụ của đội ứng phó sự cố</h1>
+
+<p>Trọng tâm của một đội ứng phó sự cố là xử lý sự cố, nhưng nó khá là hiếm đội ứng phó sự cố nào mà chỉ hoạt động xử lý sự cố đơn thuần. Sau đây là một số dịch vụ ngoài mà đội ứng phó sự cố có thể cung cấp:</p>
+
+<ul>
+<li><strong>Phát hiện xâm nhập</strong>: Điều này rất quan trọng đối với một đội ứng phó sự cố. Phát hiện xâm nhập là bước đầu tiên, nó có thể chỉ ra những sự kiện là tiềm năng cho một cuộc tấn công. Việc phát hiện sớm ảnh hưởng trực tiếp đến sự hiệu quả của hoạt động ứng phó sự cố.</li>
+<li><strong>Tư vấn</strong>: Đội ứng phó sự cố có thể khuyến cáo tổ chức trong các vấn đề liên quan đến các lỗ hổng mới tiềm năng, các lỗ hổng về chính sách có thể dẫn đến tiền năng cho các cuộc tấn công.</li>
+<li><strong>Đào tạo</strong>: Đội ứng phó sự cố có thể thực hiện đào tạo nâng cao nhận thức về an toàn thông tin cho các nhân viên cũng như đào tạo nâng cao tình độ chuyên môn cho các kỹ thuật viên trong tổ chức</li>
+<li><strong>Chia sẻ thông tin</strong>: Các đội xử lý sự cố thường xuyên chia sẻ thông tin với nhau nhằn nâng cao khả năng phản ứng và xử lý sự cố.</li>
+</ul>
+
+<blockquote>
+<p>zMadMoon</p>
+
+<p>Dịch lược NIST.SP.800-61 Rev. 2</p>
+</blockquote>
+
+        
+    </div>
+
+</article>
+<section class="comment">
+    <p class="local-info">
+        Comment is disabled to avoid unwanted discussions from 'localhost:1313' on your Disqus
+        account...
+    </p>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+
+    (function () {
+        if (window.location.hostname == "localhost") {
+            return
+        }
+        document.querySelector('.local-info').classList.add('hide')
+
+        let dsq = document.createElement('script')
+        dsq.type = 'text/javascript'
+        dsq.async = true
+        let disqus_shortname = 'your disqus short name'
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
+    })()
+</script>
+
+
+        </main>
+    </div>
+    <footer class="footer clearfix">
+    <ul class="control social clearfix">
+        <li><a class="author btn" href="#">TrungKFC</a></li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon email"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon facebook"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon github"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon twitter"></i></a>
+        </li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="http://vnstrawhat.github.io/index.xml" type="application/rss+xml" title="rss">
+                <i class="rss icon"></i></a>
+        </li>
+    </ul>
+
+    <ul class="control status clearfix">
+        <li><a href="#" class="btn">Posts:
+                7</a>
+        </li>
+        <li><a href="#" class="btn">Pages:
+                0</a></li>
+    </ul>
+</footer>
+<div class="dialog">
+    <div class="wrapper">
+        <div class="clearfix"><button class="btn close-dialog">X</button></div>
+        <header>
+            <h1 class="title">Theme Name</h1>
+        </header>
+        <main>
+            <div class="clearfix">
+                <label for="theme-name">
+                    <p>Only English Character, space, hyphen are allowed!</p>
+                </label>
+                <input type="text" name="theme-name" id="theme-name">
+            </div>
+            <div class="clearfix">
+                <button class="btn export">Export</button>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</div>
+
+    <script src="http://vnstrawhat.github.io/js/main.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'your ga id', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>
