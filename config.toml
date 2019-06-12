@@ -43,7 +43,7 @@ googleAnalytics = "your ga id"
     useCustomSyntaxHighlight = false
     customJs = []
     customCss = ["kfc.css"]
-    mode = "light"
+    mode = "dark"
 # menubar setting, you can change url, weight and name except the 'Theme'.
 [[menu.main]]
     name = "Article"
