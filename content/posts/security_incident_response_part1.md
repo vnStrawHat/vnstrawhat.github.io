@@ -24,7 +24,7 @@ Sử dụng không đúng cách: Các sự cố xảy ra do vi phạm các chín
 # Ứng phó sự số là gì ?
 
 Ứng phó sự cố là các hành động được thực hiện nhằm giám sát, phát hiện và thực hiện đối phó với các sự cố an ninh, an toàn thông tin gây ảnh hưởng đến tính toàn vẹn, tính bí mật và tính sẵn sang của thông tin và hệ thống thông tin. Việc ứng phó sự cố đòi hỏi một quy trình cụ thể cùng với một nhóm chuyên gia có đầy đủ kinh nghiệm và năng lực thực hiện quy trình đó.
-Quy trình ứng phó sự cố bao gồm 7 bước:
+Quy trình ứng phó sự cố bao gồm 7 bước::
 
 - Chuẩn bị
 - Phát hiện
