@@ -6,9 +6,19 @@
     <description>Recent content in Tags on TrungKFC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Thu, 24 Dec 2015 11:50:39 +0700</lastBuildDate>
     
 	<atom:link href="http://vnstrawhat.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Incident Response</title>
+      <link>http://vnstrawhat.github.io/tags/incident-response/</link>
+      <pubDate>Thu, 24 Dec 2015 11:50:39 +0700</pubDate>
+      
+      <guid>http://vnstrawhat.github.io/tags/incident-response/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
