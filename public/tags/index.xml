@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on TrungKFC</title>
-    <link>http://vnstrawhat.github.io/tags/</link>
+    <link>https://vnstrawhat.github.io/tags/</link>
     <description>Recent content in Tags on TrungKFC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 24 Dec 2015 11:50:39 +0700</lastBuildDate>
     
-	<atom:link href="http://vnstrawhat.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://vnstrawhat.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Incident Response</title>
-      <link>http://vnstrawhat.github.io/tags/incident-response/</link>
+      <link>https://vnstrawhat.github.io/tags/incident-response/</link>
       <pubDate>Thu, 24 Dec 2015 11:50:39 +0700</pubDate>
       
-      <guid>http://vnstrawhat.github.io/tags/incident-response/</guid>
+      <guid>https://vnstrawhat.github.io/tags/incident-response/</guid>
       <description></description>
     </item>
     

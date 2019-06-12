@@ -1,6 +1,6 @@
 theme = "edidor"
 title = "TrungKFC"
-baseurl = "http://vnstrawhat.github.io"
+baseurl = "https://vnstrawhat.github.io"
 AuthorName = "TrungKFC"
 # place your logo file to ./static/images to set logo
 

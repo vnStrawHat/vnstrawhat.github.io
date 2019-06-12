@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TrungKFC</title>
-    <link>http://vnstrawhat.github.io/</link>
+    <link>https://vnstrawhat.github.io/</link>
     <description>Recent content on TrungKFC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 24 Dec 2015 11:50:39 +0700</lastBuildDate>
     
-	<atom:link href="http://vnstrawhat.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://vnstrawhat.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Incident Response part 4 - Quy trình ứng phó sự cố</title>
-      <link>http://vnstrawhat.github.io/posts/security_incident_response_part4/</link>
+      <link>https://vnstrawhat.github.io/posts/security_incident_response_part4/</link>
       <pubDate>Thu, 24 Dec 2015 11:50:39 +0700</pubDate>
       
-      <guid>http://vnstrawhat.github.io/posts/security_incident_response_part4/</guid>
+      <guid>https://vnstrawhat.github.io/posts/security_incident_response_part4/</guid>
       <description>Quy trình ứng phó sự cố bao gồm nhiều gian đoạn. Giai đoạn đầu tiên là việc thành lập và đào tạo một đội phản ứng sự cố và lựa chọn các công cụ cũng như nguồn lực cần thiết. Trong thời gian chuẩn bị, tổ chức cũng phải hạn chế số lượng các sự cố xảy ra. Việc phát hiện các lỗ hổng bảo mật là cần thiết để cảnh báo cho các tổ chức bất kể khi nào xảy ra sự cố.</description>
     </item>
     
     <item>
       <title>Incident Response part 3 - Cơ cấu của một đội ứng phó sự cố</title>
-      <link>http://vnstrawhat.github.io/posts/security_incident_response_part3/</link>
+      <link>https://vnstrawhat.github.io/posts/security_incident_response_part3/</link>
       <pubDate>Wed, 23 Dec 2015 11:43:38 +0700</pubDate>
       
-      <guid>http://vnstrawhat.github.io/posts/security_incident_response_part3/</guid>
+      <guid>https://vnstrawhat.github.io/posts/security_incident_response_part3/</guid>
       <description>Một đội ứng phó sự cố nên ở trạng thái sẵn sàng trước những phát hiện hoặc nghi ngờ rằng có một sự cố về bảo mật đã xảy ra. Một hoặc nhiều thành viên trong nhóm tùy thuộc vào độ lớn của đội xử lý sự cố sẽ thực hiện xử lý sự cố. Việc xử lý sự cố bao gồm việc phân tích các dữ liệu, xác định tác động của vụ việc, các hành đồng để hạn chế thiệt hại và khôi phục lại sự hoạt động bình thường của dịch vụ.</description>
     </item>
     
     <item>
       <title>Incident Response part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố</title>
-      <link>http://vnstrawhat.github.io/posts/security_incident_response_part2/</link>
+      <link>https://vnstrawhat.github.io/posts/security_incident_response_part2/</link>
       <pubDate>Tue, 22 Dec 2015 11:13:11 +0700</pubDate>
       
-      <guid>http://vnstrawhat.github.io/posts/security_incident_response_part2/</guid>
+      <guid>https://vnstrawhat.github.io/posts/security_incident_response_part2/</guid>
       <description>Chính sách Chính sách về quản lý và ứng phó sự cố của từng các nhân hay tổ chức là khác nhau. Tuy nhiên, hầy hết các chính sách đều bao gồm các yếu tố sau:
  Cam kết quản lý Mục đích và mục tiêu của chính sách Phạm vi của chính sách Định nghĩa về sự cố bảo mật và các vấn đề liên quan Cơ cấu tổ chức, định nghĩa về vai trò, mức độ và quyền hạn Xếp hạng mức độ ưu tiên hoặc mức độ nghiêm trọng của sự cố Performance Measures Báo cáo và mẫu phương thức liên lạc  Kế Hoạch Cá nhân hay tổ chúc cần có một kế hoạch chính thức, tập trung và phối hợp các bên liên quan để giải quyết các sự cố về bảo mật.</description>
     </item>
     
     <item>
       <title>Incident Response part 1 - Tổng quan</title>
-      <link>http://vnstrawhat.github.io/posts/security_incident_response_part1/</link>
+      <link>https://vnstrawhat.github.io/posts/security_incident_response_part1/</link>
       <pubDate>Mon, 21 Dec 2015 14:39:53 +0700</pubDate>
       
-      <guid>http://vnstrawhat.github.io/posts/security_incident_response_part1/</guid>
+      <guid>https://vnstrawhat.github.io/posts/security_incident_response_part1/</guid>
       <description>Sự cố an ninh là gì ? Một sự có về an ninh hay nói cách khác là sự cố về an toàn thông tin được hiểu là những vi phạm một cách rõ ràng về các chính sách an toàn thông tin, là những hành vi nhằm cố gắng đạt được những quyền truy cập trái phép, là những hành vi làm ảnh hưởng đến tính sẵn sang của hệ thống và những hành vi sửa đổi tài nguyên mà không được sự đồng ý của chủ sở hữu Sự cố về an ninh, an toàn thông tin có thể xảy ra theo nhiều cách khác nhau.</description>
     </item>
     
