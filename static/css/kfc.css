@@ -1,0 +1,52 @@
+h1:after {
+    content: "";
+    display: block;
+    position: relative;
+/*    top: .33em;*/
+    border-bottom: 2px solid #797d85;
+}
+
+ul {
+    margin-left: 1em;
+}
+
+td, th {
+    border-right: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    border-top: 1px solid #939bab;
+    border-bottom: 1px solid #939bab;
+    padding: 8px 12px;
+}
+
+table {
+    border-spacing: 0;
+}
+
+th {
+    font-weight: 700;
+}
+
+td {
+    font-weight: 100;
+}
+
+.footer a, .header a, .sidebar a, .taxonomy-key {
+    font-size: .70rem;
+}
+
+.pagination {
+    position: inherit;
+    bottom: 0;
+    right: 0;
+}
+
+.main {
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+blockquote {
+    padding-left: 1.5em;
+    margin: 1.2em 0;
+    border-left: 7px solid #3083fe;
+}

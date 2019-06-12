@@ -1,9 +1,9 @@
 +++
 Categories = []
 Description = ""
-Tags = []
+Tags = ["Incident Response"]
 date = "2015-12-22T11:13:11+07:00"
-menu = "main"
+menu = "posts"
 title = "Incident Response part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố"
 
 +++

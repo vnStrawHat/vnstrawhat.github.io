@@ -1,9 +1,9 @@
 +++
 Categories = []
 Description = ""
-Tags = []
+Tags = ["Incident Response"]
 date = "2015-12-24T11:50:39+07:00"
-menu = "main"
+menu = "posts"
 title = "Incident Response part 4 - Quy trình ứng phó sự cố"
 
 +++
