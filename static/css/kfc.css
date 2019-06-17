@@ -1,4 +1,4 @@
-h1:after {
+h1:after, h2:after {
     content: "";
     display: block;
     position: relative;
@@ -28,6 +28,10 @@ th {
 
 td {
     font-weight: 100;
+}
+
+pre {
+    padding: .3rem .5rem;
 }
 
 .footer a, .header a, .sidebar a, .taxonomy-key {

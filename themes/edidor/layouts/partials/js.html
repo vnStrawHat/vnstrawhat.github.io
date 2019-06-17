@@ -1,14 +1,16 @@
 <script src="{{ "js/main.js" | absURL }}"></script>
 {{ range .Site.Params.customJs}}
-    <script src="{{ "js/" | absURL }}{{ . }}"></script>
+<script src="{{ "js/" | absURL }}{{ . }}"></script>
 {{ end }}
 {{ if (.Site.Params.isHighlightCode) }}
 {{ if not .Site.Params.useCustomSyntaxHighlight}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+<script src="{{ "js/highlight.pack.js" | absURL }}"></script>
 {{ end }}
-<script>hljs.initHighlightingOnLoad();</script>
+<script>
+hljs.initHighlightingOnLoad();
+hljs.getLanguage('console').k += ' use apt-get wmic python perl ruby lua git powershell.exe powershell msf msfvenom nc certutil.exe certutil regsvr32 rundll32.exe rundll32 mshta.exe mshta exploit cat telnet rm msiexec certutil.exe certutil php bash'; // note the leading space
+</script>
 {{ end }}
-
 {{- if not .Site.IsServer -}}
 {{ template "_internal/google_analytics_async.html" . }}
 {{- end -}}
