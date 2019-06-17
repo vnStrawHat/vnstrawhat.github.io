@@ -4,7 +4,7 @@ Description = ""
 Tags = ["Incident Response"]
 date = "2015-12-24T11:50:39+07:00"
 menu = "posts"
-title = "Incident Response part 4 - Quy trình ứng phó sự cố"
+title = "IR part 4 - Quy trình ứng phó sự cố"
 
 +++
 
