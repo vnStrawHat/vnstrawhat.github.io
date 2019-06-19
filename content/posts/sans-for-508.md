@@ -63,9 +63,9 @@ Một số hành động cho việc khôi phục bao gồm:
  - Network re-design
 
 ### Follow Up/Lession Learn
-
+Thông thường, việc follow up là cần thiết để đảm bảo sự cố đã được ngăn chặn hoàn toàn, kẻ tấn công đã được loại bỏ ra khỏi hệ thống, các hành đông ngăn ngừa đã được thực hiện. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MDk2OTI0NCwxMzAyMTQyNTYzLDE4OD
+eyJoaXN0b3J5IjpbMTE1ODE0OTA2NCwxMzAyMTQyNTYzLDE4OD
 M1NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3MjgwMSw3Mjk5MzIz
 ODMsLTczNTQ0OTcwN119
 -->
