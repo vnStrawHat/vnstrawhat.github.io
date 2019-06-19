@@ -29,8 +29,14 @@ Sáu bước trong quy trình xử lý sự cố bao gồm: Chuẩn bị (prepar
 
 ### Identification
 
-### Cont
+### Containment and Intelligence Development
+
+### Remediation
+
+### Recovery
+
+### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NzcxODE5LDcyOTkzMjM4MywtNzM1ND
-Q5NzA3XX0=
+eyJoaXN0b3J5IjpbLTU5MDQ5NTQ1Myw3Mjk5MzIzODMsLTczNT
+Q0OTcwN119
 -->
