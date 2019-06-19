@@ -40,14 +40,14 @@ Identification là bước đầu tiên để hướng tới việc khắc phụ
 ### Containment and Intelligence Development
 Trong khi phân tích hành vi của kẻ tấn công, bạn sẽ biết được chính xác làm thế nào kẻ tấn công có thể vượt qua các hệ thống ANBM, làm thế nào để kẻ tấn công có thể di chuyển từ hệ thống này sang hệ thống khác, và mã đọc đã được sử dụng như thế nào.
 
-Tất cả các đặc điểm trên đều có thể được sử dụng để xác định các hệ thống khác bị đã bị chiếm quyền điều khiển và giúp cho  Team Incident Response đưa ra được các cơ chế kiểm soát
+Tất cả các đặc điểm trên đều có thể được sử dụng để xác định các hệ thống khác bị đã bị chiếm quyền điều khiển và giúp cho  Team Incident Response đưa ra được các phương án ngăn chặn để sử dụng cho việc khắc phục sự cố (Remediation).  Threat Intelligence là một điểm quan trọng 
 ### Remediation
 
 ### Recovery
 
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNjM3ODM3MSwxMzAyMTQyNTYzLDE4OD
-M1NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3MjgwMSw3Mjk5MzIz
-ODMsLTczNTQ0OTcwN119
+eyJoaXN0b3J5IjpbLTE0MTIzODc4NDUsMTMwMjE0MjU2MywxOD
+gzNTYzNzM4LC0xMDY2MDg2ODcxLDExNTc4NzI4MDEsNzI5OTMy
+MzgzLC03MzU0NDk3MDddfQ==
 -->
