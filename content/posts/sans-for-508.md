@@ -65,9 +65,16 @@ Một số hành động cho việc khôi phục bao gồm:
 ### Follow Up
 Thông thường, việc follow up là cần thiết để đảm bảo sự cố đã được ngăn chặn hoàn toàn, kẻ tấn công đã được loại bỏ ra khỏi hệ thống, các hành đông ngăn ngừa đã được thực hiện, các hệ thống hoạt động trở lại như bình thường
 
-### Lession Learn
+### Lesson Learn
+Lesson Learn là bước cuối dùng trong quy trình xử lý sự cố. Bước này cần cố gắng để trả lời các câu hỏi sau:
+
+ - which key elements should be covered ?
+ - when they should take place ?
+ - who should participate ?
+ - what actions should be taken to move your organization forward after suffering from a security incident ?
+ - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MTg4OTg4MCwxMzAyMTQyNTYzLDE4OD
-M1NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3MjgwMSw3Mjk5MzIz
-ODMsLTczNTQ0OTcwN119
+eyJoaXN0b3J5IjpbODMwMTE1MDMwLDEzMDIxNDI1NjMsMTg4Mz
+U2MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4
+MywtNzM1NDQ5NzA3XX0=
 -->
