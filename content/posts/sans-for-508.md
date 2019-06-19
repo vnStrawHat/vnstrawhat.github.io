@@ -51,10 +51,10 @@ Khắc phục sự cố là các hành động cần thiết có thể hoàn th�
  - Enterprise password Change
  - Verify all remediation activities
 ### Recovery
-
+Hành động khôi phục nhằm mục đích đưa
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA0MTQ2NTMyLDEzMDIxNDI1NjMsMTg4Mz
-U2MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4
-MywtNzM1NDQ5NzA3XX0=
+eyJoaXN0b3J5IjpbLTE3OTI3MDA2MzMsMTMwMjE0MjU2MywxOD
+gzNTYzNzM4LC0xMDY2MDg2ODcxLDExNTc4NzI4MDEsNzI5OTMy
+MzgzLC03MzU0NDk3MDddfQ==
 -->
