@@ -38,14 +38,16 @@ Thật không may, hầu hết các tổ chức chuyển ngay đến bước Con
 
 Identification là bước đầu tiên để hướng tới việc khắc phục sự cố (Remediation). Team Incident Response phải tìm cách xác định tất cả các hệ thống đã bị chiếm quyền điều khiển. Tuy nhiên để thực hiện tốt điều đó, Team Incident Response phải thu thập thông tin.
 ### Containment and Intelligence Development
-Trong khi phân tích hành vi của kẻ tấn công, bạn sẽ biết được chính xác làm thế nào kẻ tấn công có thể vượt qua các hệ thống ANBM, làm thế nào để kẻ tấn công có thể di chuyển từ hệ thống này sang hệ thống khác, và làm thế nào
+Trong khi phân tích hành vi của kẻ tấn công, bạn sẽ biết được chính xác làm thế nào kẻ tấn công có thể vượt qua các hệ thống ANBM, làm thế nào để kẻ tấn công có thể di chuyển từ hệ thống này sang hệ thống khác, và mã đọc đã được sử dụng như thế nào.
+
+
 ### Remediation
 
 ### Recovery
 
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTI0Njg3MDAsMTMwMjE0MjU2MywxOD
+eyJoaXN0b3J5IjpbLTE2NzM0MzU2MjEsMTMwMjE0MjU2MywxOD
 gzNTYzNzM4LC0xMDY2MDg2ODcxLDExNTc4NzI4MDEsNzI5OTMy
 MzgzLC03MzU0NDk3MDddfQ==
 -->
