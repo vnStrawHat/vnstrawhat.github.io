@@ -25,7 +25,7 @@ Với khái niệm phòng thủ tích cức (Active Defense), Tổ chức của 
  - Eradication Checklist
  - Communications Log
 
-Sáu bước trong quy trình xử lý sự cố bao gồm: **Preparation** (Chuẩn bị), Identification (nhận biết sự cố), **Containment** (Ngăn chặn), **Eradication/Rem** (Loại bỏ), **Recovery** (Khôi phục), **Lessons Learned** (Bài học kinh nghiệm). Mỗi bước trong quy trình sẽ giúp chỉ ra cho người thực hiện lộ trình để xử lý sự cố, một cách để chỉ ra những việc người xử lý sự cố cần phải thực hiện và những việc tiếp theo họ sẽ phải làm.
+Sáu bước trong quy trình xử lý sự cố bao gồm: **Preparation** (Chuẩn bị), Identification (nhận biết sự cố), **Containment** (Ngăn chặn), **Eradication/Remediation** (Loại bỏ), **Recovery** (Khôi phục), **Lessons Learned** (Bài học kinh nghiệm). Mỗi bước trong quy trình sẽ giúp chỉ ra cho người thực hiện lộ trình để xử lý sự cố, một cách để chỉ ra những việc người xử lý sự cố cần phải thực hiện và những việc tiếp theo họ sẽ phải làm.
 ## Overview of the Six-Step Incident Response Process
 ### Preparation
 Phương pháp luận của việc ứng phó sự cố thường sẽ nhấn mạnh vào bước chuẩn bị. Không chỉ chuẩn bị là khả năng ứng phó của tổ chức đối với sự cố mà còn phải đảm bảo hệ thống máy chủ, hệ thống mạng, ứng dụng đủ an toàn.
@@ -41,13 +41,13 @@ Identification là bước đầu tiên để hướng tới việc khắc phụ
 Trong khi phân tích hành vi của kẻ tấn công, bạn sẽ biết được chính xác làm thế nào kẻ tấn công có thể vượt qua các hệ thống ANBM, làm thế nào để kẻ tấn công có thể di chuyển từ hệ thống này sang hệ thống khác, và mã đọc đã được sử dụng như thế nào.
 
 Tất cả các đặc điểm trên đều có thể được sử dụng để xác định các hệ thống khác bị đã bị chiếm quyền điều khiển và giúp cho  Team Incident Response đưa ra được các phương án ngăn chặn để sử dụng cho việc khắc phục sự cố (Remediation).  Threat Intelligence là một điểm quan trọng đối với Team Incident Response trong quá trình xử lý incident.
-### Remediation
-
+### Eradication/Remediation
+Khắc phục sự cố là các hành động cần thiết
 ### Recovery
 
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTgwNjkwODgsMTMwMjE0MjU2MywxOD
-gzNTYzNzM4LC0xMDY2MDg2ODcxLDExNTc4NzI4MDEsNzI5OTMy
-MzgzLC03MzU0NDk3MDddfQ==
+eyJoaXN0b3J5IjpbMTQ4MzY3MTY2MiwxMzAyMTQyNTYzLDE4OD
+M1NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3MjgwMSw3Mjk5MzIz
+ODMsLTczNTQ0OTcwN119
 -->
