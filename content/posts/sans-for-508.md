@@ -11,7 +11,7 @@ menu = "posts"
 
 ![enter image description here](https://vnstrawhat.github.io/images/ir-step.png)
 # Six-Step Incident Response process
-Xử lý sự cố có mức độ quan trọng được coi la
+Ứng phó sự cố được coi như có mức độ quan trọng tương đương với việc quản lý sự cố.  Thông thường, quy trình ứng phó sự cố bao gồm 6 bước chính
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNzk1MzQ0MCwtNzM1NDQ5NzA3XX0=
+eyJoaXN0b3J5IjpbLTEyMzA2MzMxMjksLTczNTQ0OTcwN119
 -->
