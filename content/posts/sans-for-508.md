@@ -42,12 +42,12 @@ Trong khi phân tích hành vi của kẻ tấn công, bạn sẽ biết đượ
 
 Tất cả các đặc điểm trên đều có thể được sử dụng để xác định các hệ thống khác bị đã bị chiếm quyền điều khiển và giúp cho  Team Incident Response đưa ra được các phương án ngăn chặn để sử dụng cho việc khắc phục sự cố (Remediation).  Threat Intelligence là một điểm quan trọng đối với Team Incident Response trong quá trình xử lý incident.
 ### Eradication/Remediation
-Khắc phục sự cố là các hành động cần thiết
+Khắc phục sự cố là các hành động cần thiết có thể hoàn thành trong khoảng thời gian nhanh nhất để giảm thiểu sự cố hiện tại. Đa số các công ty chọn thực hiện các hành động có thời gian thực hiện hơn 1 tuần
 ### Recovery
 
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MzY3MTY2MiwxMzAyMTQyNTYzLDE4OD
+eyJoaXN0b3J5IjpbLTczODE5ODk4OCwxMzAyMTQyNTYzLDE4OD
 M1NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3MjgwMSw3Mjk5MzIz
 ODMsLTczNTQ0OTcwN119
 -->
