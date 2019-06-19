@@ -29,7 +29,7 @@ Sáu bước trong quy trình xử lý sự cố bao gồm: **Preparation** (Chu
 Phương pháp luận của việc ứng phó sự cố thường sẽ nhấn mạnh vào bước chuẩn bị. Không chỉ chuẩn bị là khả năng ứng phó của tổ chức đối với sự cố mà còn phải đảm bảo hệ thống máy chủ, hệ thống mạng, ứng dụng đủ an toàn.
 ### Identification
 Việc phát hiện/nhận biết sự cố đa số và nên bắt nguồn từ Team ANBM hoặc Team vận hành ANBM. Tuy nhiên việc này có thể đến từ một đối tác bên ngoài.
-
+Bước đầu tiên của quy trình ứng phó sự cố là rất quan trọng, nó sẽ giúp cho việc nhân dạng đúng hệ thống nào đang bị tấn công (Tất cả các hệ thô
 ### Containment and Intelligence Development
 
 ### Remediation
@@ -38,6 +38,6 @@ Việc phát hiện/nhận biết sự cố đa số và nên bắt nguồn từ
 
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjYwODY4NzEsMTE1Nzg3MjgwMSw3Mj
-k5MzIzODMsLTczNTQ0OTcwN119
+eyJoaXN0b3J5IjpbMTc5OTcwNzM3OCwtMTA2NjA4Njg3MSwxMT
+U3ODcyODAxLDcyOTkzMjM4MywtNzM1NDQ5NzA3XX0=
 -->
