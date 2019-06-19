@@ -44,13 +44,17 @@ Tất cả các đặc điểm trên đều có thể được sử dụng để
 ### Eradication/Remediation
 Khắc phục sự cố là các hành động cần thiết có thể hoàn thành trong khoảng thời gian nhanh nhất để giảm thiểu sự cố hiện tại. Đa số các công ty chọn thực hiện các hành động có thời gian thực hiện hơn 1 tuần. Các hành động sau nên được thực thi để đảm bảo sự cố được khắc phục một cách toàn diện:
 
- - Block malici
-
+ - Block malicious IP Address
+ - Blackhole malicious domain name
+ - Rebuild compromised systems
+ - Coordinate with cloud and service providers
+ - Enterprise password Change
+ - Verify all remediation activities
 ### Recovery
 
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzYyMTkwNywxMzAyMTQyNTYzLDE4OD
-M1NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3MjgwMSw3Mjk5MzIz
-ODMsLTczNTQ0OTcwN119
+eyJoaXN0b3J5IjpbOTA0MTQ2NTMyLDEzMDIxNDI1NjMsMTg4Mz
+U2MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4
+MywtNzM1NDQ5NzA3XX0=
 -->
