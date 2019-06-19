@@ -23,8 +23,8 @@ Với khái niệm phòng thủ tích cức (Active Defense), Tổ chức của 
  - Eradication Checklist
  - Communications Log
 
-Sáu bước trong quy trình xử lý sự cố bao gồm: Chuẩn bị (preparation), identification
+Sáu bước trong quy trình xử lý sự cố bao gồm: Chuẩn bị (preparation), nhận biết sự cố (identification), Containment, Eradication, Recovery, Bài học kinh nghiệp\Lessons Learned
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTk5Njc0NTYsNzI5OTMyMzgzLC03Mz
-U0NDk3MDddfQ==
+eyJoaXN0b3J5IjpbMTE1NjUxMTk4MCw3Mjk5MzIzODMsLTczNT
+Q0OTcwN119
 -->
