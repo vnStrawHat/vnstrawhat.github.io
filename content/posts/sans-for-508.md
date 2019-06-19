@@ -11,7 +11,7 @@ menu = "posts"
 
 ![enter image description here](https://vnstrawhat.github.io/images/ir-step.png)
 # Six-Step Incident Response process
-
+Xử lý sự cố có mức độ quan trọng được coi la
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNTQ0OTcwN119
+eyJoaXN0b3J5IjpbMjAwNzk1MzQ0MCwtNzM1NDQ5NzA3XX0=
 -->
