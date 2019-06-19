@@ -25,7 +25,7 @@ Với khái niệm phòng thủ tích cức (Active Defense), Tổ chức của 
  - Eradication Checklist
  - Communications Log
 
-Sáu bước trong quy trình xử lý sự cố bao gồm: **Preparation** (Chuẩn bị), Identification (nhận biết sự cố), **Containment** (Ngăn chặn), **Eradication** (Loại bỏ), **Recovery** (Khôi phục), **Lessons Learned** (Bài học kinh nghiệm). Mỗi bước trong quy trình sẽ giúp chỉ ra cho người thực hiện lộ trình để xử lý sự cố, một cách để chỉ ra những việc người xử lý sự cố cần phải thực hiện và những việc tiếp theo họ sẽ phải làm.
+Sáu bước trong quy trình xử lý sự cố bao gồm: **Preparation** (Chuẩn bị), Identification (nhận biết sự cố), **Containment** (Ngăn chặn), **Eradication/Rem** (Loại bỏ), **Recovery** (Khôi phục), **Lessons Learned** (Bài học kinh nghiệm). Mỗi bước trong quy trình sẽ giúp chỉ ra cho người thực hiện lộ trình để xử lý sự cố, một cách để chỉ ra những việc người xử lý sự cố cần phải thực hiện và những việc tiếp theo họ sẽ phải làm.
 ## Overview of the Six-Step Incident Response Process
 ### Preparation
 Phương pháp luận của việc ứng phó sự cố thường sẽ nhấn mạnh vào bước chuẩn bị. Không chỉ chuẩn bị là khả năng ứng phó của tổ chức đối với sự cố mà còn phải đảm bảo hệ thống máy chủ, hệ thống mạng, ứng dụng đủ an toàn.
@@ -47,7 +47,7 @@ Tất cả các đặc điểm trên đều có thể được sử dụng để
 
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY1MzcxMjUzLDEzMDIxNDI1NjMsMTg4Mz
-U2MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4
-MywtNzM1NDQ5NzA3XX0=
+eyJoaXN0b3J5IjpbLTE1OTgwNjkwODgsMTMwMjE0MjU2MywxOD
+gzNTYzNzM4LC0xMDY2MDg2ODcxLDExNTc4NzI4MDEsNzI5OTMy
+MzgzLC03MzU0NDk3MDddfQ==
 -->
