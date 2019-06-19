@@ -56,11 +56,16 @@ Một số hành động cho việc khôi phục bao gồm:
  - Improve enterprise authentication model
  - Enhanced network visibility
  - Establish comprehensive patch management program
- - enforce change
+ - Enforce change management program
+ - Centralized Logging
+ - Enhance password portal
+ - Establish security awareness training program
+ - Network re-design
 
 ### Follow Up/Lession Learn
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNTU3MzEzNCwxMzAyMTQyNTYzLDE4OD
+eyJoaXN0b3J5IjpbLTU5MDk2OTI0NCwxMzAyMTQyNTYzLDE4OD
 M1NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3MjgwMSw3Mjk5MzIz
 ODMsLTczNTQ0OTcwN119
 -->
