@@ -34,7 +34,9 @@ Việc phát hiện/nhận biết sự cố đa số và nên bắt nguồn từ
 
 Bước đầu tiên của quy trình ứng phó sự cố là rất quan trọng, nó sẽ giúp cho việc nhân dạng đúng hệ thống nào đang bị tấn công (Tất cả các hệ thống bị tấn công, không phải chỉ 1 hoặc 2 hệ thống). Theo một thống kê, kẻ xâm nhập chỉ cài đặt malware hoặc backdoor lên 54% hệ thống bị chiếm quyền điều khiển. Điều này có nghĩa là những hệ thống khác trong tổ chức của bạn bị chiếm quyền điều khiển nhưng không được cài đặt malware hoặc backdoor. Việc cần làm là xác định tất cả các hệ thống đó.
 
-Thật không may, hầu hết các tổ chức chuyển ngay đến bước Containment và Remediation ngay khi xác được định dấu hiệu đầu tiên mà bỏ qua việc xác định phạm vi của cuộc tấn công. Kẻ tấn công sẽ nhanh chóng đưa ra các biện pháp đối phó để đảm bảo việc 
+Thật không may, hầu hết các tổ chức chuyển ngay đến bước Containment và Remediation ngay khi xác được định dấu hiệu đầu tiên mà bỏ qua việc xác định phạm vi của cuộc tấn công. Kẻ tấn công sẽ nhanh chóng đưa ra các biện pháp đối phó để đảm bảo việc có thể tiếp tục truy cập hệ thống, tiếp tục thu thập dữ liệu.
+
+Kết quả của việc 
 ### Containment and Intelligence Development
 
 ### Remediation
@@ -43,7 +45,7 @@ Thật không may, hầu hết các tổ chức chuyển ngay đến bước Con
 
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzc3MzMyMzIsMTg4MzU2MzczOCwtMT
+eyJoaXN0b3J5IjpbLTE1NTM4MTUxMTksMTg4MzU2MzczOCwtMT
 A2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4MywtNzM1NDQ5
 NzA3XX0=
 -->
