@@ -26,7 +26,7 @@ Với khái niệm phòng thủ tích cức (Active Defense), Tổ chức của 
 Sáu bước trong quy trình xử lý sự cố bao gồm: **Preparation** (Chuẩn bị), Identification (nhận biết sự cố), **Containment** (Ngăn chặn), **Eradication** (Loại bỏ), **Recovery** (Khôi phục), **Lessons Learned** (Bài học kinh nghiệm). Mỗi bước trong quy trình sẽ giúp chỉ ra cho người thực hiện lộ trình để xử lý sự cố, một cách để chỉ ra những việc người xử lý sự cố cần phải thực hiện và những việc tiếp theo họ sẽ phải làm.
 ## Overview of the Six-Step Incident Response Process
 ### Preparation
-Phương pháp luận của việc ứng phó sự cố thường sẽ nhấn mạnh vào bước chuẩn bị.
+Phương pháp luận của việc ứng phó sự cố thường sẽ nhấn mạnh vào bước chuẩn bị. Không chỉ 
 ### Identification
 
 ### Containment and Intelligence Development
@@ -37,6 +37,6 @@ Phương pháp luận của việc ứng phó sự cố thường sẽ nhấn m�
 
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDAzNDYwNzksNzI5OTMyMzgzLC03Mz
-U0NDk3MDddfQ==
+eyJoaXN0b3J5IjpbMTcwMjUxNjYxMSw3Mjk5MzIzODMsLTczNT
+Q0OTcwN119
 -->
