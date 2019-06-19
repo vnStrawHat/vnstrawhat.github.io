@@ -72,9 +72,17 @@ Lesson Learn là bước cuối dùng trong quy trình xử lý sự cố. Bư�
  - when they should take place ?
  - who should participate ?
  - what actions should be taken to move your organization forward after suffering from a security incident ?
- - 
+
+Lessons learned sessions offer a variety of benefits for the incident response team, the organization as well as existing and future incidents. A properly executed lessons learned exercise can help organizations:
+
+-   **Learn from mistakes.** Especially during a security incident, organizations tend to operate in crisis mode and are too overwhelmed to execute all steps flawlessly. Identifying where mistakes have been made will help self-evaluate performance and set the tone for continuous improvement.
+-   **Understand where problems occurred.**  Despite its negative impact, a security incident can represent a valuable opportunity to dig deeper into where exactly errors were made, which vulnerabilities led to the incident, whether  [security controls](https://www.hitachi-systems-security.com/blog/information-security-controls-faq/)  were effective and whether there are any security gaps in the organization that could be fixed. Getting all relevant parties together during this exercise will help understand the problems from a 360-degree view.
+-   **Recognize success.** Too often, organizations tend to forget about what actually went well during a security incident. In addition to analyzing what didn’t go well, it is equally important to recognize what went well – whether it relates to employee performance, effective processes in place, crisis communications etc. Identifying success stories will encourage positive performance and leverage exemplary behavior for future incidents.
+-   **Retain organizational knowledge.** During a crisis, documentation is often the last thing on the mind of those who are dealing with the crisis. Keep in mind that it is crucial to document the good, the bad and the ugly to retain this knowledge and make it available for future use.
+-   **Reduce future risk.** If similar security incidents occur in the future, a lessons learned session can help prevent similar mistakes and thereby reduce the risk to the organization as a whole.
+-   **Improve future performance.** By analyzing how an organization dealt with a security incident, it can optimize its incident response performance for future similar scenarios. In addition to having an Incident Response Plan in place, lessons learned sessions contribute to adapting and improving this plan so that the organization can be better prepared.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMwMTE1MDMwLDEzMDIxNDI1NjMsMTg4Mz
+eyJoaXN0b3J5IjpbMjMzNTU5Mjg1LDEzMDIxNDI1NjMsMTg4Mz
 U2MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4
 MywtNzM1NDQ5NzA3XX0=
 -->
