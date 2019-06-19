@@ -36,7 +36,7 @@ Bước đầu tiên của quy trình ứng phó sự cố là rất quan trọn
 
 Thật không may, hầu hết các tổ chức chuyển ngay đến bước Containment và Remediation ngay khi xác được định dấu hiệu đầu tiên mà bỏ qua việc xác định phạm vi của cuộc tấn công. Kẻ tấn công sẽ nhanh chóng đưa ra các biện pháp đối phó để đảm bảo việc có thể tiếp tục truy cập hệ thống, tiếp tục thu thập dữ liệu.
 
-Identification là bước đầu tiên để hướng tới việc Remediation
+Identification là bước đầu tiên để hướng tới việc khắc phục sự cố (Remediation). Team Incident Response phải tìm cách xác định tất cả các hệ thống đã bị chiếm quyền điều khiển. Tuy nhiên để
 ### Containment and Intelligence Development
 
 ### Remediation
@@ -45,7 +45,7 @@ Identification là bước đầu tiên để hướng tới việc Remediation
 
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODQ4OTYwLDEzMDIxNDI1NjMsMTg4Mz
-U2MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4
-MywtNzM1NDQ5NzA3XX0=
+eyJoaXN0b3J5IjpbMTEzOTQwNTIwMiwxMzAyMTQyNTYzLDE4OD
+M1NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3MjgwMSw3Mjk5MzIz
+ODMsLTczNTQ0OTcwN119
 -->
