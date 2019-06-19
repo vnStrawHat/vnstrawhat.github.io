@@ -51,10 +51,10 @@ Khắc phục sự cố là các hành động cần thiết có thể hoàn th�
  - Enterprise password Change
  - Verify all remediation activities
 ### Recovery
-Hành động khôi phục nhằm mục đích đưa
+Hành động khôi phục nhằm mục đích đưa tổ chức quay lại với hoạt động kinh doanh hằng ngày. Tuy nhiên những hành động dài hạn cũng cần phải được bắt đầu thực hiện. Thông thường, các hành động khôi phục được sử dụng để nâng cao tính bảo mật của hệ thống
 ### Follow Up/Lession Learn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTI3MDA2MzMsMTMwMjE0MjU2MywxOD
-gzNTYzNzM4LC0xMDY2MDg2ODcxLDExNTc4NzI4MDEsNzI5OTMy
-MzgzLC03MzU0NDk3MDddfQ==
+eyJoaXN0b3J5IjpbODM3MTMwNDksMTMwMjE0MjU2MywxODgzNT
+YzNzM4LC0xMDY2MDg2ODcxLDExNTc4NzI4MDEsNzI5OTMyMzgz
+LC03MzU0NDk3MDddfQ==
 -->
