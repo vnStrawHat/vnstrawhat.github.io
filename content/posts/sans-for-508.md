@@ -81,8 +81,11 @@ Lessons learned sessions offer a variety of benefits for the incident response t
 -   **Retain organizational knowledge.** During a crisis, documentation is often the last thing on the mind of those who are dealing with the crisis. Keep in mind that it is crucial to document the good, the bad and the ugly to retain this knowledge and make it available for future use.
 -   **Reduce future risk.** If similar security incidents occur in the future, a lessons learned session can help prevent similar mistakes and thereby reduce the risk to the organization as a whole.
 -   **Improve future performance.** By analyzing how an organization dealt with a security incident, it can optimize its incident response performance for future similar scenarios. In addition to having an Incident Response Plan in place, lessons learned sessions contribute to adapting and improving this plan so that the organization can be better prepared.
+
+
+[https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMzNTU5Mjg1LDEzMDIxNDI1NjMsMTg4Mz
-U2MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4
-MywtNzM1NDQ5NzA3XX0=
+eyJoaXN0b3J5IjpbMjA0MjA1MTA3OCwxMzAyMTQyNTYzLDE4OD
+M1NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3MjgwMSw3Mjk5MzIz
+ODMsLTczNTQ0OTcwN119
 -->
