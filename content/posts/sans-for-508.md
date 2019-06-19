@@ -13,7 +13,8 @@ menu = "posts"
 # Six-Step Incident Response process
 Ứng phó sự cố được coi như có mức độ quan trọng tương đương với việc quản lý sự cố.  Thông thường, quy trình ứng phó sự cố bao gồm 6 bước chính. Tuy nhiên, việc ứng phó sự cố đòi hỏi, yêu cầu nhiều chiến thuật, quy trình linh hoạt để có thể khắc phục, ứng phó thành công đối với sự cố. Cũng nên nhớ rằng, kẻ tấn công có thể đã ở trong hệ thống mạng của bạn hơn 1 năm trước khi gây ra sự cố. Theo Mandiant, Trung bình cần 101 ngày để phát hiện được hệ thống của bạn đã bị tấn công/thỏa hiệp.
 Việc phát hiện sự cố đa số và nên bắt nguồn từ Team ANBM hoặc Team vận hành ANBM. 
-Với khái niệm phòng thủ tích cức (Active Defense), Tổ chức của bạn nên sử dụng toàn bộ kiến trúc bảo mật,  hệ thông bảo mật và nhân sự ANBM để xác định phạm vi của vấn đề. 
+Với khái niệm phòng thủ tích cức (Active Defense), Tổ chức của bạn nên sử dụng toàn bộ kiến trúc bảo mật,  hệ thông bảo mật và nhân sự ANBM để xác định phạm vi của vấn đề. Sử trưởng thành về mặt security của một tổ chức sẽ là sử dịch chuyển của việc phát hiện các sự cố 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI5OTMyMzgzLC03MzU0NDk3MDddfQ==
+eyJoaXN0b3J5IjpbODMxNDIyOTIzLDcyOTkzMjM4MywtNzM1ND
+Q5NzA3XX0=
 -->
