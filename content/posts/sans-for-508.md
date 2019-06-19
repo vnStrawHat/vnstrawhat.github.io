@@ -14,7 +14,7 @@ menu = "posts"
 Ứng phó sự cố được coi như có mức độ quan trọng tương đương với việc quản lý sự cố.  Thông thường, quy trình ứng phó sự cố bao gồm 6 bước chính. Tuy nhiên, việc ứng phó sự cố đòi hỏi, yêu cầu nhiều chiến thuật, quy trình linh hoạt để có thể khắc phục, ứng phó thành công đối với sự cố. Cũng nên nhớ rằng, kẻ tấn công có thể đã ở trong hệ thống mạng của bạn hơn 1 năm trước khi gây ra sự cố. Theo Mandiant, Trung bình cần 101 ngày để phát hiện được hệ thống của bạn đã bị tấn công/thỏa hiệp.
 Việc phát hiện sự cố đa số và nên bắt nguồn từ Team ANBM hoặc Team vận hành ANBM. 
 Với khái niệm phòng thủ tích cức (Active Defense), Tổ chức của bạn nên sử dụng toàn bộ kiến trúc bảo mật,  hệ thông bảo mật và nhân sự ANBM để xác định phạm vi của vấn đề. Sử trưởng thành về mặt security của một tổ chức sẽ là sử dịch chuyển của việc phát hiện các sự cố được thực hiện bởi nhân sự của tổ chức thay vì đối tác bên thứ 3.
-Để giúp bạn có thể tiếp cận dễ dàng hơi với 6 bước chính trong quy trình ứng phó sự cố, SANS cung cấp các form template chứa các thông tin cần thiết để có thể sử dụng khi có sự cố:
+Để giúp bạn có thể tiếp cận dễ dàng hơi với 6 bước chính trong quy trình ứng phó sự cố, SANS cung cấp các [form template](https://www.sans.org/score/incident-forms) chứa các thông tin cần thiết để có thể sử dụng khi có sự cố:
 
  - Incident Contact List
  - Identification Checklist
@@ -23,7 +23,8 @@ Với khái niệm phòng thủ tích cức (Active Defense), Tổ chức của 
  - Eradication Checklist
  - Communications Log
 
+Sáu bước trong quy trình xử lý sự cố bao gồm: Chuẩn bị (preparation), identification
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxOTU4MTk0NSw3Mjk5MzIzODMsLTczNT
-Q0OTcwN119
+eyJoaXN0b3J5IjpbLTEyNTk5Njc0NTYsNzI5OTMyMzgzLC03Mz
+U0NDk3MDddfQ==
 -->
