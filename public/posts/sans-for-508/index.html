@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.55.6" />
+        
+        <link rel="canonical" href="https://vnstrawhat.github.io/posts/sans-for-508/" />
+        <meta name="description" content="">
+        
+        <title>1. SANS FOR 508: Six-Step Incident Response Process &middot; TrungKFC</title>
+        <link rel="shortcut icon" href="https://vnstrawhat.github.io/images/favicon.ico" />
+        <link rel="stylesheet" href="https://vnstrawhat.github.io/css/main.css" />
+        
+        
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/an-old-hope.min.css">
+                    
+                    
+                    
+                    
+                    <link rel="stylesheet" href="https://vnstrawhat.github.io/css/kfc.css">
+                    
+                </head>
+
+<body class="loading dark-mode">
+    
+<div class="top">
+    <img class="logo" src="https://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+<div class="bottom">
+    <img class="logo" src="https://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+
+    <header class="header">
+    <ul class="menu clearfix control">
+        
+
+<li class="logo-container logo-default">
+    <a href="https://vnstrawhat.github.io" class="btn logo-link">
+        <img class="logo" src="https://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+    </a>
+</li>
+
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                Article
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="/posts"
+                    
+                        class="btn "
+                    >Posts</a>
+                </li>
+                
+                <li class="">
+                    <a href="/tags"
+                    
+                        class="btn "
+                    >Tags</a>
+                </li>
+                
+                <li class="">
+                    <a href="/categories"
+                    
+                        class="btn "
+                    >Categories</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                View
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="#"
+                    
+                        class="btn toggle-sidebar"
+                    >Toggle Sidebar</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/" class="btn">
+                About
+            </a>
+        </li>
+        
+        
+    </ul>
+</header>
+
+    <div class="middle">
+        <nav class="sidebar">
+            <h4 style="color: white;" class="taxonomy-key">Recent Posts</h4>
+<ul class="posts control">
+    
+    <li><a class="no-break btn" href='/posts/sans-for-508/'><i class="icon icon-post"></i>1. SANS FOR 508: Six-Step Incident Response Process</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part4/'><i class="icon icon-post"></i>IR part 4 - Quy trình ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part3/'><i class="icon icon-post"></i>IR part 3 - Cơ cấu của một đội ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part2/'><i class="icon icon-post"></i>IR part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part1/'><i class="icon icon-post"></i>IR part 1 - Tổng quan</a></li>
+    
+</ul>
+        </nav>
+        <main class="main">
+            <article class="article">
+    <h3 class="title"><a href='/posts/sans-for-508/' class="btn">1. SANS FOR 508: Six-Step Incident Response Process</a></h3>
+    <div class="article-meta clearfix">
+        <ul class="dates clearfix left control">
+            <li><i class="icon icon-date"></i></li>
+            <li class="publish-date">
+                <time datetime="2019.06.17">2019.06.17</time>
+            </li>
+        </ul>
+        
+        
+        <div class="article-meta-splitter clearfix"></div>
+        <ul class="article-tags clearfix control">
+            <li><i class="icon icon-tags"></i></li>
+            
+            <li>
+                <a href="https://vnstrawhat.github.io/tags/incident-response/" class="btn">Incident Response</a>
+            </li>
+            
+        </ul>
+        
+    </div>
+    <div class="content">
+        
+        
+
+<p><img src="https://vnstrawhat.github.io/images/ir-step.png" alt="enter image description here" /></p>
+
+<h1 id="six-step-incident-response-process">Six-Step Incident Response process</h1>
+
+<p>Ứng phó sự cố được coi như có mức độ quan trọng tương đương với việc quản lý sự cố.  Thông thường, quy trình ứng phó sự cố bao gồm 6 bước chính. Tuy nhiên, việc ứng phó sự cố đòi hỏi, yêu cầu nhiều chiến thuật, quy trình linh hoạt để có thể khắc phục, ứng phó thành công đối với sự cố. Cũng nên nhớ rằng, kẻ tấn công có thể đã ở trong hệ thống của bạn hơn 1 năm hoặc lâu hơn trước khi gây ra sự cố. Theo Mandiant, Trung bình cần 101 ngày để phát hiện được hệ thống của bạn đã bị tấn công/thỏa hiệp.</p>
+
+<p>Với khái niệm phòng thủ tích cực (Active Defense), Tổ chức của bạn nên sử dụng toàn bộ kiến trúc bảo mật,  hệ thông bảo mật và nhân sự ANBM để xác định phạm vi của sự cố. Sự trưởng thành về mặt security của một tổ chức thể hiện bởi sử dịch chuyển của việc phát hiện các sự cố được thực hiện bởi nhân sự của tổ chức đó thay vì đối tác bên thứ 3.</p>
+
+<p>Để giúp tiếp cận dễ dàng hơi với 6 bước chính trong quy trình ứng phó sự cố, SANS cung cấp các <a href="https://www.sans.org/score/incident-forms">form template</a> chứa các thông tin, checklist cần thiết để có thể sử dụng khi có sự cố:</p>
+
+<ul>
+<li>Incident Contact List</li>
+<li>Identification Checklist</li>
+<li>Survey</li>
+<li>Containment Checklist</li>
+<li>Eradication Checklist</li>
+<li>Communications Log</li>
+</ul>
+
+<p>6 bước trong quy trình xử lý sự cố bao gồm: <strong>Preparation</strong> (Chuẩn bị), <strong>Identification</strong> (nhận biết sự cố), <strong>Containment</strong> (Ngăn chặn), <strong>Eradication/Remediation</strong> (Loại bỏ), <strong>Recovery</strong> (Khôi phục), <strong>Lessons Learned</strong> (Bài học kinh nghiệm). Mỗi bước trong quy trình sẽ giúp chỉ ra cho người thực hiện lộ trình để xử lý sự cố, những việc người xử lý sự cố cần phải thực hiện và những việc tiếp theo họ sẽ phải làm.</p>
+
+<h2 id="overview-of-the-six-step-incident-response-process">Overview of the Six-Step Incident Response Process</h2>
+
+<h3 id="preparation">Preparation</h3>
+
+<p>Phương pháp luận của việc ứng phó sự cố thường sẽ nhấn mạnh vào bước chuẩn bị. Preparation không chỉ là chuẩn bị về khả năng ứng phó của tổ chức đối với sự cố mà còn phải đảm bảo hệ thống máy chủ, hệ thống mạng, ứng dụng được cấu hình và vận hành an toàn.</p>
+
+<h3 id="identification">Identification</h3>
+
+<p>Việc phát hiện/nhận biết sự cố đa số và nên bắt nguồn từ Team ANBM hoặc Team vận hành ANBM. Tuy nhiên việc này có thể đến từ một đối tác bên ngoài.</p>
+
+<p>Bước đầu tiên của quy trình ứng phó sự cố là rất quan trọng, nó sẽ giúp cho việc nhân dạng đúng hệ thống nào đang bị tấn công (Tất cả các hệ thống bị tấn công, không phải chỉ 1 hoặc 2 hệ thống). Theo một thống kê, kẻ xâm nhập chỉ cài đặt malware hoặc backdoor lên 54% hệ thống bị chiếm quyền điều khiển. Điều này có nghĩa là những hệ thống khác trong tổ chức của bạn bị chiếm quyền điều khiển nhưng không được cài đặt malware hoặc backdoor. Việc cần làm là xác định tất cả các hệ thống đó.</p>
+
+<p>Thật không may, hầu hết các tổ chức chuyển ngay đến bước Containment và Remediation ngay khi xác được định dấu hiệu đầu tiên mà bỏ qua việc xác định phạm vi của cuộc tấn công. Kẻ tấn công sẽ nhanh chóng đưa ra các biện pháp đối phó để đảm bảo việc có thể tiếp tục truy cập hệ thống, tiếp tục thu thập dữ liệu.</p>
+
+<p>Identification là bước đầu tiên để hướng tới việc khắc phục sự cố (Remediation). Team Incident Response phải tìm cách xác định tất cả các hệ thống đã bị chiếm quyền điều khiển. Tuy nhiên để thực hiện tốt điều đó, Team Incident Response phải thu thập thông tin.</p>
+
+<h3 id="containment-and-intelligence-development">Containment and Intelligence Development</h3>
+
+<p>Trong khi phân tích hành vi của kẻ tấn công, bạn sẽ biết được chính xác làm thế nào kẻ tấn công có thể vượt qua các hệ thống ANBM, làm thế nào để kẻ tấn công có thể di chuyển từ hệ thống này sang hệ thống khác, và mã độc đã được sử dụng như thế nào.</p>
+
+<p>Tất cả các đặc điểm trên đều có thể được sử dụng để xác định các hệ thống khác bị đã bị chiếm quyền điều khiển và giúp cho  Team Incident Response đưa ra được các phương án ngăn chặn để sử dụng cho việc khắc phục sự cố (Remediation).  Threat Intelligence là một điểm quan trọng đối với Team Incident Response trong quá trình xử lý incident.</p>
+
+<h3 id="eradication-remediation">Eradication/Remediation</h3>
+
+<p>Khắc phục sự cố là các hành động cần thiết có thể hoàn thành trong khoảng thời gian nhanh nhất để giảm thiểu sự cố hiện tại. Đa số các công ty chọn thực hiện các hành động có thời gian thực hiện không quá 1 tuần. Các hành động sau nên được thực thi để đảm bảo sự cố được khắc phục một cách toàn diện:</p>
+
+<ul>
+<li>Block malicious IP Address</li>
+<li>Blackhole malicious domain name</li>
+<li>Rebuild compromised systems</li>
+<li>Coordinate with cloud and service providers</li>
+<li>Enterprise password Change</li>
+<li>Verify all remediation activities</li>
+</ul>
+
+<h3 id="recovery">Recovery</h3>
+
+<p>Hành động khôi phục nhằm mục đích đưa tổ chức quay lại với hoạt động kinh doanh hằng ngày. Tuy nhiên những hành động dài hạn cũng cần phải được bắt đầu thực hiện. Thông thường, các hành động khôi phục được sử dụng để nâng cao tính bảo mật của hệ thống nhằm chống lại và phát hiện được các sự cố khác tương tự có thể xảy ra.
+Một số hành động cho việc khôi phục bao gồm:
+ - Improve enterprise authentication model
+ - Enhanced network visibility
+ - Establish comprehensive patch management program
+ - Enforce change management program
+ - Centralized Logging
+ - Enhance password portal
+ - Establish security awareness training program
+ - Network re-design</p>
+
+<h3 id="follow-up">Follow Up</h3>
+
+<p>Thông thường, việc follow up là cần thiết để đảm bảo sự cố đã được ngăn chặn hoàn toàn, kẻ tấn công đã được loại bỏ ra khỏi hệ thống, các hành đông ngăn ngừa đã được thực hiện, các hệ thống hoạt động trở lại như bình thường.</p>
+
+<h3 id="lesson-learn">Lesson Learn</h3>
+
+<p>😕 Mặc dù quy trình có 6 bước nhưng đây là mục thứ 7 từ trên xuống  😄</p>
+
+<p>Lesson Learn là bước cuối dùng trong quy trình xử lý sự cố. Bước này cần cố gắng để trả lời các câu hỏi sau:</p>
+
+<ul>
+<li>Which key elements should be covered ?</li>
+<li>When they should take place ?</li>
+<li>Who should participate ?</li>
+<li>What actions should be taken to move your organization forward after suffering from a security incident ?</li>
+</ul>
+
+<p>Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhiều lợi tích cho Team Incident Response, tổ chức về việc ứng phó các sự cố sẽ xảy ra trong tương lai. Các bài học kinh nghiệm  có thể giúp tổ chức:</p>
+
+<ul>
+<li><strong>Learn from mistakes.</strong> Đặc biệt trong các sự cố ANBM, các tổ chức có xu hướng hoạt động trong chế độ khủng hoảng, hoặc làm việc quá sức để  xử lý hoàn hảo tất cả các bước trong quy trình ứng phó sự cố. Việc bình tĩnh ngồi lại xác định, đánh giá các hành động, các vị trí tồn tại lỗ hổng sẽ giúp đánh giá và nâng cao được hiệu suất của hoạt động ứng phó sự cố.</li>
+<li><strong>Understand where problems occurred.</strong>  Mặc dù có tác động tiêu cực đến hoạt động của tổ chức nhưng các sự cố ANBM là cơ hội tốt, cơ hội quý giá để tìm hiểu sâu hơn về vị trí xảy ra sự cố ? lỗ hổng dẫn đến sự cố ? các security control đã áp dụng có hiệu quả không ? liệu còn lỗ hổng bảo mật nào trong hệ thống cần và có thể fix hay không ?. Tập hợp tất cả các vấn đề trên sẽ giúp có một có nhìn 360 độ về hiện trạng ANBM của tổ chức.</li>
+<li><strong>Recognize success.</strong>  Khi xảy ra sự cố,  các tỏ chức thường xuyên quyên đi những sự việc tốt xảy ra trong quá trình ứng phó sự cố. Ngoài các sự việc không tốt đẹp, điều quan trọng là nhận ra những điều tốt đẹp, những việc mà Team Incident Response đã thực hiện tốt ví dụ: hiệu suất làm việc của các thành viên, quy trình hiệu quả, truyền thông giải quyết khủng hoảng tốt. Các câu chuyện về sự thành công, các việc thực hiện tốt sẽ làm khích lệ tinh thần của các thành viên từ đó khuyên khích sự tích cực, các hành vi mẫu mực, tuân thủ trong tương lai.</li>
+<li><strong>Retain organizational knowledge.</strong> Trong một cuộc khủng hoảng, tài liệu hóa thường là điều cuối cùng mà những người xử lý khủng hoảng nghĩ đến. Luôn phải nhớ rằng điều quan trọng nhất là phải ghi lại những điều đã làm được, những điều đã làm được, những điều đã làm tốt, những điều chưa làm tốt để giữ lại các kiến thức này và làm cho nó sẵn sàng để những người mới có thể tiếp cận một cách dễ dàng và dễ hiểu nhất.</li>
+<li><strong>Reduce future risk.</strong> Nếu các sự cố ANBM xảy ra trong tương lai, các bài học kinh nghiệm sẽ giúp ngăn ngừa các lỗi  tương tự có thể xảy ra do đó làm giảm rủi ro cho toàn bộ tổ chức.</li>
+<li><strong>Improve future performance.</strong> Bằng cách phân tích cách mà tổ chức của bạn ứng phó với với sự cố ANBM, nó có thể giúp tối ưu hóa hiệu suất xử lý các sự cố tương tự. Ngoài việc có kế hoạch cho việc ứng phó sự cố, các bài học kinh nghiệm sẽ góp phần điều chỉnh và cải thiện kế hoạch giúp cho tổ chức chuẩn bị tốt hơn cho các sự cố sắp tới.</li>
+</ul>
+
+<p>Dịch hơi hơi lược   😉:</p>
+
+<ul>
+<li><a href="https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/">https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/</a></li>
+<li>SANS FOR 508
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTM1NjU4NTk2LDMxMTkzNjQ0MCw2NTkxMT
+U0MjcsLTIxMDg0NjM1ODMsLTEzMDE2OTAzNzIsMjA0MjA1MTA3
+OF19
+--></li>
+</ul>
+
+        
+    </div>
+</article>
+<section class="comment">
+    <p class="local-info">
+        Comment is disabled to avoid unwanted discussions from 'localhost:1313' on your Disqus
+        account...
+    </p>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+
+    (function () {
+        if (window.location.hostname == "localhost") {
+            return
+        }
+        document.querySelector('.local-info').classList.add('hide')
+
+        let dsq = document.createElement('script')
+        dsq.type = 'text/javascript'
+        dsq.async = true
+        let disqus_shortname = 'your disqus short name'
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
+    })()
+</script>
+
+        </main>
+    </div>
+    <footer class="footer clearfix">
+    <ul class="control social clearfix">
+        <li><a class="author btn" href="#">TrungKFC</a></li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon email"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon facebook"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon github"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon twitter"></i></a>
+        </li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="https://vnstrawhat.github.io/index.xml" type="application/rss+xml" title="rss">
+            <i class="rss icon"></i></a>
+        </li>
+    </ul>
+    <ul class="control status clearfix">
+        <li><a href="#" class="btn">Posts:
+        6</a>
+    </li>
+    <li><a href="#" class="btn">Pages:
+    0</a></li>
+</ul>
+</footer>
+<div class="dialog">
+<div class="wrapper">
+    <div class="clearfix"><button class="btn close-dialog">X</button></div>
+    <header>
+        <h1 class="title">Theme Name</h1>
+    </header>
+    <main>
+        <div class="clearfix">
+            <label for="theme-name">
+                <p>Only English Character, space, hyphen are allowed!</p>
+            </label>
+            <input type="text" name="theme-name" id="theme-name">
+        </div>
+        <div class="clearfix">
+            <button class="btn export">Export</button>
+        </div>
+    </main>
+<footer></footer>
+</div>
+</div>
+    <script src="https://vnstrawhat.github.io/js/main.js"></script>
+
+
+
+<script src="https://vnstrawhat.github.io/js/highlight.pack.js"></script>
+
+<script>
+hljs.initHighlightingOnLoad();
+hljs.getLanguage('console').k += ' use apt-get wmic python perl ruby lua git powershell.exe powershell msf msfvenom nc certutil.exe certutil regsvr32 rundll32.exe rundll32 mshta.exe mshta exploit cat telnet rm msiexec certutil.exe certutil php bash'; 
+</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'your ga id', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>
