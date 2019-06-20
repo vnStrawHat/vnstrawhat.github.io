@@ -82,11 +82,11 @@ Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhi
 -   **Recognize success.**  Khi xảy ra sự cố,  các tỏ chức thường xuyên quyên đi những sự việc tốt xảy ra trong quá trình ứng phó sự cố. Ngoài các sự việc không tốt đẹp, điều quan trọng là nhận ra những điều tốt đẹp, những việc mà Team Incident Response đã thực hiện tốt ví dụ: hiệu suất làm việc của các thành viên, quy trình hiệu quả, truyền thông giải quyết khủng hoảng. Các câu chuyện về sự thành công, các việc thực hiện tốt sẽ làm khích lệ tinh thần của các thành viên từ đó khuyên khích sự tích cực, các hành vi mẫu mực, tuân thủ trong tương lai.
 -   **Retain organizational knowledge.** Trong một cuộc khủng hoảng, tài liệu thường là điều cuối cùng mà những người xử lý khủng hoảng nghĩ đến. Luôn phải nhớ rằng điều quan trọng nhất là phải ghi lại những điều đã làm được, những điều đã làm được, những điều đã làm tốt, những điều chưa làm tốt để giữ lại các kiến thức này và làm cho nó sẵn sàng để những người mới có thể tiếp cận một cách dễ dàng và dễ hiểu nhất.
 -   **Reduce future risk.** Nếu các sự cố ANBM xảy ra trong tương lai, các bài học kinh nghiệm sẽ giúp ngăn ngừa các lỗi  tương tự có thể xảy ra do đó làm giảm rủi ro cho toàn bộ tổ chức.
--   **Improve future performance.** By analyzing how an organization dealt with a security incident, it can optimize its incident response performance for future similar scenarios. In addition to having an Incident Response Plan in place, lessons learned sessions contribute to adapting and improving this plan so that the organization can be better prepared.
+-   **Improve future performance.** Bằng cách phân tích cách mà tổ chức của bạn xử lý, ứng phó với với sự cố ANBM, nó có thể tối ưu hóa hiệu suất xử lý các sự cố tương tự. Ngoài việc có kế hoạch  By analyzing how an organization dealt with a security incident, it can optimize its incident response performance for future similar scenarios. In addition to having an Incident Response Plan in place, lessons learned sessions contribute to adapting and improving this plan so that the organization can be better prepared.
 
 
 [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTIzNTY5NSwtMjEwODQ2MzU4MywtMT
-MwMTY5MDM3MiwyMDQyMDUxMDc4XX0=
+eyJoaXN0b3J5IjpbLTEyNjAzMDk5OTMsLTIxMDg0NjM1ODMsLT
+EzMDE2OTAzNzIsMjA0MjA1MTA3OF19
 -->
