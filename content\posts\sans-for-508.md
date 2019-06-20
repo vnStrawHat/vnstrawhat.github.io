@@ -74,8 +74,8 @@ Lesson Learn là bước cuối dùng trong quy trình xử lý sự cố. Bư�
  - When they should take place ?
  - Who should participate ?
  - What actions should be taken to move your organization forward after suffering from a security incident ?
-Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhiều lợi tích cho Team Incident Response, tổ chức về việc ứng phó các sự cố sẽ xảy ra trong tương lai. 
-Lessons learned sessions offer a variety of benefits for the incident response team, the organization as well as existing and future incidents. A properly executed lessons learned exercise can help organizations:
+
+Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhiều lợi tích cho Team Incident Response, tổ chức về việc ứng phó các sự cố sẽ xảy ra trong tương lai. Các bài học kinh nghiệm  có thể giúp tổ chức:
 
 -   **Learn from mistakes.** Especially during a security incident, organizations tend to operate in crisis mode and are too overwhelmed to execute all steps flawlessly. Identifying where mistakes have been made will help self-evaluate performance and set the tone for continuous improvement.
 -   **Understand where problems occurred.**  Despite its negative impact, a security incident can represent a valuable opportunity to dig deeper into where exactly errors were made, which vulnerabilities led to the incident, whether  [security controls](https://www.hitachi-systems-security.com/blog/information-security-controls-faq/)  were effective and whether there are any security gaps in the organization that could be fixed. Getting all relevant parties together during this exercise will help understand the problems from a 360-degree view.
@@ -87,6 +87,6 @@ Lessons learned sessions offer a variety of benefits for the incident response t
 
 [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5Mzc4NTAxNSwtMTMwMTY5MDM3MiwyMD
-QyMDUxMDc4XX0=
+eyJoaXN0b3J5IjpbLTIxMDg0NjM1ODMsLTEzMDE2OTAzNzIsMj
+A0MjA1MTA3OF19
 -->
