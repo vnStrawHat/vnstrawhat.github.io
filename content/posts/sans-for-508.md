@@ -79,7 +79,7 @@ Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhi
 
 -   **Learn from mistakes.** Đặc biệt trong các sự cố ANBM, các tổ chức có xu hướng hoạt động trong chế độ khủng hoảng, hoặc làm việc quá sức để  xử lý hoàn hảo tất cả các bước trong quy trình ứng phó sự cố. Việc bình tĩnh ngồi lại xác định, đánh giá các hành động, các vị trí tồn tại lỗ hổng sẽ giúp đánh giá và nâng cao được hiệu suất của hoạt động ứng phó sự cố.
 -   **Understand where problems occurred.**  Mặc dù có tác động tiêu cực đến hoạt động của tổ chức nhưng các sự cố ANBM là cơ hội tốt, cơ hội quý giá để tìm hiểu sâu hơn về vị trí xảy ra sự cố ? lỗ hổng dẫn đến sự cố ? các security control đã áp dụng có hiệu quả không ? liệu còn lỗ hổng bảo mật nào trong hệ thống cần và có thể fix hay không ?. Tập hợp tất cả các vấn đề trên sẽ giúp có một có nhìn 360 độ về hiện trạng ANBM của tổ chức.
--   **Recognize success.**  Too often, organizations tend to forget about what actually went well during a security incident. In addition to analyzing what didn’t go well, it is equally important to recognize what went well – whether it relates to employee performance, effective processes in place, crisis communications etc. Identifying success stories will encourage positive performance and leverage exemplary behavior for future incidents.
+-   **Recognize success.**  Khi xảy ra sự cố,  các tỏ chức thường xuyên quyên đi những sự việc tốt xảy ra trong quá trình ứng phó sự cố. Ngoài các sự việc không tốt đẹp, điều quan trọng là nhận ra những điều tốt đẹp, những việc mà Team Incident Response đa Too often, organizations tend to forget about what actually went well during a security incident. In addition to analyzing what didn’t go well, it is equally important to recognize what went well – whether it relates to employee performance, effective processes in place, crisis communications etc. Identifying success stories will encourage positive performance and leverage exemplary behavior for future incidents.
 -   **Retain organizational knowledge.** During a crisis, documentation is often the last thing on the mind of those who are dealing with the crisis. Keep in mind that it is crucial to document the good, the bad and the ugly to retain this knowledge and make it available for future use.
 -   **Reduce future risk.** If similar security incidents occur in the future, a lessons learned session can help prevent similar mistakes and thereby reduce the risk to the organization as a whole.
 -   **Improve future performance.** By analyzing how an organization dealt with a security incident, it can optimize its incident response performance for future similar scenarios. In addition to having an Incident Response Plan in place, lessons learned sessions contribute to adapting and improving this plan so that the organization can be better prepared.
@@ -87,8 +87,8 @@ Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhi
 
 [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDg2NTk0NSwtMjEwODQ2MzU4MywtMT
-MwMTY5MDM3MiwyMDQyMDUxMDc4LDEzMDIxNDI1NjMsMTg4MzU2
-MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4My
-wtNzM1NDQ5NzA3XX0=
+eyJoaXN0b3J5IjpbLTEyNzUyNTk1NjEsLTIxMDg0NjM1ODMsLT
+EzMDE2OTAzNzIsMjA0MjA1MTA3OCwxMzAyMTQyNTYzLDE4ODM1
+NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3MjgwMSw3Mjk5MzIzOD
+MsLTczNTQ0OTcwN119
 -->
