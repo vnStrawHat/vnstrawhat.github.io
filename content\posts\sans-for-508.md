@@ -65,7 +65,7 @@ Một số hành động cho việc khôi phục bao gồm:
 ### Follow Up
 Thông thường, việc follow up là cần thiết để đảm bảo sự cố đã được ngăn chặn hoàn toàn, kẻ tấn công đã được loại bỏ ra khỏi hệ thống, các hành đông ngăn ngừa đã được thực hiện, các hệ thống hoạt động trở lại như bình thường
 
-### Lesson Learn
+### Lesson Learn ( :confused:
 Lesson Learn là bước cuối dùng trong quy trình xử lý sự cố. Bước này cần cố gắng để trả lời các câu hỏi sau:
 
  - which key elements should be covered ?
@@ -85,5 +85,5 @@ Lessons learned sessions offer a variety of benefits for the incident response t
 
 [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MjA1MTA3OF19
+eyJoaXN0b3J5IjpbMTA2Nzg4MjUzNywyMDQyMDUxMDc4XX0=
 -->
