@@ -1,7 +1,6 @@
 ---
-title: "SANS FOR 508: Six-Step Incident Response Process"
+title: "1. SANS FOR 508: Six-Step Incident Response Process"
 date: 2019-06-17T21:15:32+07:00
-draft: true
 Categories = []
 Description = ""
 Tags = ["Incident Response"]
@@ -89,8 +88,8 @@ Dịch hơi hơi lược   :wink::
 - [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 - SANS FOR 508
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzExOTM2NDQwLDY1OTExNTQyNywtMjEwOD
-Q2MzU4MywtMTMwMTY5MDM3MiwyMDQyMDUxMDc4LDEzMDIxNDI1
-NjMsMTg4MzU2MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLD
-cyOTkzMjM4MywtNzM1NDQ5NzA3XX0=
+eyJoaXN0b3J5IjpbMTQ0Njc4MTcxNCwzMTE5MzY0NDAsNjU5MT
+E1NDI3LC0yMTA4NDYzNTgzLC0xMzAxNjkwMzcyLDIwNDIwNTEw
+NzgsMTMwMjE0MjU2MywxODgzNTYzNzM4LC0xMDY2MDg2ODcxLD
+ExNTc4NzI4MDEsNzI5OTMyMzgzLC03MzU0NDk3MDddfQ==
 -->
