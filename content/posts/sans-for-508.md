@@ -70,10 +70,10 @@ Thông thường, việc follow up là cần thiết để đảm bảo sự c�
 
 Lesson Learn là bước cuối dùng trong quy trình xử lý sự cố. Bước này cần cố gắng để trả lời các câu hỏi sau:
 
- - which key elements should be covered ?
- - when they should take place ?
- - who should participate ?
- - what actions should be taken to move your organization forward after suffering from a security incident ?
+ - Which key elements should be covered ?
+ - When they should take place ?
+ - Who should participate ?
+ - What actions should be taken to move your organization forward after suffering from a security incident ?
 
 Lessons learned sessions offer a variety of benefits for the incident response team, the organization as well as existing and future incidents. A properly executed lessons learned exercise can help organizations:
 
@@ -87,7 +87,7 @@ Lessons learned sessions offer a variety of benefits for the incident response t
 
 [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTEyMzYzNTYsMjA0MjA1MTA3OCwxMz
+eyJoaXN0b3J5IjpbLTEzMDE2OTAzNzIsMjA0MjA1MTA3OCwxMz
 AyMTQyNTYzLDE4ODM1NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3
 MjgwMSw3Mjk5MzIzODMsLTczNTQ0OTcwN119
 -->
