@@ -5,7 +5,6 @@ Categories = []
 Description = ""
 Tags = ["Incident Response"]
 menu = "posts"
-
 ---
 
 ![enter image description here](https://vnstrawhat.github.io/images/ir-step.png)
@@ -88,7 +87,7 @@ Dịch hơi hơi lược   :wink::
 - [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 - SANS FOR 508
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0Njc4MTcxNCwzMTE5MzY0NDAsNjU5MT
-E1NDI3LC0yMTA4NDYzNTgzLC0xMzAxNjkwMzcyLDIwNDIwNTEw
-NzhdfQ==
+eyJoaXN0b3J5IjpbNTM1NjU4NTk2LDMxMTkzNjQ0MCw2NTkxMT
+U0MjcsLTIxMDg0NjM1ODMsLTEzMDE2OTAzNzIsMjA0MjA1MTA3
+OF19
 -->
