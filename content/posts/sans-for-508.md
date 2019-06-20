@@ -80,8 +80,8 @@ Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhi
 
 -   **Learn from mistakes.** Đặc biệt trong các sự cố ANBM, các tổ chức có xu hướng hoạt động trong chế độ khủng hoảng, hoặc làm việc quá sức để  xử lý hoàn hảo tất cả các bước trong quy trình ứng phó sự cố. Việc bình tĩnh ngồi lại xác định, đánh giá các hành động, các vị trí tồn tại lỗ hổng sẽ giúp đánh giá và nâng cao được hiệu suất của hoạt động ứng phó sự cố.
 -   **Understand where problems occurred.**  Mặc dù có tác động tiêu cực đến hoạt động của tổ chức nhưng các sự cố ANBM là cơ hội tốt, cơ hội quý giá để tìm hiểu sâu hơn về vị trí xảy ra sự cố ? lỗ hổng dẫn đến sự cố ? các security control đã áp dụng có hiệu quả không ? liệu còn lỗ hổng bảo mật nào trong hệ thống cần và có thể fix hay không ?. Tập hợp tất cả các vấn đề trên sẽ giúp có một có nhìn 360 độ về hiện trạng ANBM của tổ chức.
--   **Recognize success.**  Khi xảy ra sự cố,  các tỏ chức thường xuyên quyên đi những sự việc tốt xảy ra trong quá trình ứng phó sự cố. Ngoài các sự việc không tốt đẹp, điều quan trọng là nhận ra những điều tốt đẹp, những việc mà Team Incident Response đã thực hiện tốt ví dụ: hiệu suất làm việc của các thành viên, quy trình hiệu quả, truyền thông giải quyết khủng hoảng. Các câu chuyện về sự thành công, các việc thực hiện tốt sẽ làm khích lệ tinh thần của các thành viên từ đó khuyên khích sự tích cực, các hành vi mẫu mực, tuân thủ trong tương lai.
--   **Retain organizational knowledge.** Trong một cuộc khủng hoảng, tài liệu thường là điều cuối cùng mà những người xử lý khủng hoảng nghĩ đến. Luôn phải nhớ rằng điều quan trọng nhất là phải ghi lại những điều đã làm được, những điều đã làm được, những điều đã làm tốt, những điều chưa làm tốt để giữ lại các kiến thức này và làm cho nó sẵn sàng để những người mới có thể tiếp cận một cách dễ dàng và dễ hiểu nhất.
+-   **Recognize success.**  Khi xảy ra sự cố,  các tỏ chức thường xuyên quyên đi những sự việc tốt xảy ra trong quá trình ứng phó sự cố. Ngoài các sự việc không tốt đẹp, điều quan trọng là nhận ra những điều tốt đẹp, những việc mà Team Incident Response đã thực hiện tốt ví dụ: hiệu suất làm việc của các thành viên, quy trình hiệu quả, truyền thông giải quyết khủng hoảng tốt. Các câu chuyện về sự thành công, các việc thực hiện tốt sẽ làm khích lệ tinh thần của các thành viên từ đó khuyên khích sự tích cực, các hành vi mẫu mực, tuân thủ trong tương lai.
+-   **Retain organizational knowledge.** Trong một cuộc khủng hoảng, tài liệu hóa thường là điều cuối cùng mà những người xử lý khủng hoảng nghĩ đến. Luôn phải nhớ rằng điều quan trọng nhất là phải ghi lại những điều đã làm được, những điều đã làm được, những điều đã làm tốt, những điều chưa làm tốt để giữ lại các kiến thức này và làm cho nó sẵn sàng để những người mới có thể tiếp cận một cách dễ dàng và dễ hiểu nhất.
 -   **Reduce future risk.** Nếu các sự cố ANBM xảy ra trong tương lai, các bài học kinh nghiệm sẽ giúp ngăn ngừa các lỗi  tương tự có thể xảy ra do đó làm giảm rủi ro cho toàn bộ tổ chức.
 -   **Improve future performance.** Bằng cách phân tích cách mà tổ chức của bạn xử lý, ứng phó với với sự cố ANBM, nó có thể tối ưu hóa hiệu suất xử lý các sự cố tương tự. Ngoài việc có kế hoạch cho việc ứng phó sự cố, các bài học kinh nghiệm sẽ góp phần điều chỉnh và cải thiện kế hoạch giúp cho tổ chức chuẩn bị tốt hơn cho các sự cố sắp tới.
 
@@ -89,8 +89,8 @@ Dịch hơi hơi lược   :wink::
 - [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 - SANS FOR 508
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5MTE1NDI3LC0yMTA4NDYzNTgzLC0xMz
-AxNjkwMzcyLDIwNDIwNTEwNzgsMTMwMjE0MjU2MywxODgzNTYz
-NzM4LC0xMDY2MDg2ODcxLDExNTc4NzI4MDEsNzI5OTMyMzgzLC
-03MzU0NDk3MDddfQ==
+eyJoaXN0b3J5IjpbLTExNjYyODE1NzgsNjU5MTE1NDI3LC0yMT
+A4NDYzNTgzLC0xMzAxNjkwMzcyLDIwNDIwNTEwNzgsMTMwMjE0
+MjU2MywxODgzNTYzNzM4LC0xMDY2MDg2ODcxLDExNTc4NzI4MD
+EsNzI5OTMyMzgzLC03MzU0NDk3MDddfQ==
 -->
