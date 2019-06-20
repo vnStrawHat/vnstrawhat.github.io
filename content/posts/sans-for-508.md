@@ -84,10 +84,11 @@ Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhi
 -   **Reduce future risk.** Nếu các sự cố ANBM xảy ra trong tương lai, các bài học kinh nghiệm sẽ giúp ngăn ngừa các lỗi  tương tự có thể xảy ra do đó làm giảm rủi ro cho toàn bộ tổ chức.
 -   **Improve future performance.** Bằng cách phân tích cách mà tổ chức của bạn xử lý, ứng phó với với sự cố ANBM, nó có thể tối ưu hóa hiệu suất xử lý các sự cố tương tự. Ngoài việc có kế hoạch cho việc ứng phó sự cố, các bài học kinh nghiệm sẽ góp phần điều chỉnh và cải thiện kế hoạch giúp cho tổ chức chuẩn bị tốt hơn cho các sự cố sắp tới.
 
-
-[https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
+Dịch hơi hơi lược:
+- [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
+- SANS FOR 508
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NjI1MTE2MiwtMjEwODQ2MzU4MywtMT
+eyJoaXN0b3J5IjpbLTExMDQ5MDkyNSwtMjEwODQ2MzU4MywtMT
 MwMTY5MDM3MiwyMDQyMDUxMDc4LDEzMDIxNDI1NjMsMTg4MzU2
 MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4My
 wtNzM1NDQ5NzA3XX0=
