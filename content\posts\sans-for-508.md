@@ -25,7 +25,7 @@ Với khái niệm phòng thủ tích cức (Active Defense), Tổ chức của 
  - Eradication Checklist
  - Communications Log
 
-Sáu bước trong quy trình xử lý sự cố bao gồm: **Preparation** (Chuẩn bị), Identification (nhận biết sự cố), **Containment** (Ngăn chặn), **Eradication/Remediation** (Loại bỏ), **Recovery** (Khôi phục), **Lessons Learned** (Bài học kinh nghiệm). Mỗi bước trong quy trình sẽ giúp chỉ ra cho người thực hiện lộ trình để xử lý sự cố, một cách để chỉ ra những việc người xử lý sự cố cần phải thực hiện và những việc tiếp theo họ sẽ phải làm.
+Sáu bước trong quy trình xử lý sự cố bao gồm: **Preparation** (Chuẩn bị), **Identification** (nhận biết sự cố), **Containment** (Ngăn chặn), **Eradication/Remediation** (Loại bỏ), **Recovery** (Khôi phục), **Lessons Learned** (Bài học kinh nghiệm). Mỗi bước trong quy trình sẽ giúp chỉ ra cho người thực hiện lộ trình để xử lý sự cố, một cách để chỉ ra những việc người xử lý sự cố cần phải thực hiện và những việc tiếp theo họ sẽ phải làm.
 ## Overview of the Six-Step Incident Response Process
 ### Preparation
 Phương pháp luận của việc ứng phó sự cố thường sẽ nhấn mạnh vào bước chuẩn bị. Không chỉ chuẩn bị là khả năng ứng phó của tổ chức đối với sự cố mà còn phải đảm bảo hệ thống máy chủ, hệ thống mạng, ứng dụng đủ an toàn.
@@ -65,7 +65,9 @@ Một số hành động cho việc khôi phục bao gồm:
 ### Follow Up
 Thông thường, việc follow up là cần thiết để đảm bảo sự cố đã được ngăn chặn hoàn toàn, kẻ tấn công đã được loại bỏ ra khỏi hệ thống, các hành đông ngăn ngừa đã được thực hiện, các hệ thống hoạt động trở lại như bình thường
 
-### Lesson Learn ( :confused:
+### Lesson Learn 
+:confused: Mặc dù quy trình có 6 bước nhưng đây là mục thứ 7 từ trên xuống  :smile:
+
 Lesson Learn là bước cuối dùng trong quy trình xử lý sự cố. Bước này cần cố gắng để trả lời các câu hỏi sau:
 
  - which key elements should be covered ?
@@ -85,5 +87,5 @@ Lessons learned sessions offer a variety of benefits for the incident response t
 
 [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2Nzg4MjUzNywyMDQyMDUxMDc4XX0=
+eyJoaXN0b3J5IjpbLTEyMTEyMzYzNTYsMjA0MjA1MTA3OF19
 -->
