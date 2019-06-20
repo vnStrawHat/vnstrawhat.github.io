@@ -13,9 +13,9 @@ menu = "posts"
 # Six-Step Incident Response process
 Ứng phó sự cố được coi như có mức độ quan trọng tương đương với việc quản lý sự cố.  Thông thường, quy trình ứng phó sự cố bao gồm 6 bước chính. Tuy nhiên, việc ứng phó sự cố đòi hỏi, yêu cầu nhiều chiến thuật, quy trình linh hoạt để có thể khắc phục, ứng phó thành công đối với sự cố. Cũng nên nhớ rằng, kẻ tấn công có thể đã ở trong hệ thống của bạn hơn 1 năm hoặc lâu hơn trước khi gây ra sự cố. Theo Mandiant, Trung bình cần 101 ngày để phát hiện được hệ thống của bạn đã bị tấn công/thỏa hiệp.
 
-Với khái niệm phòng thủ tích cực (Active Defense), Tổ chức của bạn nên sử dụng toàn bộ kiến trúc bảo mật,  hệ thông bảo mật và nhân sự ANBM để xác định phạm vi của sự cố. Sự trưởng thành về mặt security của một tổ chức sẽ được thể hiện bởi sử dịch chuyển của việc phát hiện các sự cố được thực hiện bởi nhân sự của tổ chức thay vì đối tác bên thứ 3.
+Với khái niệm phòng thủ tích cực (Active Defense), Tổ chức của bạn nên sử dụng toàn bộ kiến trúc bảo mật,  hệ thông bảo mật và nhân sự ANBM để xác định phạm vi của sự cố. Sự trưởng thành về mặt security của một tổ chức thể hiện bởi sử dịch chuyển của việc phát hiện các sự cố được thực hiện bởi nhân sự của tổ chức đó thay vì đối tác bên thứ 3.
 
-Để giúp bạn có thể tiếp cận dễ dàng hơi với 6 bước chính trong quy trình ứng phó sự cố, SANS cung cấp các [form template](https://www.sans.org/score/incident-forms) chứa các thông tin cần thiết để có thể sử dụng khi có sự cố:
+Để giúp tiếp cận dễ dàng hơi với 6 bước chính trong quy trình ứng phó sự cố, SANS cung cấp các [form template](https://www.sans.org/score/incident-forms) chứa các thông tin, checklist cần thiết để có thể sử dụng khi có sự cố:
 
  - Incident Contact List
  - Identification Checklist
@@ -24,7 +24,7 @@ Với khái niệm phòng thủ tích cực (Active Defense), Tổ chức của 
  - Eradication Checklist
  - Communications Log
 
-Sáu bước trong quy trình xử lý sự cố bao gồm: **Preparation** (Chuẩn bị), **Identification** (nhận biết sự cố), **Containment** (Ngăn chặn), **Eradication/Remediation** (Loại bỏ), **Recovery** (Khôi phục), **Lessons Learned** (Bài học kinh nghiệm). Mỗi bước trong quy trình sẽ giúp chỉ ra cho người thực hiện lộ trình để xử lý sự cố, một cách để chỉ ra những việc người xử lý sự cố cần phải thực hiện và những việc tiếp theo họ sẽ phải làm.
+6 bước trong quy trình xử lý sự cố bao gồm: **Preparation** (Chuẩn bị), **Identification** (nhận biết sự cố), **Containment** (Ngăn chặn), **Eradication/Remediation** (Loại bỏ), **Recovery** (Khôi phục), **Lessons Learned** (Bài học kinh nghiệm). Mỗi bước trong quy trình sẽ giúp chỉ ra cho người thực hiện lộ trình để xử lý sự cố, một cách để chỉ ra những việc người xử lý sự cố cần phải thực hiện và những việc tiếp theo họ sẽ phải làm.
 ## Overview of the Six-Step Incident Response Process
 ### Preparation
 Phương pháp luận của việc ứng phó sự cố thường sẽ nhấn mạnh vào bước chuẩn bị. Không chỉ chuẩn bị là khả năng ứng phó của tổ chức đối với sự cố mà còn phải đảm bảo hệ thống máy chủ, hệ thống mạng, ứng dụng đủ an toàn.
@@ -87,7 +87,7 @@ Dịch hơi hơi lược   :wink::
 - [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 - SANS FOR 508
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0OTQzOTI5MiwtMjEwODQ2MzU4MywtMT
+eyJoaXN0b3J5IjpbMTk0Njg5NTU0MCwtMjEwODQ2MzU4MywtMT
 MwMTY5MDM3MiwyMDQyMDUxMDc4LDEzMDIxNDI1NjMsMTg4MzU2
 MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4My
 wtNzM1NDQ5NzA3XX0=
