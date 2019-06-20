@@ -74,7 +74,7 @@ Lesson Learn là bước cuối dùng trong quy trình xử lý sự cố. Bư�
  - When they should take place ?
  - Who should participate ?
  - What actions should be taken to move your organization forward after suffering from a security incident ?
-
+Các bài học rút ra từ quá trình xử lý sự cố rất 
 Lessons learned sessions offer a variety of benefits for the incident response team, the organization as well as existing and future incidents. A properly executed lessons learned exercise can help organizations:
 
 -   **Learn from mistakes.** Especially during a security incident, organizations tend to operate in crisis mode and are too overwhelmed to execute all steps flawlessly. Identifying where mistakes have been made will help self-evaluate performance and set the tone for continuous improvement.
@@ -87,7 +87,8 @@ Lessons learned sessions offer a variety of benefits for the incident response t
 
 [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDE2OTAzNzIsMjA0MjA1MTA3OCwxMz
-AyMTQyNTYzLDE4ODM1NjM3MzgsLTEwNjYwODY4NzEsMTE1Nzg3
-MjgwMSw3Mjk5MzIzODMsLTczNTQ0OTcwN119
+eyJoaXN0b3J5IjpbLTIwOTAzMTQ3MiwtMTMwMTY5MDM3MiwyMD
+QyMDUxMDc4LDEzMDIxNDI1NjMsMTg4MzU2MzczOCwtMTA2NjA4
+Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4MywtNzM1NDQ5NzA3XX
+0=
 -->
