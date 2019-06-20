@@ -77,7 +77,7 @@ Lesson Learn là bước cuối dùng trong quy trình xử lý sự cố. Bư�
 
 Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhiều lợi tích cho Team Incident Response, tổ chức về việc ứng phó các sự cố sẽ xảy ra trong tương lai. Các bài học kinh nghiệm  có thể giúp tổ chức:
 
--   **Learn from mistakes.** Đặc biệt trong các sự cố ANBM, các tổ chức có xu hướng hoạt động trong chế độ khủng hoảng, hoặc làm việc quá sức để  xử lý hoàn hảo tất cả các bước trong quy trình ứng phó sự cố.Especially during a security incident, organizations tend to operate in crisis mode and are too overwhelmed to execute all steps flawlessly. Identifying where mistakes have been made will help self-evaluate performance and set the tone for continuous improvement.
+-   **Learn from mistakes.** Đặc biệt trong các sự cố ANBM, các tổ chức có xu hướng hoạt động trong chế độ khủng hoảng, hoặc làm việc quá sức để  xử lý hoàn hảo tất cả các bước trong quy trình ứng phó sự cố. Việc ngồi lại xác định, đánh giá các hành động, các vị trí tồn tại lỗ hổng sẽ giúp đánh giá được hiệu suất của hoạt động ứng phó sự cố và .Especially during a security incident, organizations tend to operate in crisis mode and are too overwhelmed to execute all steps flawlessly. Identifying where mistakes have been made will help self-evaluate performance and set the tone for continuous improvement.
 -   **Understand where problems occurred.**  Despite its negative impact, a security incident can represent a valuable opportunity to dig deeper into where exactly errors were made, which vulnerabilities led to the incident, whether  [security controls](https://www.hitachi-systems-security.com/blog/information-security-controls-faq/)  were effective and whether there are any security gaps in the organization that could be fixed. Getting all relevant parties together during this exercise will help understand the problems from a 360-degree view.
 -   **Recognize success.** Too often, organizations tend to forget about what actually went well during a security incident. In addition to analyzing what didn’t go well, it is equally important to recognize what went well – whether it relates to employee performance, effective processes in place, crisis communications etc. Identifying success stories will encourage positive performance and leverage exemplary behavior for future incidents.
 -   **Retain organizational knowledge.** During a crisis, documentation is often the last thing on the mind of those who are dealing with the crisis. Keep in mind that it is crucial to document the good, the bad and the ugly to retain this knowledge and make it available for future use.
@@ -87,7 +87,7 @@ Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhi
 
 [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4ODIxOTQxMSwtMjEwODQ2MzU4MywtMT
+eyJoaXN0b3J5IjpbMTIxOTYyNzY4NCwtMjEwODQ2MzU4MywtMT
 MwMTY5MDM3MiwyMDQyMDUxMDc4LDEzMDIxNDI1NjMsMTg4MzU2
 MzczOCwtMTA2NjA4Njg3MSwxMTU3ODcyODAxLDcyOTkzMjM4My
 wtNzM1NDQ5NzA3XX0=
