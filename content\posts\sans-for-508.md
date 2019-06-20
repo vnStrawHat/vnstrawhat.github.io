@@ -39,7 +39,7 @@ Thật không may, hầu hết các tổ chức chuyển ngay đến bước Con
 Identification là bước đầu tiên để hướng tới việc khắc phục sự cố (Remediation). Team Incident Response phải tìm cách xác định tất cả các hệ thống đã bị chiếm quyền điều khiển. Tuy nhiên để thực hiện tốt điều đó, Team Incident Response phải thu thập thông tin.
 
 ### Containment and Intelligence Development
-Trong khi phân tích hành vi của kẻ tấn công, bạn sẽ biết được chính xác làm thế nào kẻ tấn công có thể vượt qua các hệ thống ANBM, làm thế nào để kẻ tấn công có thể di chuyển từ hệ thống này sang hệ thống khác, và mã đọc đã được sử dụng như thế nào.
+Trong khi phân tích hành vi của kẻ tấn công, bạn sẽ biết được chính xác làm thế nào kẻ tấn công có thể vượt qua các hệ thống ANBM, làm thế nào để kẻ tấn công có thể di chuyển từ hệ thống này sang hệ thống khác, và mã độc đã được sử dụng như thế nào.
 
 Tất cả các đặc điểm trên đều có thể được sử dụng để xác định các hệ thống khác bị đã bị chiếm quyền điều khiển và giúp cho  Team Incident Response đưa ra được các phương án ngăn chặn để sử dụng cho việc khắc phục sự cố (Remediation).  Threat Intelligence là một điểm quan trọng đối với Team Incident Response trong quá trình xử lý incident.
 ### Eradication/Remediation
@@ -89,6 +89,6 @@ Dịch hơi hơi lược   :wink::
 - [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 - SANS FOR 508
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NTc1NDM1NywtMjEwODQ2MzU4MywtMT
+eyJoaXN0b3J5IjpbMTQ1MTg1MjY3MSwtMjEwODQ2MzU4MywtMT
 MwMTY5MDM3MiwyMDQyMDUxMDc4XX0=
 -->
