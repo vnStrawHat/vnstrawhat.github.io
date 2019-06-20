@@ -43,7 +43,7 @@ Trong khi phân tích hành vi của kẻ tấn công, bạn sẽ biết đượ
 
 Tất cả các đặc điểm trên đều có thể được sử dụng để xác định các hệ thống khác bị đã bị chiếm quyền điều khiển và giúp cho  Team Incident Response đưa ra được các phương án ngăn chặn để sử dụng cho việc khắc phục sự cố (Remediation).  Threat Intelligence là một điểm quan trọng đối với Team Incident Response trong quá trình xử lý incident.
 ### Eradication/Remediation
-Khắc phục sự cố là các hành động cần thiết có thể hoàn thành trong khoảng thời gian nhanh nhất để giảm thiểu sự cố hiện tại. Đa số các công ty chọn thực hiện các hành động có thời gian thực hiện hơn 1 tuần. Các hành động sau nên được thực thi để đảm bảo sự cố được khắc phục một cách toàn diện:
+Khắc phục sự cố là các hành động cần thiết có thể hoàn thành trong khoảng thời gian nhanh nhất để giảm thiểu sự cố hiện tại. Đa số các công ty chọn thực hiện các hành động có thời gian thực hiện không quá 1 tuần. Các hành động sau nên được thực thi để đảm bảo sự cố được khắc phục một cách toàn diện:
 
  - Block malicious IP Address
  - Blackhole malicious domain name
@@ -64,7 +64,7 @@ Một số hành động cho việc khôi phục bao gồm:
  - Network re-design
 
 ### Follow Up
-Thông thường, việc follow up là cần thiết để đảm bảo sự cố đã được ngăn chặn hoàn toàn, kẻ tấn công đã được loại bỏ ra khỏi hệ thống, các hành đông ngăn ngừa đã được thực hiện, các hệ thống hoạt động trở lại như bình thường
+Thông thường, việc follow up là cần thiết để đảm bảo sự cố đã được ngăn chặn hoàn toàn, kẻ tấn công đã được loại bỏ ra khỏi hệ thống, các hành đông ngăn ngừa đã được thực hiện, các hệ thống hoạt động trở lại như bình thường.
 
 ### Lesson Learn 
 :confused: Mặc dù quy trình có 6 bước nhưng đây là mục thứ 7 từ trên xuống  :smile:
@@ -89,6 +89,6 @@ Dịch hơi hơi lược   :wink::
 - [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 - SANS FOR 508
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MTg1MjY3MSwtMjEwODQ2MzU4MywtMT
-MwMTY5MDM3MiwyMDQyMDUxMDc4XX0=
+eyJoaXN0b3J5IjpbNjU5MTE1NDI3LC0yMTA4NDYzNTgzLC0xMz
+AxNjkwMzcyLDIwNDIwNTEwNzhdfQ==
 -->
