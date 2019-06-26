@@ -5,7 +5,7 @@ Categories = []
 Description = ""
 Tags = ["Incident Response"]
 menu = "posts"
-draft: true
+draft = true
 +++
 
 # The problem ? Imediate Eradication without proper Incident Scoping/Containment
