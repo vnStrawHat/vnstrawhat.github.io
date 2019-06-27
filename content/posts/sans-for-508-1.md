@@ -1,9 +1,9 @@
 ﻿+++
-title = "2. SANS FOR 508: The problem ?"
+title = "FOR 508: The problem ?"
 date = 2019-06-26T19:59:27+07:00
-Categories = []
+Categories = ["SANS FOR508"]
 Description = ""
-Tags = ["Incident Response"]
+Tags = ["Incident Response", "SANS FOR508"]
 menu = "posts"
 draft = true
 +++

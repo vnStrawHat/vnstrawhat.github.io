@@ -1,9 +1,9 @@
 +++
-title = "1. SANS FOR 508: Six-Step Incident Response Process"
+title = "FOR 508: Six-Step Incident Response Process"
 date = 2019-06-17T21:15:32+07:00
-Categories = []
+Categories = ["SANS FOR508"]
 Description = ""
-Tags = ["Incident Response"]
+Tags = ["Incident Response", "SANS FOR508"]
 menu = "posts"
 +++
 

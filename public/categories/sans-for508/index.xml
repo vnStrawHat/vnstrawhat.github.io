@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SANS FOR508 on TrungKFC</title>
+    <link>https://vnstrawhat.github.io/categories/sans-for508/</link>
+    <description>Recent content in SANS FOR508 on TrungKFC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Jun 2019 19:59:27 +0700</lastBuildDate>
+    
+	<atom:link href="https://vnstrawhat.github.io/categories/sans-for508/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FOR 508: The problem ?</title>
+      <link>https://vnstrawhat.github.io/posts/sans-for-508-1/</link>
+      <pubDate>Wed, 26 Jun 2019 19:59:27 +0700</pubDate>
+      
+      <guid>https://vnstrawhat.github.io/posts/sans-for-508-1/</guid>
+      <description>The problem ? Imediate Eradication without proper Incident Scoping/Containment Một vấn đề thực sự là không nhiều Team Incident Response tuân theo 6 bước trong quy trình ứng phó sự cố. Các Team có xu hướng bỏ qua các bước khác và ngay lập tức đi đến bước Eradication/Remediation. Chúng ta có thể nhanh chóng đi đến bươc thực hiện remediation nhưng không phải bằng cách bỏ qua các bước quan trọng (key step) trong quy trình cũng như xem nhẹ vai trò của Cyber Threat Intelligence.</description>
+    </item>
+    
+    <item>
+      <title>FOR 508: Six-Step Incident Response Process</title>
+      <link>https://vnstrawhat.github.io/posts/sans-for-508/</link>
+      <pubDate>Mon, 17 Jun 2019 21:15:32 +0700</pubDate>
+      
+      <guid>https://vnstrawhat.github.io/posts/sans-for-508/</guid>
+      <description>Six-Step Incident Response process Ứng phó sự cố được coi như có mức độ quan trọng tương đương với việc quản lý sự cố. Thông thường, quy trình ứng phó sự cố bao gồm 6 bước chính. Tuy nhiên, việc ứng phó sự cố đòi hỏi, yêu cầu nhiều chiến thuật, quy trình linh hoạt để có thể khắc phục, ứng phó thành công đối với sự cố. Cũng nên nhớ rằng, kẻ tấn công có thể đã ở trong hệ thống của bạn hơn 1 năm hoặc lâu hơn trước khi gây ra sự cố.</description>
+    </item>
+    
+  </channel>
+</rss>

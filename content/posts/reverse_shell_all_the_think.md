@@ -4,7 +4,7 @@ Description = ""
 Tags = ["Reverse Shell"]
 date = "2019-06-17T12:02:32+07:00"
 menu = "posts"
-title = "Reverse Shell - Part 1"
+title = "Reverse Shell"
 
 +++
 
