@@ -1,12 +1,11 @@
-+++
-Categories = ["Hack The Box"]
-Description = ""
-Tags = ["Reverse Shell"]
-date = "2019-06-17T12:02:32+07:00"
-menu = "posts"
-title = "Reverse Shell"
-
-+++
+---
+title: "Reverse Shell"
+date: "2019-06-17T12:02:32+07:00"
+Categories: ["Hack The Box"]
+Description: ""
+Tags: ["Reverse Shell"]
+menu: "posts"
+---
 
 Note cho khi cần dùng đến.
 # Reverse Shell

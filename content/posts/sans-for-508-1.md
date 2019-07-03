@@ -1,12 +1,12 @@
-﻿+++
-title = "FOR 508: The problem ?"
-date = 2019-06-26T19:59:27+07:00
-Categories = ["SANS FOR508"]
-Description = ""
-Tags = ["Incident Response", "SANS FOR508"]
-menu = "posts"
-draft = true
-+++
+﻿---
+title: "FOR 508: The problem ?"
+date: 2019-06-26T19:59:27+07:00
+Categories: ["SANS FOR508"]
+Description: ""
+Tags: ["Incident Response", "SANS FOR508"]
+menu: "posts"
+draft: true
+---
 
 # The problem ? Imediate Eradication without proper Incident Scoping/Containment
 Một vấn đề thực sự là không nhiều Team Incident Response tuân theo 6 bước trong quy trình ứng phó sự cố. Các Team có xu hướng bỏ qua các bước khác và ngay lập tức đi đến bước Eradication/Remediation. Chúng ta có thể nhanh chóng đi đến bươc thực hiện  remediation nhưng không phải bằng cách bỏ qua các bước quan trọng (key step) trong quy trình cũng như xem nhẹ vai trò của Cyber Threat Intelligence.
@@ -17,4 +17,8 @@ Có một số các hành động tượng tự như: Block IP Address, rebuild 
 
 Whack a Mole xảy ra khi chuyển quá nhanh đến bước Eradication mà xem nhẹ việc thực hiện Cyber Threat Intelligence, bỏ qua hoặc thực hiện hời hợt bước Contaiment. Nếu bạn không xác định được scope của sự cố, việc thực hiện loại bỏ sẽ không được thực hiện đầy đủ dẫn đén kẻ tấn công vấn chưa được lại bỏ ra khỏi hệ thống mạng. Kẻ tấn công sẽ tìm cách cài đặt mã độc mới trên các hệ thống khác hoặc dừng việc tấn công để nâng cao khả năng sống sót. Qua thời gian, Incident Response Team không nhận ra kẻ tấn không vẫn còn trong hệ thống mạng, Incident được đóng lại. Một thời gian sau kẻ tấn công lại quay lại tấn công tổ chức.
 
-Điều gì thúc đẩy cho việc thực hiện khắc phục sự cố ngay lập tức ? Rất nhiêu tổ chức lo sợ dữ liệu của họ bị mất (phá hoại), bị rò rỉ (data leak). hoặc đơn giản là hành động đấy mang lại giá trị và rủi ro là rất cao. Kết quả là đa số Incident Response Team biết việc rút phích cắn điện là một ý kiến tồi nhưng bắt buộc phải thực hiện do quản lý của họ sợ...
+Điều gì thúc đẩy cho việc thực hiện khắc phục sự cố ngay lập tức ? Rất nhiêu tổ chức lo sợ dữ liệu của họ bị mất (phá hoại), bị rò rỉ (data leak). hoặc đơn giản là hành động đấy mang lại giá trị cho một sự việc rủi ro là rất cao. Kết quả là đa số Incident Response Team biết việc rút phích cắn điện là một ý kiến tồi nhưng bắt buộc phải thực hiện do quản lý của họ sợ...
+
+Dịch hơi hơi lược   :wink::
+
+- SANS FOR 508.1

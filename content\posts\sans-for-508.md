@@ -1,11 +1,11 @@
-+++
-title = "FOR 508: Six-Step Incident Response Process"
-date = 2019-06-17T21:15:32+07:00
-Categories = ["SANS FOR508"]
-Description = ""
-Tags = ["Incident Response", "SANS FOR508"]
-menu = "posts"
-+++
+---
+title: "FOR 508: Six-Step Incident Response Process"
+date: 2019-06-17T21:15:32+07:00
+Categories: ["SANS FOR508"]
+Description: ""
+Tags: ["Incident Response", "SANS FOR508"]
+menu: "posts"
+---
 
 ![enter image description here](https://vnstrawhat.github.io/images/ir-step.png)
 # Six-Step Incident Response process
@@ -98,9 +98,4 @@ Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhi
 Dịch hơi hơi lược   :wink::
 
 - [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
-- SANS FOR 508
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2ODM2OTc1OCw1MzU2NTg1OTYsMzExOT
-M2NDQwLDY1OTExNTQyNywtMjEwODQ2MzU4MywtMTMwMTY5MDM3
-MiwyMDQyMDUxMDc4XX0=
--->
+- SANS FOR 508.1
