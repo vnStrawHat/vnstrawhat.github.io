@@ -100,7 +100,7 @@ Dịch hơi hơi lược   :wink::
 - [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
 - SANS FOR 508
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2ODM2OTc1OCw1MzU2NTg1OTYsMzExOT
-M2NDQwLDY1OTExNTQyNywtMjEwODQ2MzU4MywtMTMwMTY5MDM3
-MiwyMDQyMDUxMDc4XX0=
+eyJoaXN0b3J5IjpbOTA5MDkyMTg4LDE1NjgzNjk3NTgsNTM1Nj
+U4NTk2LDMxMTkzNjQ0MCw2NTkxMTU0MjcsLTIxMDg0NjM1ODMs
+LTEzMDE2OTAzNzIsMjA0MjA1MTA3OF19
 -->
