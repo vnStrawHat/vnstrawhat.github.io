@@ -98,4 +98,13 @@ Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhi
 Dịch hơi hơi lược   :wink::
 
 - [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
+<<<<<<< HEAD
 - SANS FOR 508.1
+=======
+- SANS FOR 508
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTA5MDkyMTg4LDE1NjgzNjk3NTgsNTM1Nj
+U4NTk2LDMxMTkzNjQ0MCw2NTkxMTU0MjcsLTIxMDg0NjM1ODMs
+LTEzMDE2OTAzNzIsMjA0MjA1MTA3OF19
+-->
+>>>>>>> 38fc97c626518b6d4774a5cb3c23ac0d7136424d
