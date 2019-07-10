@@ -38,7 +38,7 @@ Quy trình ứng phó sự cố bao gồm 7 bước::
 
 Các sự cố về bảo mật có thể được phân loại như sau:
 
-![Security incident](/img/security_incident.png)
+<center>![Security incident](/images/security_incident.png)</center>
 
 - **Tấn công bằng mã độc hại**: Mã độc hại có thể là các chương trình như virus, worm, trojan…Các kẻ tấn công thường sử dụng các mã độc hại để đạt được quyền truy cập, chiếm mật khẩu, chụp hoặc ghi lại các thông tin nhạy cảm khác. Các cuộc tấn công bằng mã độc thường khó phát hiện. Một số ví dụ về tấn công mã độc hại được biết đến như:
 
@@ -73,6 +73,7 @@ Sau khi phân loại các sự cố, mức độ nghiêm trọng của sự cố
 - **Thấp**: Những sự cố này có thể ảnh hưởng đến tính bảo mật, toàn vẹn hoặc sẵn sàng của dữ liệu tuy nhiên không có thiệt hại gì xảy ra.
 - **Không quan trọng**: Những sự cố này gây ra những nguy cơ hoặc thiệt hại không đáng kể cho công ty hay tổ chức
 
-> zMadMoon
+# ./.
+### Dịch hơi hơi lược   :wink::
 
-> Dịch lược NIST.SP.800-61 Rev. 2
+> NIST.SP.800-61 Rev. 2

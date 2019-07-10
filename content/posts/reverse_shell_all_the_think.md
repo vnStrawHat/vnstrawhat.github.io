@@ -340,17 +340,26 @@ $ ruby: exec "/bin/sh"
 ```console
 $ lua: os.execute('/bin/sh')
 ```
-## Nguồn
+# ./.
 
-Tổng hợp từ khắp mọi nơi trên thế giới
+### Tổng hợp từ khắp mọi nơi trên thế giới
 
-- [https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
-- [https://highon.coffee/blog/reverse-shell-cheat-sheet/](https://highon.coffee/blog/reverse-shell-cheat-sheet/)
-- [https://nitesculucian.github.io/2018/07/15/reverse-shells-cheat-sheet/](https://nitesculucian.github.io/2018/07/15/reverse-shells-cheat-sheet/)
-- [http://www.codemania.it/2018/05/04/reverse-shell-cheat-sheet/](http://www.codemania.it/2018/05/04/reverse-shell-cheat-sheet/)
-- [https://netsec.ws/?p=331](https://netsec.ws/?p=331)
-- [https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1](https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1)
-- [https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/](https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/)
-- [https://hackernoon.com/reverse-shell-cf154dfee6bd](https://hackernoon.com/reverse-shell-cf154dfee6bd)
-- [https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/](https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/)
-- ...
+>[https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+>
+>[https://highon.coffee/blog/reverse-shell-cheat-sheet/](https://highon.coffee/blog/reverse-shell-cheat-sheet/)
+
+>[https://nitesculucian.github.io/2018/07/15/reverse-shells-cheat-sheet/](https://nitesculucian.github.io/2018/07/15/reverse-shells-cheat-sheet/)
+
+>[http://www.codemania.it/2018/05/04/reverse-shell-cheat-sheet/](http://www.codemania.it/2018/05/04/reverse-shell-cheat-sheet/)
+
+>[https://netsec.ws/?p=331](https://netsec.ws/?p=331)
+
+>[https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1](https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1)
+
+>[https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/](https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/)
+
+>[https://hackernoon.com/reverse-shell-cf154dfee6bd](https://hackernoon.com/reverse-shell-cf154dfee6bd)
+
+>[https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/](https://www.hackingarticles.in/get-reverse-shell-via-windows-one-liner/)
+
+>...

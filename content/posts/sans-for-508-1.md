@@ -19,6 +19,7 @@ Whack a Mole xảy ra khi chuyển quá nhanh đến bước Eradication mà xem
 
 Điều gì thúc đẩy cho việc thực hiện khắc phục sự cố ngay lập tức ? Rất nhiêu tổ chức lo sợ dữ liệu của họ bị mất (phá hoại), bị rò rỉ (data leak). hoặc đơn giản là hành động đấy mang lại giá trị cho một sự việc rủi ro là rất cao. Kết quả là đa số Incident Response Team biết việc rút phích cắn điện là một ý kiến tồi nhưng bắt buộc phải thực hiện do quản lý của họ sợ...
 
-Dịch hơi hơi lược   :wink::
+# ./.
+### Dịch hơi hơi lược   :wink::
 
-- SANS FOR 508.1
+> SANS FOR 508.1

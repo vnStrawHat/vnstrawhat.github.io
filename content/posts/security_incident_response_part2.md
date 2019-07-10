@@ -43,7 +43,7 @@ Trong quá trình ứng phó sự cố, đội ứng phó sự cố cần phải
 
 Các tổ chức cũng có thể chủng động chia sẻ thông tin về sự cố với các đồng nghiệm khác nhằm phát hiện và phân tích các sự cố giúp cho việc giải quyết sự cố nhanh chóng hơn. Các thủ tục về vấn đề chia sẻ thông tin ra bên ngoài cầm phải được thiết lập nhằm đảm bảo các thông tin nhạy cảm không bị lộ ra bên ngoài một cách trái phép có thể dẫn đến những tổn thất về kinh tế cũng như danh tiếng cho tổ chức. Đội ứng phó sự cố phải lưu lại tất cả các thông tin, địa chỉ liên lạc với phía bên ngoài công ty, tổ chức để có thể quản lý về mặt trách nhiệm trong trường hợp thất thoát thông tin xảy ra.
 
-![Các đối tượng chia sẻ thông tin với đội ứng phó sự cố](/img/object_share.png)
+<center>![Các đối tượng chia sẻ thông tin với đội ứng phó sự cố](/images/object_share.png)</center>
 
 ## Phương tiện
 
@@ -76,6 +76,7 @@ Công ty hay tổ chức trong quán trình ứng phó sự cố có thể muố
 - **Các đội ứng phó sự cố khác**:
 Một số đội ứng phó sự cố khác có thể cũng gặp các sự cố tương tự nên việc chủ động chia sẻ thông tin sẽ tăng hiệu quả trong quá trình xử lý sự cố (ví dụ như cảnh báo sớm, tăng khả năng chuẩn bị ứng phó sự cố)
 
-> zMadMoon
+# ./.
+### Dịch hơi hơi lược   :wink::
 
-> Dịch lược NIST.SP.800-61 Rev. 2
+> NIST.SP.800-61 Rev. 2

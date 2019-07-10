@@ -48,7 +48,7 @@ Một nhân viên duy nhất nên được chỉ định để phụ trách vi�
 Trong mô hình thuê ngoài hoàn toàn, người này sẽ thực hiện giám sát, đánh giá và thẩm định hoạt động ứng phó sự cố. Người này có nhiệm vụ thực hiện các liên lạc với các bên liên quan (ví dụ như các cấp trên, các phòng ban liên quan, các đội ứng phó khác hay các tổ chức khác trong trường hợp cần thiết, tiếp xúc trực tiếp với các đơn vị truyền thông…) Người quản lý cần phải thành thạo kỹ thuật, có kỹ năng giao tiếp tốt đặc biệt là giao tiếp và nói trước nhiều người. Người quản lý cũng đảm bảo hoạt động ứng phó sự cố được thực hiện đúng cách, đúng quy trình.
 
 Ngoài người quản lý, trong đội cầm có một người quản lý về mặt kỹ thuật. Người này phải có kiến thức về kỹ thuật sâu rộng, rất có kinh nghiệm trong việc xử lý sự cố, giám sát hệ thống và điều tra số. Đây là người chịu trách nhiệm về chất lượng công việc kỹ thuật của đội.
-Thành viên của đội xử lý sự cố cần phải có kỹ thuật vững vàng về các mảng như quản trị hệ thống mạng, lập kỹ, phát hiện xâm nhập, điều tra số, phân tích mã động. Mỗi thành viên trong nhóm cần phải có kỹ năng giải quyết vấn đề và tư duy tốt. 
+Thành viên của đội xử lý sự cố cần phải có kỹ thuật vững vàng về các mảng như quản trị hệ thống mạng, lập kỹ, phát hiện xâm nhập, điều tra số, phân tích mã động. Mỗi thành viên trong nhóm cần phải có kỹ năng giải quyết vấn đề và tư duy tốt.
 
 Các gợi ý sau đây sẽ giúp ích cho việc xây dựng và duy trì đội kỹ thuật:
 
@@ -81,6 +81,7 @@ Trọng tâm của một đội ứng phó sự cố là xử lý sự cố, nh�
 - **Đào tạo**: Đội ứng phó sự cố có thể thực hiện đào tạo nâng cao nhận thức về an toàn thông tin cho các nhân viên cũng như đào tạo nâng cao tình độ chuyên môn cho các kỹ thuật viên trong tổ chức
 - **Chia sẻ thông tin**: Các đội xử lý sự cố thường xuyên chia sẻ thông tin với nhau nhằn nâng cao khả năng phản ứng và xử lý sự cố.
 
-> zMadMoon
+# ./.
+### Dịch hơi hơi lược   :wink::
 
-> Dịch lược NIST.SP.800-61 Rev. 2
+> NIST.SP.800-61 Rev. 2

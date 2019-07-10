@@ -7,7 +7,7 @@ Tags: ["Incident Response", "SANS FOR508"]
 menu: "posts"
 ---
 
-![enter image description here](https://vnstrawhat.github.io/images/ir-step.png)
+<center>![enter image description here](https://vnstrawhat.github.io/images/ir-step.png)</center>
 # Six-Step Incident Response process
 
 Ứng phó sự cố được coi như có mức độ quan trọng tương đương với việc quản lý sự cố.  Thông thường, quy trình ứng phó sự cố bao gồm 6 bước chính. Tuy nhiên, việc ứng phó sự cố đòi hỏi, yêu cầu nhiều chiến thuật, quy trình linh hoạt để có thể khắc phục, ứng phó thành công đối với sự cố. Cũng nên nhớ rằng, kẻ tấn công có thể đã ở trong hệ thống của bạn hơn 1 năm hoặc lâu hơn trước khi gây ra sự cố. Theo Mandiant, Trung bình cần 101 ngày để phát hiện được hệ thống của bạn đã bị tấn công/thỏa hiệp.
@@ -95,16 +95,9 @@ Các bài học rút ra từ quá trình xử lý sự cố cung cấp rất nhi
 -   **Reduce future risk.** Nếu các sự cố ANBM xảy ra trong tương lai, các bài học kinh nghiệm sẽ giúp ngăn ngừa các lỗi  tương tự có thể xảy ra do đó làm giảm rủi ro cho toàn bộ tổ chức.
 -   **Improve future performance.** Bằng cách phân tích cách mà tổ chức của bạn ứng phó với với sự cố ANBM, nó có thể giúp tối ưu hóa hiệu suất xử lý các sự cố tương tự. Ngoài việc có kế hoạch cho việc ứng phó sự cố, các bài học kinh nghiệm sẽ góp phần điều chỉnh và cải thiện kế hoạch giúp cho tổ chức chuẩn bị tốt hơn cho các sự cố sắp tới.
 
-Dịch hơi hơi lược   :wink::
+# ./.
+### Dịch hơi hơi lược   :wink::
 
-- [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
-<<<<<<< HEAD
-- SANS FOR 508.1
-=======
-- SANS FOR 508
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA5MDkyMTg4LDE1NjgzNjk3NTgsNTM1Nj
-U4NTk2LDMxMTkzNjQ0MCw2NTkxMTU0MjcsLTIxMDg0NjM1ODMs
-LTEzMDE2OTAzNzIsMjA0MjA1MTA3OF19
--->
->>>>>>> 38fc97c626518b6d4774a5cb3c23ac0d7136424d
+> [https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/](https://www.hitachi-systems-security.com/blog/lessons-learned-incident-response-planning/)
+>
+> SANS FOR 508.1

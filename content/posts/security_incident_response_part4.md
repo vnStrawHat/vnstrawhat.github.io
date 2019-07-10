@@ -10,7 +10,7 @@ title = "IR part 4 - Quy trình ứng phó sự cố"
 
 Quy trình ứng phó sự cố bao gồm nhiều gian đoạn. Giai đoạn đầu tiên là việc thành lập và đào tạo một đội phản ứng sự cố và lựa chọn các công cụ cũng như nguồn lực cần thiết. Trong thời gian chuẩn bị, tổ chức cũng phải hạn chế số lượng các sự cố xảy ra. Việc phát hiện các lỗ hổng bảo mật là cần thiết để cảnh báo cho các tổ chức bất kể khi nào xảy ra sự cố. Sauk hi sự cố được xử lý đầy đủ, tổ chức cần phải phát hành một báo cáo chi tiết về nguyên nhân và chi phí của vụ việc, các bước để tổ chức ngăn chặn trong tương lai. Các quy trình ứng phó sự cố và các mối quan hệ được minh họa bởi hình sau:
 
-![Quy trình ứng phó sự cố](/img/incident_response_process.png)
+<center>![Quy trình ứng phó sự cố](/images/incident_response_process.png)</center>
 
 # Chuẩn bị
 
@@ -60,7 +60,7 @@ Mặc dù đội ứng phó sự cố nói chung không chịu trách nhiệm b�
 
 # Phát hiện và phân tích
 
-![Phát hiện và phân tích](/img/detection_analysis.png)
+<center>![Phát hiện và phân tích](/images/detection_analysis.png)</center>
 
 ## Dấu hiệu của sự cố
 
@@ -68,7 +68,7 @@ Mặc dù đội ứng phó sự cố nói chung không chịu trách nhiệm b�
 
 - Sự cố có thể được phát hiện thông qua nhiều phương tiện khác nhau, các mức độ và tính trung thực cũng khác nhau. Khả năng phát hiện tự động bao gồm việc dựa trên các sự kiện của hệ thống phát hiện xâm nhập IDS, phần mềm chống mã độc hại và phân tích quá trình đăng nhập. Sự cố có thể được phát hiện thông qua những báo cáo của người dùng.
 - Số lượng các sự cố tiền ẩn thưởng rất cao. Ví dụ như nó không phổ biến cho một tổ chức cụ thể hoặc hệ thống phát hiện thông báo quá nhiều sự kiện trong một khoảng thời gian.
-- Việc phát hiện sự cố phụ thuộc vào kiến thức kỹ thuật, kinh nghiệm trong việc phân tích các dữ liệu liên quan đến sự cố của đội ứng phó sự cố 
+- Việc phát hiện sự cố phụ thuộc vào kiến thức kỹ thuật, kinh nghiệm trong việc phân tích các dữ liệu liên quan đến sự cố của đội ứng phó sự cố.
 
 Dấu hiệu về sự cố có thể rơi vào 2 loại. Một là những <b><span style="color:red;">dấu hiệu tiền thân</span></b>, nó là những dấu hiệu cho thấy sự cố có thể xảy ra trong tương lai. Hai là <b><span style="color:red;">dấu hiệu chỉ thị</span></b>, nó là những dấu hiệu cho thấy sự cố đã xảy ra hoặc có thể xảy ra ngay lập tức. Nếu một <b><span style="color:red;">dấu hiệu tiền thân</span></b> được phát hiện, tổ chức có thể thực hiện ngăn chặn sự cố này trước khi sự cố xảy ra. Một số <b><span style="color:red;">dấu hiệu tiền thân</span></b> như là:
 
@@ -102,7 +102,7 @@ Các dấu hiệu của sự cố được xác định từ nhiều nguồn th�
 
 ## Phân tích sự cố
 
-Việc phân tích sự cố sẽ dễ dàng hơn nếu các dấu hiệu được đảm bảo là chính xác. Tuy nhiên các dấu hiệu không phải lúc nào cũng đúng. Ví dụ như các hệ thống phát hiện xâm nhập có thể đưa ra những cảnh báo sai. Hoặc tệ hơn, hệ thống phát hiện xâm nhập đưa ra quá nhiều cảnh báo, nó làm cho việc phân tích trở nên vô cùng khó khăn. 
+Việc phân tích sự cố sẽ dễ dàng hơn nếu các dấu hiệu được đảm bảo là chính xác. Tuy nhiên các dấu hiệu không phải lúc nào cũng đúng. Ví dụ như các hệ thống phát hiện xâm nhập có thể đưa ra những cảnh báo sai. Hoặc tệ hơn, hệ thống phát hiện xâm nhập đưa ra quá nhiều cảnh báo, nó làm cho việc phân tích trở nên vô cùng khó khăn.
 Thậm chí là nếu một số dấu hiệu là chính xác, nó cũng không đảm bảo được là sự cố đã xảy ra. Một số sự cố dễ dàng được phát hiện ví dụ như nội dung của trang web đã bị thay đổi. Tuy nhiên không nhiều những sự cố dễ dàng phát hiện được như vậy. Biện pháp khắc phục tốt nhất là xây dựng một đội ngũ giàu kinh nghiệm và thành thạo có thể phân tích, xác định chính xác các dấu hiệu và đưa ra những hành động thích hợp. Nếu không có một đội ngũ nhân viên có khả năng phát hiện và phân tích sự việc thì việc ứng phó sự cố sẽ không hiệu quả và những sai lầm, tốn kém có thể xảy ra.
 Đội phản ứng sự cố nên phân tích một cách nhanh chóng và xác định xem sự cố đã thật sự xảy ra hay chưa. Khi đã xác định một sự cố đã thật sự xảy ra, nhóm nghiên cứu bắt đầu thực hiện các bước phân tích ban đầu đề xác định phạm vi của sự việc ví dụ như mạng, máy chủ, hệ thống bị ảnh hưởng, cái gì có thể là nguồn gốc của vụ việc, làm thế nào để sự việc xảy ra. Những phân tích ban đầu sẽ cung cấp thông tin cho các hoạt động phân tích sâu tiếp theo.
 Các khuyến nghị sau đây giúp việc phân tích sự cố dễ dàng và hiệu quả hơn:
@@ -119,7 +119,7 @@ Xác định mức độ ưu tiên cho các sự kiện cũng là một vấn đ
 
 - Tác động về mặt chức năng của sự cố: Sự cố nhắm đến mục tiêu là các hệ thống công nghệ thông tin thường ảnh hưởng đến hoạt động kinh doanh. Việc xử lý sự cố nên được xem xét đến việc làm ảnh hưởng đến hoạt động của hệ thống.Nên xem xét cả những tác động về mặt chức năng trong tương lai có thể xảy ra.
 - Tác động về mặt thông tin của sự cố: Sự cố có thể ảnh hưởng đến tính bảo mật, tính toàn vẹn và tính sẵn sàng của hệ thống.Việc xử lý sự cố cần được xem xét sự ảnh hưởng về mặt thông tin đến hoạt động bình thường của tổ chức. Nó cũng có thể liên quan đến các tỏ chức khác nếu như sự cố ảnh hưởng đến các dữ liệu gắn liền với tổ chức đố.
-- Phục hồi sự cố: Mức độ của sự cố ảnh hưởng đến chi phí khôi phục, thời gian và nguồn lực của tổ chức trong đó chưa kể đến một số trường hợp các sự cố xảy ra không thể phục hồi. 
+- Phục hồi sự cố: Mức độ của sự cố ảnh hưởng đến chi phí khôi phục, thời gian và nguồn lực của tổ chức trong đó chưa kể đến một số trường hợp các sự cố xảy ra không thể phục hồi.
 
 ### Phân loại tác động về mặt chức năng như sau:
 
@@ -151,7 +151,7 @@ Xác định mức độ ưu tiên cho các sự kiện cũng là một vấn đ
 
 # Ngăn chặn, Loại bỏ và Phục hồi
 
-![Ngăn chặn, Loại bỏ và Phục hồi](/img/containment_eradication_recovery.png)
+<center>![Ngăn chặn, Loại bỏ và Phục hồi](/images/containment_eradication_recovery.png)</center>
 
 ## Lựa chọn chiến lực ngăn chặn
 
@@ -195,7 +195,7 @@ Xóa và phục hồi nên được thực hiện theo từng giai đoạn để
 
 # Hoạt động sau sự cố
 
-![Hoạt động sau sự cố](/img/post_incident.png)
+<center>![Hoạt động sau sự cố](/images/post_incident.png)</center>
 
 ## Bài học kinh nghiệm
 
@@ -217,6 +217,7 @@ Tổ chức cần thiết lập chính sách cho việc lưu trữ các bằng c
 - **Lưu giữ dữ liệu**: Hầu hết các tổ chức có chính sách về thời gian sống cho các dữ liệu. Ví dụ các thư điện tử sẽ được giữ lại 180 ngày. Sau 180 ngày các thư điện tử sẽ bị xóa hoàn toàn.
 - **Chi phí**: Chi phí cho các thiết bị phần chứng thực hiện lưu trữ bằng chứng cần dược xem xét. Chi phí có thể là đáng kể nếu như bằng chứng được lưu giữ trong thời gian dài.
 
-> zMadMoon
+# ./.
+### Dịch hơi hơi lược   :wink::
 
-> Dịch lược NIST.SP.800-61 Rev. 2
+> NIST.SP.800-61 Rev. 2

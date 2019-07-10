@@ -30,6 +30,7 @@ Việc xây dựng IOC là việc rất quan trọng trong bước Containment b
 
 Bất kỳ hệ thống nào đều có thể đã bị tấn công bởi, việc xác định một hệ thống bị nhiễm mã độc đơn giản hơn rất nhiều so với việc xác định một hệ thống đã bị kẻ tấn công truy cập, kiểm tra, sử dụng. Cũng cần nhớ rằng, kẻ tấn công chỉ cài đặt mã độc lên 54% các hệ thống mà họ xâm nhập.
 
-Dịch hơi hơi lược   :wink::
+# ./.
+### Dịch hơi hơi lược   :wink::
 
-- SANS FOR 508.1
+> SANS FOR 508.1
