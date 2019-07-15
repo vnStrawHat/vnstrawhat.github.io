@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.55.6" />
+        
+        <link rel="canonical" href="https://vnstrawhat.github.io/posts/some-work-with-mcafee-endpoint-security/" />
+        <meta name="description" content="">
+        
+        <title>Some work With Mcafee Endpoint Security &middot; TrungKFC</title>
+        <link rel="shortcut icon" href="https://vnstrawhat.github.io/images/favicon.ico" />
+        <link rel="stylesheet" href="https://vnstrawhat.github.io/css/main.css" />
+        
+        
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/an-old-hope.min.css">
+                    
+                    
+                    
+                    
+                    <link rel="stylesheet" href="https://vnstrawhat.github.io/css/kfc.css">
+                    
+                </head>
+
+<body class="loading dark-mode">
+    
+<div class="top">
+    <img class="logo" src="https://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+<div class="bottom">
+    <img class="logo" src="https://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+</div>
+
+    <header class="header">
+    <ul class="menu clearfix control">
+        
+
+<li class="logo-container logo-default">
+    <a href="https://vnstrawhat.github.io" class="btn logo-link">
+        <img class="logo" src="https://vnstrawhat.github.io/images/logo.svg" alt="logo" />
+    </a>
+</li>
+
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                Article
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="/posts"
+                    
+                        class="btn "
+                    >Posts</a>
+                </li>
+                
+                <li class="">
+                    <a href="/tags"
+                    
+                        class="btn "
+                    >Tags</a>
+                </li>
+                
+                <li class="">
+                    <a href="/categories"
+                    
+                        class="btn "
+                    >Categories</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                View
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="#"
+                    
+                        class="btn toggle-sidebar"
+                    >Toggle Sidebar</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/" class="btn">
+                About
+            </a>
+        </li>
+        
+        
+    </ul>
+</header>
+
+    <div class="middle">
+        <nav class="sidebar">
+            <ul class="control">
+    
+    <br>
+    <li class="taxonomy-key">Categories</li>
+    
+    
+    <li>
+        <a href="https://vnstrawhat.github.io/categories/hack-the-box" class="btn">
+            <i class="icon icon-categories"></i>
+            hack-the-box
+            <span class="count">1</span>
+        </a>
+    </li>
+    
+    
+    
+    <li>
+        <a href="https://vnstrawhat.github.io/categories/sans-for508" class="btn">
+            <i class="icon icon-categories"></i>
+            sans-for508
+            <span class="count">4</span>
+        </a>
+    </li>
+    
+    
+    
+    <br>
+    <li class="taxonomy-key">Tags</li>
+    
+    
+    <li>
+        <a href="https://vnstrawhat.github.io/tags/expert-rules" class="btn">
+            <i class="icon icon-tags"></i>
+            expert-rules
+            <span class="count">1</span>
+        </a>
+    </li>
+    
+    
+    
+    <li>
+        <a href="https://vnstrawhat.github.io/tags/incident-response" class="btn">
+            <i class="icon icon-tags"></i>
+            incident-response
+            <span class="count">9</span>
+        </a>
+    </li>
+    
+    
+    
+    <li>
+        <a href="https://vnstrawhat.github.io/tags/mcafee" class="btn">
+            <i class="icon icon-tags"></i>
+            mcafee
+            <span class="count">1</span>
+        </a>
+    </li>
+    
+    
+    
+    <li>
+        <a href="https://vnstrawhat.github.io/tags/reverse-shell" class="btn">
+            <i class="icon icon-tags"></i>
+            reverse-shell
+            <span class="count">1</span>
+        </a>
+    </li>
+    
+    
+    
+    <li>
+        <a href="https://vnstrawhat.github.io/tags/sans-for508" class="btn">
+            <i class="icon icon-tags"></i>
+            sans-for508
+            <span class="count">4</span>
+        </a>
+    </li>
+    
+    
+    
+    <br>
+    <li class="taxonomy-key">Recent Posts</li>
+    
+    <li><a class="no-break btn" href='/posts/some-work-with-mcafee-endpoint-security/'><i class="icon icon-post"></i>Some work With Mcafee Endpoint Security</a></li>
+    
+    <li><a class="no-break btn" href='/posts/sans-for-508-3/'><i class="icon icon-post"></i>FOR 508: Hunting versus Reactive Response</a></li>
+    
+    <li><a class="no-break btn" href='/posts/sans-for-508-2/'><i class="icon icon-post"></i>FOR 508: Active Defence</a></li>
+    
+    <li><a class="no-break btn" href='/posts/sans-for-508-1/'><i class="icon icon-post"></i>FOR 508: The problem ?</a></li>
+    
+    <li><a class="no-break btn" href='/posts/sans-for-508/'><i class="icon icon-post"></i>FOR 508: Six-Step Incident Response Process</a></li>
+    
+    <li><a class="no-break btn" href='/posts/reverse_shell_all_the_think/'><i class="icon icon-post"></i>Reverse Shell</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part4/'><i class="icon icon-post"></i>IR part 4 - Quy trình ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part3/'><i class="icon icon-post"></i>IR part 3 - Cơ cấu của một đội ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part2/'><i class="icon icon-post"></i>IR part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố</a></li>
+    
+    <li><a class="no-break btn" href='/posts/security_incident_response_part1/'><i class="icon icon-post"></i>IR part 1 - Tổng quan</a></li>
+    
+</ul>
+        </nav>
+        <main class="main">
+            <article class="article">
+    <h3 class="title"><a href='/posts/some-work-with-mcafee-endpoint-security/' class="btn">Some work With Mcafee Endpoint Security</a></h3>
+    <div class="article-meta clearfix">
+        <ul class="dates clearfix left control">
+            <li><i class="icon icon-date"></i></li>
+            <li class="publish-date">
+                <time datetime="2019.07.15">2019.07.15</time>
+            </li>
+        </ul>
+        
+        
+        <div class="article-meta-splitter clearfix"></div>
+        <ul class="article-tags clearfix control">
+            <li><i class="icon icon-tags"></i></li>
+            
+            <li>
+                <a href="https://vnstrawhat.github.io/tags/incident-response/" class="btn">Incident Response</a>
+            </li>
+            
+            <li>
+                <a href="https://vnstrawhat.github.io/tags/mcafee/" class="btn">McAfee</a>
+            </li>
+            
+            <li>
+                <a href="https://vnstrawhat.github.io/tags/expert-rules/" class="btn">Expert Rules</a>
+            </li>
+            
+        </ul>
+        
+    </div>
+    <div class="content">
+        
+        
+
+<h1 id="some-work-with-expert-rules-in-mcafee-endpoint-security">Some work with Expert Rules in McAfee Endpoint Security</h1>
+
+<p>Bằng việc sử dụng Expert Rules trong policy Threat Prevention - Exploit Prevention, chúng ta có thể tạo ra một số custom rules để phục vụ cho việc giám sát một số hành vi bất thường trên endpoint.</p>
+
+<p>😏 Nếu các bạn muốn sử dụng các rules này trên hệ thống Production thì nên lưu ý nên thực hiện các bước sau để nâng cao tính hiệu quả:</p>
+
+<ul>
+<li>Áp dụng các rules bên dưới chạy ở mode monitor cho một nhóm nhỏ</li>
+<li>Thêm các Exclusion cho các rules bị noise</li>
+<li>Mở rộng việc áp dụng các rules này cho các Endpoint khác</li>
+<li>Thêm các Exclusion cho các rules bị noise</li>
+<li>Apply Block mode   🔥</li>
+</ul>
+
+<p>Note:</p>
+
+<ul>
+<li>Các rules bên dưới đa số dựa vào process command line mà process sẽ thực thi để xác định hành vi bât thường</li>
+<li>McAfee sẽ không support bạn trong trường hợp các Custon Rules gây ảnh hưởng đến hệ thống của bạn 😞 vậy nên <strong>Take Care of Yourself</strong> 😄</li>
+<li>Việc thêm các exclusion đồng nghĩa với việc hacker có thể sử dụng điều đó để bypass các rules bạn định nghĩa   👊</li>
+<li>Exclusion có thể add thêm bằng cách thêm dòng <code>Exclude PROCESS_CMD_LINE { -v &quot;nội dung cần exclusion&quot; }</code> vào section <strong>Process</strong></li>
+<li>Các DLL trong section <strong>Target</strong> nhằm mục đích giới hạn số lượng event mà McAfee Endpoint Security tạo ra. DLL này sẽ được process trong section <strong>Process</strong> load lên khi chạy</li>
+<li>Ba cái thứ này sao không cài sysmon mà monitor cho đầy đủ 😏 ? Bởi vì tôi thích làm bằng McAfee 😕</li>
+</ul>
+
+<h2 id="regsvr32-exe-local-remote-com-scriptlet-execution">regsvr32.exe local/remote COM scriptlet execution</h2>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1117/">https://attack.mitre.org/techniques/T1117/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v *regsvr32* }
+        Include PROCESS_CMD_LINE { -v &quot;*.sct*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*.txt*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*.xml*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*http:*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*https:*&quot; }
+    }
+    Target {
+        Match FILE {  
+            Include OBJECT_NAME { 
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\BCRYPT.DLL&quot; 
+            } 
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="wmic-wmiprvse-create-unwanted-process">WMIC/wmiprvse create unwanted process</h2>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v *wmiprvse* }
+        Include OBJECT_NAME { -v *wmic* }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;powershell.exe&quot;
+                -v &quot;mshta.exe&quot;
+                -v &quot;certutil.exe&quot;
+                -v &quot;cmstp.exe&quot; 
+            }
+            Include -access &quot;EXECUTE&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="mshta-exe-executes-javascript-from-internet">Mshta.exe executes JavaScript from internet</h2>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1170">https://attack.mitre.org/techniques/T1170</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v mshta.exe }
+        Include PROCESS_CMD_LINE { -v &quot;*http*&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME { 
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\DNSAPI.DLL&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="installutil-exe-uninstall-method-call">InstallUtil.exe uninstall method call</h2>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1118/">https://attack.mitre.org/techniques/T1118/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v &quot;C:\\Windows\\Microsoft.NET\\Framework*\\**\\InstallUtil.exe&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*LogToConsole=false*&quot; }
+    }
+    Target {
+        Match FILE {  
+            Include OBJECT_NAME { 
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\BCRYPT.DLL&quot;
+            } 
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="execution-using-csmtp-exe-inf-file">Execution using csmtp.exe inf file</h2>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1191/">https://attack.mitre.org/techniques/T1191/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v cmstp.exe }
+        Include PROCESS_CMD_LINE { -v &quot;*.inf*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*.sct*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*.txt*&quot; }
+    }
+    Target {
+        Match FILE {  
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\CMUTIL.DLL&quot;
+            } 
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="run-powershell-with-execution-policy-bypass">Run powershell with Execution Policy Bypass</h2>
+
+<p><strong>Note</strong>: Rule này khá noise nếu không được exclude. Nếu muốn apply thì cần monitor và thêm exclude để giảm noise.</p>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1086/">https://attack.mitre.org/techniques/T1086/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v &quot;*powershell*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-executionpolicy bypass*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-ep bypass*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-exec bypass*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-exe bypass*&quot; }
+        Exclude PROCESS_CMD_LINE { -v &quot;*DisableSMB1*&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\BCRYPT.DLL&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="run-powershell-with-executionpolicy-unrestricted">Run powershell with ExecutionPolicy Unrestricted</h2>
+
+<p><strong>Note</strong>: Rule này khá noise nếu không được exclude. Nếu muốn apply thì cần monitor và thêm exclude để giảm noise.</p>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1086/">https://attack.mitre.org/techniques/T1086/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v &quot;*powershell*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-executionpolicy unrestricted*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-ep unrestricted*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-exec unrestricted*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-exe unrestricted*&quot; }
+        Exclude PROCESS_CMD_LINE { -v &quot;*MODULES*SMBSHARE*DISABLEUNUSEDSMB1*PS1*&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\BCRYPT.DLL&quot;
+            } 
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="run-powershell-with-file-parameter">Run powershell with File parameter</h2>
+
+<p><strong>Note</strong>: Rule này khá noise nếu không được exclude. Nếu muốn apply thì cần monitor và thêm exclude để giảm noise.</p>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1086/">https://attack.mitre.org/techniques/T1086/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v &quot;*powershell*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-f*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-file*&quot; }
+        Exclude PROCESS_CMD_LINE { -v &quot;*VMNetworkAdapter*&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME { 
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\BCRYPT.DLL&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="run-powershell-with-encodedcommand-parameter">Run powershell with EncodedCommand parameter</h2>
+
+<p><strong>Note</strong>: Rule này khá noise nếu không được exclude. Nếu muốn apply thì cần monitor và thêm exclude để giảm noise.</p>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1086/">https://attack.mitre.org/techniques/T1086/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v &quot;*powershell*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-enc*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-ec*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-en*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-encodedcommand*&quot; }
+        Exclude PROCESS_CMD_LINE { -v &quot;*VMNetworkAdapter*&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\BCRYPT.DLL&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="run-powershell-with-invokeexpression-parameter">Run powershell with InvokeExpression parameter</h2>
+
+<p><strong>Note</strong>: Rule này khá noise nếu không được exclude. Nếu muốn apply thì cần monitor và thêm exclude để giảm noise.</p>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1086/">https://attack.mitre.org/techniques/T1086/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v &quot;*powershell*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*IEX*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*Invoke-Expression*&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\BCRYPT.DLL&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="run-powershell-with-command-parameter">Run powershell with Command parameter</h2>
+
+<p><strong>Note</strong>: Rule này khá noise nếu không được exclude. Nếu muốn apply thì cần monitor và thêm exclude để giảm noise.</p>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1086/">https://attack.mitre.org/techniques/T1086/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v &quot;*powershell*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-c*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-command*&quot; }
+        Exclude PROCESS_CMD_LINE { -v &quot;*SYSTEM*SECURITY*PRINCIPAL*WINDOWSIDENTITY*&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\BCRYPT.DLL&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="list-domain-admin-using-net-exe">List Domain Admin using net.exe</h2>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1087/">https://attack.mitre.org/techniques/T1087/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v net.exe }
+        Include PROCESS_CMD_LINE { -v &quot;*group*Domain Admins*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*localgroup*administrators*&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\NET1.EXE&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="create-admin-account-via-net-exe">Create Admin Account via net.exe</h2>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1136/">https://attack.mitre.org/techniques/T1136/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v net.exe }
+        Include PROCESS_CMD_LINE { -v &quot;*localgroup*administrators*add&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*add*localgroup*administrators*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*localgroup*add*administrators*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*localgroup*administrators*add*y&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\NET1.EXE&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="run-psexec-exe">Run Psexec.exe</h2>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v psexec.exe }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSWOW64\\NETAPI32.DLL&quot;
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\NETAPI32.DLL&quot;
+            } 
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="monitor-cscript-exe-and-wscript-exe">Monitor cscript.exe and wscript.exe</h2>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1064/">https://attack.mitre.org/techniques/T1064/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v cscript.exe }
+        Include OBJECT_NAME { -v wscript.exe }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;**\\*.vbs&quot;
+            }
+            Exclude OBJECT_NAME -type PATH {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\SLMGR.VBS&quot;
+                -v &quot;**\\MICROSOFT OFFICE\\**\\OSPP.VBS&quot;
+                -v &quot;**\\MICROSOFT MONITORING AGENT\\AGENT\\HEALTH SERVICE STATE\\**\\*.VBS
+            }
+            Include -access &quot;READ EXECUTE&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="using-wevtutil-exe-to-clean-event-log">Using wevtutil.exe to clean Event Log</h2>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v wevtutil.exe }
+        Include PROCESS_CMD_LINE { -v &quot;* cl *&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\WEVTAPI.DLL&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="schedule-a-job-on-remote-system-using-schtasks-exe">Schedule a job on remote system using schtasks.exe</h2>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1053/">https://attack.mitre.org/techniques/T1053/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v schtasks.exe }
+        Include PROCESS_CMD_LINE { -v &quot;* /s *&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;* /create *&quot; }
+        Include DLL_LOADED -name &quot;BCRYPT&quot; { -v 0x1 }
+    }
+    Target {
+        Match SECTION { Include -access &quot;EXECUTE&quot; }
+    }
+}
+</code></pre>
+
+<h2 id="create-process-on-remote-system-using-wmic">Create process on remote system using wmic</h2>
+
+<p><strong>Mitre Att&amp;ck</strong>: <a href="https://attack.mitre.org/techniques/T1047/">https://attack.mitre.org/techniques/T1047/</a></p>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v wmic.exe }
+        Include PROCESS_CMD_LINE { -v &quot;* process call create *&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\WBEM\\WMIUTILS.DLL&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="ms-word-excel-powerpoint-trying-to-execute-unwanted-programs">MS Word, Excel, PowerPoint trying to execute unwanted programs</h2>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v excel.exe }
+        Include OBJECT_NAME { -v winword.exe }
+        Include OBJECT_NAME { -v powerpnt.exe }
+        Include OBJECT_NAME { -v EQNEDT32.EXE }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME { 
+                -v &quot;cmd.exe&quot;
+                -v &quot;powershell.exe&quot;
+                -v &quot;mshta.exe&quot;
+                -v &quot;wmic.exe&quot;
+                -v &quot;certutil.exe&quot;
+                -v &quot;cmstp.exe&quot; 
+            }
+            Include -access &quot;EXECUTE&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="delete-volumes-shadown-copy-vssadmin">Delete Volumes Shadown Copy - vssadmin</h2>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v *vssadmin* }
+        Include PROCESS_CMD_LINE { -v &quot;*delete*shadows*&quot; }
+     }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\VSSAPI.DLL&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="delete-volumes-shadown-copy-wmic">Delete Volumes Shadown Copy - wmic</h2>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v *wmic* }
+        Include PROCESS_CMD_LINE { -v &quot;*shadowcopy*delete*&quot; }
+    }
+    Target {
+        Match FILE {
+            Include OBJECT_NAME {
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\IMM32.DLL&quot;
+            }
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="high-confidence-powershell-attacked">High confidence powershell Attacked</h2>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v &quot;*powershell*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-window hidden -enc*&quot; }
+        Include PROCESS_CMD_LINE { -v &quot;*-nop -noni -enc*&quot; }
+        Include PROECSS_CMD_LINE { -v &quot;*-enc*&quot; }
+        Include PROECSS_CMD_LINE { -v &quot;*-NoP -sta -NonI -W Hidden -Enc*&quot; }
+        Include PROECSS_CMD_LINE { -v &quot;*-EncodedCommand*&quot; }
+        Include PROECSS_CMD_LINE { -v &quot;*-ep bypass -noni -w hidden -enc*&quot; }
+        Include PROECSS_CMD_LINE { -v &quot;*-NoP -NonI -W Hidden -Enc*&quot; }
+        Include PROECSS_CMD_LINE { -v &quot;*-nop -win hidden -noni -enc*&quot; }
+        Include PROECSS_CMD_LINE { -v &quot;*-executionpolicy bypass -windowstyle hidden -enc*&quot; }
+        Include PROECSS_CMD_LINE { -v &quot;*-nop -exec bypass -win Hidden -noni -enc*&quot; }
+    }
+    Target {
+        Match FILE {  
+            Include OBJECT_NAME { 
+                -v &quot;C:\\WINDOWS\\SYSTEM32\\BCRYPT.DLL&quot; 
+            } 
+            Include -access &quot;READ&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="running-mimikatz-in-memory">Running Mimikatz in Memory</h2>
+
+<p><strong>Rule type</strong>: Processes</p>
+
+<p><strong>Reference</strong>: <a href="https://cyberwardog.blogspot.com/2017/03/chronicles-of-threat-hunter-hunting-for.html">https://cyberwardog.blogspot.com/2017/03/chronicles-of-threat-hunter-hunting-for.html</a></p>
+
+<p><strong>Rule content</strong>:</p>
+
+<pre><code class="language-puppet">Rule {
+    Process {
+        Include OBJECT_NAME { -v &quot;*.exe&quot; }
+        Include DLL_LOADED -name &quot;WINSCARD&quot; { -v 0x1 }
+        Include DLL_LOADED -name &quot;CRYPTDLL&quot; { -v 0x1 }
+        Include DLL_LOADED -name &quot;HID&quot; { -v 0x1 }
+        Include DLL_LOADED -name &quot;SAMLIB&quot; { -v 0x1 }
+        Include DLL_LOADED -name &quot;VAULTCLI&quot; { -v 0x1 }
+        Include DLL_LOADED -name &quot;WMINET_UTILS&quot; { -v 0x1 }
+        Exclude -vtp_trust true
+    }
+    Target {
+        Match SECTION { Include -access &quot;LOAD_IMAGE&quot; }
+    }
+}
+</code></pre>
+
+        
+    </div>
+</article>
+<section class="comment">
+    <p class="local-info">
+        Comment is disabled to avoid unwanted discussions from 'localhost:1313' on your Disqus
+        account...
+    </p>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+
+    (function () {
+        if (window.location.hostname == "localhost") {
+            return
+        }
+        document.querySelector('.local-info').classList.add('hide')
+
+        let dsq = document.createElement('script')
+        dsq.type = 'text/javascript'
+        dsq.async = true
+        let disqus_shortname = 'your disqus short name'
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
+    })()
+</script>
+
+        </main>
+    </div>
+    <footer class="footer clearfix">
+    <ul class="control social clearfix">
+        <li><a class="author btn" href="#">TrungKFC</a></li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon email"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon facebook"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon github"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon twitter"></i></a>
+        </li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="https://vnstrawhat.github.io/index.xml" type="application/rss+xml" title="rss">
+            <i class="rss icon"></i></a>
+        </li>
+    </ul>
+    <ul class="control status clearfix">
+        <li><a href="#" class="btn">Posts:
+        11</a>
+    </li>
+    <li><a href="#" class="btn">Pages:
+    0</a></li>
+</ul>
+</footer>
+<div class="dialog">
+<div class="wrapper">
+    <div class="clearfix"><button class="btn close-dialog">X</button></div>
+    <header>
+        <h1 class="title">Theme Name</h1>
+    </header>
+    <main>
+        <div class="clearfix">
+            <label for="theme-name">
+                <p>Only English Character, space, hyphen are allowed!</p>
+            </label>
+            <input type="text" name="theme-name" id="theme-name">
+        </div>
+        <div class="clearfix">
+            <button class="btn export">Export</button>
+        </div>
+    </main>
+<footer></footer>
+</div>
+</div>
+    <script src="https://vnstrawhat.github.io/js/main.js"></script>
+
+
+
+<script src="https://vnstrawhat.github.io/js/highlight.pack.js"></script>
+
+<script>
+hljs.initHighlightingOnLoad();
+hljs.getLanguage('console').k += ' use apt-get wmic python perl ruby lua git powershell.exe powershell msf msfvenom nc certutil.exe certutil regsvr32 rundll32.exe rundll32 mshta.exe mshta exploit cat telnet rm msiexec certutil.exe certutil php bash'; 
+</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'your ga id', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>
