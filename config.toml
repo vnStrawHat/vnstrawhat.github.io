@@ -21,7 +21,7 @@ buildDrafts = "true"
 disableFastRender = true
 # --------------------------------------------------------------------------
 
-disqusShortname = "your disqus short name"
+disqusShortname = "vnstrawhat"
 googleAnalytics = "your ga id"
 
 # social link in the footer, change it to "" hide it
