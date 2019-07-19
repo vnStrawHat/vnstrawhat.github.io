@@ -6,10 +6,28 @@
     <description>Recent content in Tags on TrungKFC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Jul 2019 09:51:20 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2019 21:22:31 +0700</lastBuildDate>
     
 	<atom:link href="https://vnstrawhat.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Incident Response</title>
+      <link>https://vnstrawhat.github.io/tags/incident-response/</link>
+      <pubDate>Fri, 19 Jul 2019 21:22:31 +0700</pubDate>
+      
+      <guid>https://vnstrawhat.github.io/tags/incident-response/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SANS FOR508</title>
+      <link>https://vnstrawhat.github.io/tags/sans-for508/</link>
+      <pubDate>Fri, 19 Jul 2019 21:22:31 +0700</pubDate>
+      
+      <guid>https://vnstrawhat.github.io/tags/sans-for508/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Expert Rules</title>
@@ -21,29 +39,11 @@
     </item>
     
     <item>
-      <title>Incident Response</title>
-      <link>https://vnstrawhat.github.io/tags/incident-response/</link>
-      <pubDate>Mon, 15 Jul 2019 09:51:20 +0700</pubDate>
-      
-      <guid>https://vnstrawhat.github.io/tags/incident-response/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>McAfee</title>
       <link>https://vnstrawhat.github.io/tags/mcafee/</link>
       <pubDate>Mon, 15 Jul 2019 09:51:20 +0700</pubDate>
       
       <guid>https://vnstrawhat.github.io/tags/mcafee/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SANS FOR508</title>
-      <link>https://vnstrawhat.github.io/tags/sans-for508/</link>
-      <pubDate>Wed, 10 Jul 2019 21:50:51 +0700</pubDate>
-      
-      <guid>https://vnstrawhat.github.io/tags/sans-for508/</guid>
       <description></description>
     </item>
     
