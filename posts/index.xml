@@ -6,10 +6,20 @@
     <description>Recent content in Posts on TrungKFC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Jul 2019 09:51:20 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2019 21:22:31 +0700</lastBuildDate>
     
 	<atom:link href="https://vnstrawhat.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FOR 508: Intelligence-Driven Incident Response</title>
+      <link>https://vnstrawhat.github.io/posts/sans-for-508-4/</link>
+      <pubDate>Fri, 19 Jul 2019 21:22:31 +0700</pubDate>
+      
+      <guid>https://vnstrawhat.github.io/posts/sans-for-508-4/</guid>
+      <description>Intelligence-Driven Incident Response 
+Hình trên thể hiện bước identification/scoping và ước containment/intelligence development sẽ được lặp đi lặp lại trong quá trình sự cố đang xảy ra hoặc đã xảy ra. Đa số Hunting Team sẽ liên tục sử dụng các feedback từ vòng lặp trên để giúp cho việc xác định các hệ thống bị chiếm quyền điều khiển một cách nhanh nhất. Có khả năng kẻ tấn công sẽ cố gắng xâm nhập lại hệ thống của bạn một lần nữa và Team Incident Response bây giờ đã được trang bị các kiến thức phù hợp sẽ hành động nhanh hơn, chủ động hơn trong việc tìm kiếm, theo dõi các vị trí mà kẻ tấn công có khả năng xuất hiện.</description>
+    </item>
     
     <item>
       <title>Some work With Mcafee Endpoint Security</title>
