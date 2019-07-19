@@ -3,7 +3,7 @@ title: "Some work With Mcafee Endpoint Security"
 date: 2019-07-15T09:51:20+07:00
 Categories: []
 Description: ""
-Tags: ["Incident Response", "McAfee", "Expert Rules"]
+Tags: ["Incident Response", "McAfee"]
 menu: "posts"
 draft: true
 ---
