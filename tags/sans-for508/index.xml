@@ -6,10 +6,19 @@
     <description>Recent content in SANS FOR508 on TrungKFC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jul 2019 21:22:31 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 21:32:01 +0700</lastBuildDate>
     
 	<atom:link href="https://vnstrawhat.github.io/tags/sans-for508/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FOR 508: Forensic Analysis VS Threat Hunting</title>
+      <link>https://vnstrawhat.github.io/posts/sans-for-508-5/</link>
+      <pubDate>Tue, 23 Jul 2019 21:32:01 +0700</pubDate>
+      
+      <guid>https://vnstrawhat.github.io/posts/sans-for-508-5/</guid>
+      <description>Forensic Analysis Versus Threat Hunting    Forensic Analysis Rapid Analysis &amp;amp; Threat Hunting     Don&amp;rsquo;t Know What I&amp;rsquo;m Looking For Know What I&amp;rsquo;m Looking For   Not accomplished on every system Touch and go scan for compromises using threat intel/indicators   Helps answer key questions about breach Identify new systems compromised   Key to successful remediation Meant to be able to scan 1000 of systems quickly   - Collects malware - sends to RE team</description>
+    </item>
     
     <item>
       <title>FOR 508: Intelligence-Driven Incident Response</title>

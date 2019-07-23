@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="generator" content="Hugo 0.55.6" />
         
-        <link rel="canonical" href="https://vnstrawhat.github.io/posts/security_incident_response_part2/" />
+        <link rel="canonical" href="https://vnstrawhat.github.io/posts/sans-for-508-5/" />
         <meta name="description" content="">
         
-        <title>IR part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố &middot; TrungKFC</title>
+        <title>FOR 508: Forensic Analysis VS Threat Hunting &middot; TrungKFC</title>
         <link rel="shortcut icon" href="https://vnstrawhat.github.io/images/favicon.ico" />
         <link rel="stylesheet" href="https://vnstrawhat.github.io/css/main.css" />
         
@@ -209,13 +209,22 @@
         </nav>
         <main class="main">
             <article class="article">
-    <h3 class="title"><a href='/posts/security_incident_response_part2/' class="btn">IR part 2 - Chính sách, kế hoạch, thủ tục ứng phó sự cố</a></h3>
+    <h3 class="title"><a href='/posts/sans-for-508-5/' class="btn">FOR 508: Forensic Analysis VS Threat Hunting</a></h3>
     <div class="article-meta clearfix">
         <ul class="dates clearfix left control">
             <li><i class="icon icon-date"></i></li>
             <li class="publish-date">
-                <time datetime="2015.12.22">2015.12.22</time>
+                <time datetime="2019.07.23">2019.07.23</time>
             </li>
+        </ul>
+        
+        <ul class="article-categories clearfix left control">
+            <li><i class="icon icon-categories"></i></li>
+            
+            <li>
+                <a href="https://vnstrawhat.github.io/categories/sans-for508/" class="btn">SANS FOR508</a>
+            </li>
+            
         </ul>
         
         
@@ -227,6 +236,10 @@
                 <a href="https://vnstrawhat.github.io/tags/incident-response/" class="btn">Incident Response</a>
             </li>
             
+            <li>
+                <a href="https://vnstrawhat.github.io/tags/sans-for508/" class="btn">SANS FOR508</a>
+            </li>
+            
         </ul>
         
     </div>
@@ -234,92 +247,56 @@
         
         
 
-<h1 id="chính-sách">Chính sách</h1>
+<h1 id="forensic-analysis-versus-threat-hunting">Forensic Analysis Versus Threat Hunting</h1>
 
-<p>Chính sách về quản lý và ứng phó sự cố của từng các nhân hay tổ chức là khác nhau. Tuy nhiên, hầy hết các chính sách đều bao gồm các yếu tố sau:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Forensic Analysis</th>
+<th align="left">Rapid Analysis &amp; Threat Hunting</th>
+</tr>
+</thead>
 
-<ul>
-<li>Cam kết quản lý</li>
-<li>Mục đích và mục tiêu của chính sách</li>
-<li>Phạm vi của chính sách</li>
-<li>Định nghĩa về sự cố bảo mật và các vấn đề liên quan</li>
-<li>Cơ cấu tổ chức, định nghĩa về vai trò, mức độ và quyền hạn</li>
-<li>Xếp hạng mức độ ưu tiên hoặc mức độ nghiêm trọng của sự cố</li>
-<li>Performance Measures</li>
-<li>Báo cáo và mẫu phương thức liên lạc</li>
-</ul>
+<tbody>
+<tr>
+<td align="left">Don&rsquo;t Know What I&rsquo;m Looking For</td>
+<td align="left">Know What I&rsquo;m Looking For</td>
+</tr>
 
-<h1 id="kế-hoạch">Kế Hoạch</h1>
+<tr>
+<td align="left">Not accomplished on every system</td>
+<td align="left">Touch and go scan for compromises using threat intel/indicators</td>
+</tr>
 
-<p>Cá nhân hay tổ chúc cần có một kế hoạch chính thức, tập trung và phối hợp các bên liên quan để giải quyết các sự cố về bảo mật. Một kế hoạch ứng phó với sự cố sẽ cung cấp một lộ trình thực hiện các biện pháp nhằm giải quyết sự cố. Kế hoạch về ứng phó sự cố thường bao gồm các yếu tố sau:</p>
+<tr>
+<td align="left">Helps answer key questions about breach</td>
+<td align="left">Identify new systems compromised</td>
+</tr>
 
-<ul>
-<li>Nhiệm vụ</li>
-<li>Mục tiêu và chiến lược</li>
-<li>Sự phê chuẩn các yêu cầu quản lý cấp cao</li>
-<li>Phương pháp của tổ chức để ứng phó với sự cố</li>
-<li>Cách thức để đội ứng phó sự cố liên lạc với các thành phần khác trong một tổ chức hoặc là liên lạc với một tổ chức khác</li>
-<li>Đánh giá khả năng ứng phó vơi sự cố và tính hiệu quả của nó</li>
-<li>Làm cách nào đẻ kế hoạch có thể được áp dụng một cách tổng thể cho toàn bộ tổ chức</li>
-</ul>
+<tr>
+<td align="left">Key to successful remediation</td>
+<td align="left">Meant to be able to scan 1000 of systems quickly</td>
+</tr>
 
-<h1 id="thủ-tục">Thủ tục</h1>
+<tr>
+<td align="left">- Collects malware - sends to RE team<br>- Collects network signatures - sends to network team</td>
+<td align="left">Looks for key signs of attacker activity via security intelligence</td>
+</tr>
 
-<p>Các thử tục về ứng phó cự cố cần phải được xây dựng dựa trên chính sách và kế hoạch ứng phó sự cố. Thủ tục hoạt động tiêu chuẩn (Standard operating procedures - SOPs) là một sự phân chia cụ thể về mặt quy trình kỹ thuật nó bao gồm kỹ thuật, checklist, các biểu mẫu đước sử dụng bởi đội ứng phó sự cố. Việc chuẩn hóa các thủ tục sẽ làm giảm đi đáng kể sự thiếu sót, sai sót trong quá trình xử lý sự cố đặc biệt là đối với những tình huống nhạy cảm, căng thẳng. SOPs phải được kiểm tra để đảm bảo tính chính xác và tính hữu dụng của nó. SOPs nên bao gồm những yếu tố sau:</p>
+<tr>
+<td align="left">Deep dive forensics: <ul><li>Memory analysis (all processes)</li><li>Timeline analysis (All activity)</li><li>File system analysis (all file system analysis)</td>
+<td align="left">Enterprise scanning: <ul><li>Memory analysis (specific processes)</li><li>Timeline analysis (specific activity</li><li>File system analysis (Specific file system analysis)</li></ul></td>
+</tr>
+</tbody>
+</table>
 
-<h2 id="chia-sẻ-thông-tin-với-bên-ngoài">Chia sẻ thông tin với bên ngoài:</h2>
+<p>Một trong những mục tiêu chính của khóa học là sử dụng điều tra số để thực hiện đồng thời deep-dive forensics và enterprise forensics cho nhiệm vụ xác định các hệ thống đã bị thỏa hiệp và trả lời các câu hỏi chính liên quan đến các dữ liệu bị truy cập trái phép. Nếu không lựa chọn được phương pháp thích hợp, nhóm của bạn sẽ bị mất phương hướng và không biết cái gì cần được xem xét.</p>
 
-<p>Trong quá trình ứng phó sự cố, đội ứng phó sự cố cần phải được chia sẻ thông tin ra bên ngoài trong một số trường hợp. Chẳng hạn như để thực thi pháp luật, trả lời các đơn vị truyền thông, hoặc tìm kiếm các chuyên gia bên ngoài giúp đỡ xử lý sự cố.</p>
+<p>Đối với deep-dive forensics, chúngta không nên sử dụng để thực hiện trên tất cả các hệ thống khi xảy ra sự cố. Ngược lại, deep-dive forensics được sử dụng khi đã xác định được một hệ thống nào đó có xuất hiện các dấu hiệu của cuộc tấn công. Hoặc đôi khi có một phỏng đoán có độ tin cậy cao rằng hệ thống này đã bị chiếm quyền điều khiển.</p>
 
-<p>Các tổ chức cũng có thể chủng động chia sẻ thông tin về sự cố với các đồng nghiệm khác nhằm phát hiện và phân tích các sự cố giúp cho việc giải quyết sự cố nhanh chóng hơn. Các thủ tục về vấn đề chia sẻ thông tin ra bên ngoài cầm phải được thiết lập nhằm đảm bảo các thông tin nhạy cảm không bị lộ ra bên ngoài một cách trái phép có thể dẫn đến những tổn thất về kinh tế cũng như danh tiếng cho tổ chức. Đội ứng phó sự cố phải lưu lại tất cả các thông tin, địa chỉ liên lạc với phía bên ngoài công ty, tổ chức để có thể quản lý về mặt trách nhiệm trong trường hợp thất thoát thông tin xảy ra.</p>
+<p>Deep-dive forensics thường được tập trung để phân tích nhanh một hệ thống trong khoảng thời gian ít hơn 3 ngày để có thể bao quát được toàn bộ các tiến trình đang chạy trên memory, các activity chính, timeline, khôi phục các tệp tin bị xóa. Mục tiêu của deep-dive forensics là thu thập đầy đủ thông tin nhất có thể để chuyển thông tin cho các team khác có liên quan như RE Team, Network Team&hellip;</p>
 
-<p><center><img src="/images/object_share.png" alt="Các đối tượng chia sẻ thông tin với đội ứng phó sự cố" /></center></p>
-
-<h2 id="phương-tiện">Phương tiện</h2>
-
-<p>Đội ứng phó sự cố nên thiết lập các thủ tục cho việc công bố thông tin qua các phương tiện truyền thông tuân theo chính sách của tổ chức. Ví dụ như một người trong đội ứng phó sự cố, sẽ tham gia cùng với các thành viên của phòng quan hệ công chúng trước các phương tiện truyền thông:</p>
-
-<ul>
-<li>Tổ chức các buổi tập huấn về tương tác với các phương tiện truyền thông liên quan khi có sự cố xảy ra, trong đó phải đảm bao việc không tiết lộ các thông tin nhạy cảm chẳng hạn như các chi tiết kỹ thuật của các biện pháp đối phó.</li>
-<li>Thiết lập một thủ tục ngắn gọn để các phương tiện truyền thông liên lạc liên quan đến các thông tin nhạy cảm của một sự việc cụ thể trước khi thảo luận chính thức với các phương tiện truyền thông.</li>
-<li>Duy trì các thông tin về tình trạng hiện tại của sự cố và liên tục cập nhật thông tin</li>
-<li>Nhắc nhở toàn bộ nhân viên về các thủ tục chung khi xử lý yêu cầu của các phương tiện truyền thông.</li>
-<li>Tập huấn các cuộc phỏng vấn giả và các cuộc họp báo khi có sự cố xảy ra. Một cố câu hỏi thường được các phương tiện truyền thông yêu cầu như:
-
-<ul>
-<li>Ai là kẻ tấn công ? Tại sao ?</li>
-<li>Cuộc tấn công xảy ra khi nào ? Chuyện gì đã xảy ra ? Điều này xảy ra do bảo mật kém hay do nguyên nhân nào khác ?</li>
-<li>Cách thức là sự cố này có thể lan rộng ra ? Bạn đã xác định sự cố như thế nào và nên làm gì để sự cố này không xảy ra trong tương lai ?</li>
-<li>Tác động của sự cố này như thế nào ? Mức độ nghiêm trọng như thế nào ? Tác động của sự cố này đến các thông tin cá nhân (PII) ? Thiệt hại ước tính của sự cố này là bao nhiêu ?</li>
-</ul></li>
-</ul>
-
-<h2 id="thi-hành-luật">Thi hành luật</h2>
-
-<p>Các đội phản ứng sự cố cần được làm quen và thảo luận với các đại diện của cơ quan thực thi pháp luật trước khi sự cố xảy ra về các điều kiện để thực thi pháp luật trong trường hợp cần thiết như báo cáo, cách thức thực hiện báo cáo, những bằng chứng cần thu thập và làm thế nào để thu thập các bằng chứng đó.
-Các cơ quan pháp luật ở các nước khác cũng có thể tham gia trong trường hợp kẻ tấn công nằm bên ngoài phạm vi của quốc gia.</p>
-
-<p>Các nhân đại diện thực thi pháp luật phải được chỉ định một cách phù hợp với yêu cầu của pháp luật và thủ tục của tổ chức. Nhiều tổ chức muốn bổ nhiệm một thành viên trong đội ứng phó sự cố làm đại diện trong việc thực thi pháp luật. Người này nên làm quen với các thủ tục, báo cáo của tất cả các cơ quan pháp lý có liên quan. Một lưu ý rằng công ty hay tổ chức thường chỉ nên liên lạc với một cơ quan pháp lý để tránh việc xung đột trong vấn đề phán quyết.</p>
-
-<h2 id="một-số-thành-phần-bên-ngoài">Một số thành phần bên ngoài</h2>
-
-<p>Công ty hay tổ chức trong quán trình ứng phó sự cố có thể muốn thảo luận và trao đổi về sự cố với các nhóm bên ngoài:</p>
-
-<ul>
-<li><strong>ISP</strong>: Quá trình ứng phó sự cố có thể cần sự hỗ trợ của các ISP trong việc ngăn chặn một cuộc tấn công mạng lớn hoặc truy tìm nguồn gốc của cuộc tấn công đó.</li>
-<li><strong>Chủ sở hữu của địa chỉ tấn công</strong>: Nếu một cuộc tấn công có nguồn gốc xuất phát từ một tổ chức bên ngoài, việc xử lý sự cố có thể được thực hiện bằng cách nói chuyện, trao đổi với tổ chức bên ngoài đó nhằm mục đích thu thập chứng cư hay ngăn chặn cuộc tấn công.</li>
-<li><strong>Các nhà cung cấp phần mềm</strong>: Đội ứng phó sự cố có thể muốn trao đổi với các  nhà cung cấp phần mềm về các hoạt động đáng ngờ của phần mềm. Sự trao đổi này có thể chỉ ra được các cuộc tấn công chiếm quyền điều khiển máy chủ thông qua một phần mền dễ bị tổn thương. Các nhà cung cấp phần mềm cũng có thể cung cấp các thông tin về các mỗi đe dọa, các lỗ hổng chưa được vá ở các phiên bản cũ để giúp đội ứng phó xử lý sự cố.</li>
-<li><strong>Các đội ứng phó sự cố khác</strong>:
-Một số đội ứng phó sự cố khác có thể cũng gặp các sự cố tương tự nên việc chủ động chia sẻ thông tin sẽ tăng hiệu quả trong quá trình xử lý sự cố (ví dụ như cảnh báo sớm, tăng khả năng chuẩn bị ứng phó sự cố)</li>
-</ul>
-
-<h1 id="toc_7">./.</h1>
-
-<h3 id="dịch-hơi-hơi-lược">Dịch hơi hơi lược   😉:</h3>
-
-<blockquote>
-<p>NIST.SP.800-61 Rev. 2</p>
-</blockquote>
+<p>Enterprise scanning có nghĩa là thực hiện phân tích đồng loạt các hệ thống trong một thời gian ngắn nhất. Tuy nhiên chúng ta cần biết điều chúng ta cần tìm kiếm là gì. Việc tìm kiếm tập trung vào một process, file, registry key, hành động cụ thể có thể thể chứng minh được nếu tồn tại các dấu hiệu đó thì đồng nghĩa với việc hệ thống đó đã bị chiếm quyền điều khiển hoặc truy cập trái phép. Nếu việc thực hiện tìm kiếm cho kết quả đủ nhanh, chung ta có thể sử dụng kết quả đó để tìm ra các cuộc xâm nhập mới và tiến đến phát hiện các bước tấn công khác nhanh hơn.</p>
 
         
     </div>
